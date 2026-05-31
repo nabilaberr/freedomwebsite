@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Freedom Recycling | Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="header">
+  <div class="container nav-wrap">
+    <a class="logo" href="index.html"><img src="assets/logo.png" alt="Freedom Recycling"></a>
+    <nav class="nav">
+      <a href="index.html">ACCUEIL</a>
+      <a href="about.html">À PROPOS</a>
+      <a href="process.html">PROCESSUS</a>
+      <a href="products.html">PRODUITS</a>
+      <a href="sustainability.html">DURABILITÉ</a>
+      <a href="certifications.html">CERTIFICATIONS</a>
+      <a href="contact.html" class="active">CONTACT</a>
+    </nav>
+    <div class="top-actions">
+      <div class="lang-dropdown">
+        <button class="lang-btn" onclick="toggleLangMenu()">FR ▾</button>
+        <div class="lang-menu" id="langMenu">
+          <a href="contact.html">Français</a>
+          <a href="contact-en.html">English</a>
+          <a href="contact-ar.html">العربية</a>
+        </div>
+      </div>
+      <a href="contact.html" class="btn btn-outline">DEMANDER UN DEVIS</a>
+    </div>
+  </div>
+</header>
+
+<section class="section light page-top">
+  <div class="container">
+    <div class="section-label">CONTACT</div>
+    <h2>Parlons de votre projet</h2>
+    <div class="page-grid">
+      <div class="page-card">
+        <h3 style="font-size:22px;margin-bottom:14px;">Localisation</h3>
+        <p style="line-height:1.9;">SARL Freedom, Zone Industrielle Berrouaghia, Médéa, Algeria</p>
+        <p style="line-height:1.9;">Téléphone: +213 XX XX XX XX</p>
+        <p style="line-height:1.9;">Email: nabilaberrabia@gmail.com</p>
+      </div>
+
+      <div class="page-card">
+        <h3 style="font-size:22px;margin-bottom:14px;">Send a Message</h3>
+        <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <input class="input" type="text" name="name" placeholder="Name" required>
+          <input class="input" type="email" name="email" placeholder="Email" required>
+          <textarea class="textarea" name="message" placeholder="Message" required></textarea>
+          <button class="btn btn-primary" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="social-stack">
+    <a class="social-link" href="YOUR-LINKEDIN-LINK" target="_blank" rel="noopener">
+      <img src="assets/lin.png" alt="LinkedIn">
+      <span>LinkedIn</span>
+    </a>
+    <a class="social-link" href="YOUR-FACEBOOK-LINK" target="_blank" rel="noopener">
+      <img src="assets/fcb.png" alt="Facebook">
+      <span>Facebook</span>
+    </a>
+  </div>
+  <div style="margin-top:18px;">© 2026 Freedom Recycling</div>
+</footer>
+
+<script>
+function toggleLangMenu(){document.getElementById('langMenu').classList.toggle('show')}
+document.addEventListener('click',function(e){const d=document.querySelector('.lang-dropdown');if(d&&!d.contains(e.target)){document.getElementById('langMenu').classList.remove('show')}})
+</script>
+</body>
+</html>

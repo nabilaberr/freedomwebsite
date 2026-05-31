@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>...</head>
+<body>
+<header class="header">
+  <div class="container nav-wrap">
+    <a class="logo" href="index-en.html"><img src="assets/logo.png" alt="Freedom Recycling"></a>
+    <nav class="nav">
+      <a href="index-en.html">HOME</a>
+      <a href="about-en.html" class="active">ABOUT</a>
+      <a href="process.html">PROCESS</a>
+      <a href="products.html">PRODUCTS</a>
+      <a href="sustainability.html">SUSTAINABILITY</a>
+      <a href="certifications.html">CERTIFICATIONS</a>
+      <a href="contact-en.html">CONTACT</a>
+    </nav>
+    <div class="top-actions">
+      <div class="lang-dropdown">
+        <button class="lang-btn" onclick="toggleLangMenu()">EN ▾</button>
+        <div class="lang-menu" id="langMenu">
+          <a href="about.html">Français</a>
+          <a href="about-en.html">English</a>
+          <a href="about-ar.html">العربية</a>
+        </div>
+      </div>
+      <a href="contact-en.html" class="btn btn-outline">REQUEST A QUOTE</a>
+    </div>
+  </div>
+</header>
+
+<section class="section light page-top">
+  <div class="container">
+    <div class="section-label">ABOUT</div>
+    <h2>Our Mission</h2>
+    <div class="page-card">
+      <p style="line-height:1.9;margin-bottom:16px;">Freedom Recycling transforms post-consumer and post-industrial PET bottle waste into high-quality recycled raw materials.</p>
+      <p style="line-height:1.9;margin-bottom:16px;">Based in Berrouaghia, Algeria, our company operates a strong infrastructure dedicated to collection, sorting, washing, and recycling.</p>
+      <p style="line-height:1.9;margin-bottom:16px;">Through rigorous recycling processes, we produce recycled PET flakes for industrial applications.</p>
+      <p style="line-height:1.9;margin-bottom:16px;">These flakes are used by our clients to manufacture food films, trays, textile fibers, and many other products, reducing dependence on virgin resources.</p>
+      <p style="line-height:1.9;font-weight:700;color:#21c35e;">Freedom Recycling — Turning today’s waste into tomorrow’s resources.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section dark">
+  <div class="container">
+    <div class="section-header">
+      <div><div class="section-label">LOCATION</div><h2>SARL Freedom, Zone Industrielle Berrouaghia, Médéa, Algeria</h2></div>
+    </div>
+    <div class="page-card">
+      <iframe src="https://www.google.com/maps?q=SARL%20Freedom%2C%20Zone%20Industrielle%20Berrouaghia%2C%20M%C3%A9d%C3%A9a%2C%20Algeria&output=embed" width="100%" height="420" style="border:0;border-radius:18px;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="section dark">
+  <div class="container">
+    <div class="section-header">
+      <div><div class="section-label">VIDEO</div><h2>Our facility</h2></div>
+    </div>
+    <div class="page-card">
+      <video controls playsinline style="width:100%;border-radius:18px;">
+        <source src="assets/about-video.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+<section class="section dark">
+  <div class="container">
+    <div class="page-grid">
+      <div class="page-card"><img src="assets/p1.jpg" alt="P1" style="border-radius:18px;margin-bottom:18px;"><h3 style="font-size:22px;margin-bottom:10px;">P1</h3><p style="line-height:1.8;color:#d2d2d2;">A visual of our facility and recycling operations.</p></div>
+      <div class="page-card"><img src="assets/p2.jpg" alt="P2" style="border-radius:18px;margin-bottom:18px;"><h3 style="font-size:22px;margin-bottom:10px;">P2</h3><p style="line-height:1.8;color:#d2d2d2;">A second image highlighting our production environment.</p></div>
+    </div>
+  </div>
+</section>
+
+<script>
+function toggleLangMenu(){document.getElementById('langMenu').classList.toggle('show')}
+document.addEventListener('click',function(e){const d=document.querySelector('.lang-dropdown');if(d&&!d.contains(e.target)){document.getElementById('langMenu').classList.remove('show')}})
+</script>
+</body>
+</html>

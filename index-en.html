@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Freedom Recycling | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="header">
+  <div class="container nav-wrap">
+    <a class="logo" href="index-en.html"><img src="assets/logo.png" alt="Freedom Recycling"></a>
+    <nav class="nav">
+      <a href="index-en.html" class="active">HOME</a>
+      <a href="about-en.html">ABOUT</a>
+      <a href="process.html">PROCESS</a>
+      <a href="products.html">PRODUCTS</a>
+      <a href="sustainability.html">SUSTAINABILITY</a>
+      <a href="certifications.html">CERTIFICATIONS</a>
+      <a href="contact-en.html">CONTACT</a>
+    </nav>
+    <div class="top-actions">
+      <div class="lang-dropdown">
+        <button class="lang-btn" onclick="toggleLangMenu()">EN ▾</button>
+        <div class="lang-menu" id="langMenu">
+          <a href="index.html">Français</a>
+          <a href="index-en.html">English</a>
+          <a href="index-ar.html">العربية</a>
+        </div>
+      </div>
+      <a href="contact-en.html" class="btn btn-outline">REQUEST A QUOTE</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-video-wrap">
+    <video class="bg-video" autoplay muted loop playsinline poster="assets/hero.jpg">
+      <source src="assets/hero-video.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="hero-content container">
+    <div class="hero-copy">
+      <div class="kicker">Circular economy in Algeria</div>
+      <h1>Turning plastic waste<span>into lasting value</span></h1>
+      <p>Freedom Recycling develops innovative and responsible recycling solutions to create high-quality recycled raw materials.</p>
+      <div class="hero-actions">
+        <a href="process.html" class="btn btn-primary">OUR PROCESS</a>
+        <a href="contact-en.html" class="btn btn-dark">CONTACT US</a>
+      </div>
+    </div>
+    <div class="hero-panel">
+      <div class="panel-title">Annual impact</div>
+      <div class="panel-item"><strong>25,000+</strong><span>Tonnes recycled every year.</span></div>
+      <div class="panel-item"><strong>45,000+</strong><span>Tonnes of CO₂ avoided every year.</span></div>
+      <div class="panel-item"><strong>100+</strong><span>Employees committed to a sustainable future.</span></div>
+    </div>
+  </div>
+</section>
+
+<script>
+function toggleLangMenu(){document.getElementById('langMenu').classList.toggle('show')}
+document.addEventListener('click',function(e){const d=document.querySelector('.lang-dropdown');if(d&&!d.contains(e.target)){document.getElementById('langMenu').classList.remove('show')}})
+</script>
+</body>
+</html>
