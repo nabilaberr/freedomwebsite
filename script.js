@@ -54,7 +54,6 @@ if (window.navigation && 'navigate' in window.navigation) {
     const href = a.getAttribute('href');
     if(!href || href.startsWith('http') || href.startsWith('#')) return;
     e.preventDefault();
-    document.documentElement.style.viewTransitionName = 'page';
     window.navigation.navigate(href);
   });
 }
