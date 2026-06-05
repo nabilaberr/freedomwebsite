@@ -18,11 +18,7 @@
       <img src="logo.png" alt="Freedom Recycling">
     </a>
 
-    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open menu">
-      <span></span><span></span><span></span>
-    </button>
-
-    <div class="top-actions">
+    <div class="header-right">
       <div class="lang-dropdown">
         <button class="lang-btn" onclick="toggleLangMenu()">FR ▾</button>
         <div class="lang-menu" id="langMenu">
@@ -31,7 +27,12 @@
           <a href="index-ar.html">العربية</a>
         </div>
       </div>
-      <a href="contact.html" class="btn btn-outline">DEMANDER UN DEVIS</a>
+
+      <a href="contact.html" class="btn btn-outline quote-btn">DEMANDER UN DEVIS</a>
+
+      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
 
     <nav class="nav" id="mainNav">
@@ -48,7 +49,7 @@
 
 <section class="hero">
   <div class="hero-media">
-    <img src="hero-mobile.jpg" alt="Freedom Recycling" class="hero-img">
+    <img src="assets/hero-mobile.jpg" alt="Freedom Recycling" class="hero-img">
   </div>
   <div class="hero-overlay"></div>
 
@@ -67,26 +68,10 @@
 
 <section class="stats">
   <div class="container stats-grid">
-    <div class="stat">
-      <div class="stat-value">25,000+</div>
-      <div class="stat-title">TONNES RECYCLÉES</div>
-      <div class="stat-subtitle">chaque année</div>
-    </div>
-    <div class="stat">
-      <div class="stat-value">45,000+</div>
-      <div class="stat-title">TONNES DE CO₂ ÉVITÉES</div>
-      <div class="stat-subtitle">chaque année</div>
-    </div>
-    <div class="stat">
-      <div class="stat-value">1.2 MILLIARDS+</div>
-      <div class="stat-title">BOUTEILLES EN PLASTIQUE</div>
-      <div class="stat-subtitle">recyclées chaque année</div>
-    </div>
-    <div class="stat">
-      <div class="stat-value">100+</div>
-      <div class="stat-title">EMPLOYÉS ENGAGÉS</div>
-      <div class="stat-subtitle">pour un avenir durable</div>
-    </div>
+    <div class="stat"><div class="stat-value counter" data-target="25000">0</div><div class="stat-title">TONNES RECYCLÉES</div><div class="stat-subtitle">chaque année</div></div>
+    <div class="stat"><div class="stat-value counter" data-target="45000">0</div><div class="stat-title">TONNES DE CO₂ ÉVITÉES</div><div class="stat-subtitle">chaque année</div></div>
+    <div class="stat"><div class="stat-value counter" data-target="1200000000">0</div><div class="stat-title">BOUTEILLES EN PLASTIQUE</div><div class="stat-subtitle">recyclées chaque année</div></div>
+    <div class="stat"><div class="stat-value counter" data-target="100">0</div><div class="stat-title">EMPLOYÉS ENGAGÉS</div><div class="stat-subtitle">pour un avenir durable</div></div>
   </div>
 </section>
 
@@ -112,10 +97,7 @@
 <section class="section dark">
   <div class="container">
     <div class="section-header">
-      <div>
-        <div class="section-label">MACHINES</div>
-        <h2>Nos machines de recyclage</h2>
-      </div>
+      <div><div class="section-label">MACHINES</div><h2>Nos machines de recyclage</h2></div>
     </div>
     <div class="product-grid">
       <div class="product-card"><img src="machine-1.jpg" alt="Machine 1"><div class="product-body"><h3>Machine 1</h3><p>Photo de notre première machine de recyclage.</p></div></div>
@@ -127,10 +109,7 @@
 <section class="section dark">
   <div class="container">
     <div class="section-header">
-      <div>
-        <div class="section-label">PRODUITS RECYCLÉS</div>
-        <h2>Matières premières durables</h2>
-      </div>
+      <div><div class="section-label">PRODUITS RECYCLÉS</div><h2>Matières premières durables</h2></div>
       <a href="products.html" class="btn btn-outline">VOIR TOUS LES PRODUITS</a>
     </div>
     <div class="product-grid">
