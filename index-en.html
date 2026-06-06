@@ -1,28 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Freedom Recycling | Home</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="loader" id="loader"><div class="recycle-icon"></div></div>
 <header class="header">
   <div class="container nav-wrap">
     <a class="logo" href="index-en.html"><img src="assets/logo.png" alt="Freedom Recycling"></a>
-    <nav class="nav">
-      <a href="index-en.html" class="active">HOME</a>
-      <a href="about-en.html">ABOUT</a>
-      <a href="process.html">PROCESS</a>
-      <a href="products.html">PRODUCTS</a>
-      <a href="sustainability.html">SUSTAINABILITY</a>
-      <a href="certifications.html">CERTIFICATIONS</a>
-      <a href="contact-en.html">CONTACT</a>
-    </nav>
-    <div class="top-actions">
+    <div class="header-right">
       <div class="lang-dropdown">
         <button class="lang-btn" onclick="toggleLangMenu()">EN ▾</button>
         <div class="lang-menu" id="langMenu">
@@ -31,39 +23,102 @@
           <a href="index-ar.html">العربية</a>
         </div>
       </div>
-      <a href="contact-en.html" class="btn btn-outline">REQUEST A QUOTE</a>
+      <a href="contact-en.html" class="btn btn-outline quote-btn">REQUEST A QUOTE</a>
+      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open menu"><span></span><span></span><span></span></button>
     </div>
+    <nav class="nav" id="mainNav">
+      <a href="index-en.html" class="active">HOME</a>
+      <a href="about-en.html">ABOUT</a>
+      <a href="process-en.html">PROCESS</a>
+      <a href="products-en.html">PRODUCTS</a>
+      <a href="sustainability-en.html">SUSTAINABILITY</a>
+      <a href="certifications-en.html">CERTIFICATIONS</a>
+      <a href="contact-en.html">CONTACT</a>
+    </nav>
   </div>
 </header>
 
 <section class="hero">
-  <div class="hero-video-wrap">
-    <video class="bg-video" autoplay muted loop playsinline poster="assets/hero.jpg">
+  <div class="hero-media">
+    <video class="hero-video" autoplay muted loop playsinline poster="assets/hero-mobile.jpg">
       <source src="assets/hero-video.mp4" type="video/mp4">
     </video>
   </div>
+  <div class="hero-overlay"></div>
   <div class="hero-content container">
     <div class="hero-copy">
-      <div class="kicker">Circular economy in Algeria</div>
-      <h1>Turning plastic waste<span>into lasting value</span></h1>
-      <p>Freedom Recycling develops innovative and responsible recycling solutions to create high-quality recycled raw materials.</p>
+      <div class="kicker">CIRCULAR ECONOMY IN ALGERIA</div>
+      <h1>TURNING PLASTIC WASTE <span>INTO LASTING VALUE</span></h1>
+      <p>Freedom Recycling develops innovative and responsible recycling solutions to create high-quality raw materials.</p>
       <div class="hero-actions">
-        <a href="process.html" class="btn btn-primary">OUR PROCESS</a>
+        <a href="process-en.html" class="btn btn-primary">DISCOVER OUR PROCESS</a>
         <a href="contact-en.html" class="btn btn-dark">CONTACT US</a>
       </div>
-    </div>
-    <div class="hero-panel">
-      <div class="panel-title">Annual impact</div>
-      <div class="panel-item"><strong>25,000+</strong><span>Tonnes recycled every year.</span></div>
-      <div class="panel-item"><strong>45,000+</strong><span>Tonnes of CO₂ avoided every year.</span></div>
-      <div class="panel-item"><strong>100+</strong><span>Employees committed to a sustainable future.</span></div>
     </div>
   </div>
 </section>
 
-<script>
-function toggleLangMenu(){document.getElementById('langMenu').classList.toggle('show')}
-document.addEventListener('click',function(e){const d=document.querySelector('.lang-dropdown');if(d&&!d.contains(e.target)){document.getElementById('langMenu').classList.remove('show')}})
-</script>
+<section class="stats">
+  <div class="container stats-grid">
+    <div class="stat"><div class="stat-value counter" data-target="25000">0</div><div class="stat-title">TONNES RECYCLED</div><div class="stat-subtitle">every year</div></div>
+    <div class="stat"><div class="stat-value counter" data-target="45000">0</div><div class="stat-title">TONNES OF CO₂ SAVED</div><div class="stat-subtitle">every year</div></div>
+    <div class="stat"><div class="stat-value counter" data-target="1200000000">0</div><div class="stat-title">PLASTIC BOTTLES</div><div class="stat-subtitle">recycled every year</div></div>
+    <div class="stat"><div class="stat-value counter" data-target="100">0</div><div class="stat-title">DEDICATED EMPLOYEES</div><div class="stat-subtitle">for a sustainable future</div></div>
+  </div>
+</section>
+
+<section class="section light">
+  <div class="container process-wrap">
+    <div>
+      <div class="section-label">OUR PROCESS</div>
+      <h2>A responsible value chain</h2>
+      <p class="lead">We transform plastic waste into high-quality recycled raw materials through a controlled and certified process.</p>
+      <a href="process-en.html" class="btn btn-primary" style="margin-top:28px;">LEARN MORE</a>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="circle">01</div><h3>COLLECTION</h3><p>Responsible collection of plastic waste.</p></div>
+      <div class="step"><div class="circle">02</div><h3>SORTING</h3><p>Manual and mechanical sorting of materials.</p></div>
+      <div class="step"><div class="circle">03</div><h3>WASHING</h3><p>Hot washing to remove impurities.</p></div>
+      <div class="step"><div class="circle">04</div><h3>SHREDDING</h3><p>Shredding into high-quality flakes.</p></div>
+      <div class="step"><div class="circle">05</div><h3>EXTRUSION</h3><p>Transformation into recycled pellets.</p></div>
+      <div class="step"><div class="circle">06</div><h3>QUALITY CONTROL</h3><p>Strict quality control before shipment.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section dark">
+  <div class="container">
+    <div class="section-header">
+      <div><div class="section-label">MACHINES</div><h2>Our recycling machines</h2></div>
+    </div>
+    <div class="product-grid">
+      <div class="product-card"><img src="assets/machine-1.jpg" alt="Machine 1"><div class="product-body"><h3>Machine 1</h3><p>Photo of our first recycling machine.</p></div></div>
+      <div class="product-card"><img src="assets/machine-2.jpg" alt="Machine 2"><div class="product-body"><h3>Machine 2</h3><p>Photo of our second recycling machine.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section dark">
+  <div class="container">
+    <div class="section-header">
+      <div><div class="section-label">RECYCLED PRODUCTS</div><h2>Sustainable raw materials</h2></div>
+      <a href="products-en.html" class="btn btn-outline">VIEW ALL PRODUCTS</a>
+    </div>
+    <div class="product-grid">
+      <div class="product-card"><img src="assets/product-1.jpg" alt="Product 1"><div class="product-body"><h3>Product 1</h3><p>Recycled PET flakes for industrial applications.</p></div></div>
+      <div class="product-card"><img src="assets/product-2.jpg" alt="Product 2"><div class="product-body"><h3>Product 2</h3><p>Recycled pellets for a variety of manufacturing uses.</p></div></div>
+      <div class="product-card"><img src="assets/product-3.jpg" alt="Product 3"><div class="product-body"><h3>Product 3</h3><p>Prepared plastic bales for transformation.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="social-stack">
+    <a class="social-link" href="YOUR-LINKEDIN-LINK" target="_blank" rel="noopener"><img src="assets/lin.png" alt="LinkedIn"><span>LinkedIn</span></a>
+    <a class="social-link" href="YOUR-FACEBOOK-LINK" target="_blank" rel="noopener"><img src="assets/fcb.png" alt="Facebook"><span>Facebook</span></a>
+  </div>
+  <div style="margin-top:18px;">© 2026 Freedom Recycling</div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
