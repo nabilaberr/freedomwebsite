@@ -9,33 +9,75 @@
 </head>
 <body>
 <div class="loader" id="loader"><div class="recycle-icon"></div></div>
+
 <header class="header">
   <div class="container nav-wrap">
-    <a class="logo" href="index.html"><img src="assets/logo.png" alt="Freedom Recycling"></a>
+    <a class="logo" href="index.html"><img src="logo.png" alt="Freedom Recycling"></a>
     <div class="header-right">
-      <div class="lang-dropdown"><button class="lang-btn" onclick="toggleLangMenu()">FR ▾</button><div class="lang-menu" id="langMenu"><a href="contact.html">Français</a><a href="contact-en.html">English</a><a href="contact-ar.html">العربية</a></div></div>
+      <div class="lang-dropdown">
+        <button class="lang-btn" onclick="toggleLangMenu()">FR ▾</button>
+        <div class="lang-menu" id="langMenu">
+          <a href="contact.html">Français</a>
+          <a href="contact-en.html">English</a>
+          <a href="contact-ar.html">العربية</a>
+        </div>
+      </div>
       <a href="contact.html" class="btn btn-outline quote-btn">DEMANDER UN DEVIS</a>
       <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open menu"><span></span><span></span><span></span></button>
     </div>
     <nav class="nav" id="mainNav">
-      <a href="index.html">ACCUEIL</a><a href="about.html">À PROPOS</a><a href="process.html">PROCESSUS</a><a href="products.html">PRODUITS</a><a href="sustainability.html">DURABILITÉ</a><a href="certifications.html">CERTIFICATIONS</a><a href="contact.html" class="active">CONTACT</a>
+      <a href="index.html">ACCUEIL</a>
+      <a href="about.html">À PROPOS</a>
+      <a href="process.html">PROCESSUS</a>
+      <a href="products.html">PRODUITS</a>
+      <a href="sustainability.html">DURABILITÉ</a>
+      <a href="certifications.html">CERTIFICATIONS</a>
+      <a href="contact.html" class="active">CONTACT</a>
     </nav>
   </div>
 </header>
 
 <section class="section dark" style="padding-top:130px;">
+  <div class="container">
+    <div class="section-label">CONTACT</div>
+    <h2>Parlons de votre projet</h2>
+    <p class="lead">Envoyez-nous votre demande et notre équipe vous répondra rapidement.</p>
+  </div>
+</section>
+
+<section class="section light">
   <div class="container process-wrap">
     <div>
-      <div class="section-label">CONTACT</div>
-      <h2>Parlons de votre projet</h2>
-      <p class="lead">Envoyez-nous votre demande et notre équipe vous répondra rapidement.</p>
+      <div class="section-label">NOS COORDONNÉES</div>
+      <h2>Freedom Recycling SARL</h2>
+      <p class="lead">Zone Industrielle, Berrouaghia, Médéa, Algérie.</p>
+
       <div class="impact-grid" style="margin-top:26px;">
-        <div class="step" style="opacity:1;transform:none;"><h3>Email</h3><p>contact@freedomrecycling.com</p></div>
-        <div class="step" style="opacity:1;transform:none;"><h3>Téléphone</h3><p>+213 00 00 00 00</p></div>
-        <div class="step" style="opacity:1;transform:none;"><h3>Adresse</h3><p>Algérie</p></div>
+        <div class="step" style="opacity:1;transform:none;">
+          <h3>Téléphone</h3>
+          <p><a href="tel:+21300000000">+213 00 00 00 00</a></p>
+        </div>
+        <div class="step" style="opacity:1;transform:none;">
+          <h3>Email</h3>
+          <p><a href="mailto:contact@freedomrecycling.com">contact@freedomrecycling.com</a></p>
+        </div>
+        <div class="step" style="opacity:1;transform:none;">
+          <h3>Localisation</h3>
+          <p>Zone Industrielle, Berrouaghia, Médéa</p>
+        </div>
+      </div>
+
+      <div class="step" style="opacity:1;transform:none;margin-top:22px;">
+        <h3>Adresse</h3>
+        <address>
+          Freedom Recycling SARL<br>
+          Zone Industrielle, Berrouaghia<br>
+          Wilaya de Médéa, Algérie
+        </address>
       </div>
     </div>
-    <div class="step" style="opacity:1;transform:none;background:#fff;">
+
+    <div class="step" style="opacity:1;transform:none;background:#fff;color:#111;">
       <h3>Formulaire de contact</h3>
       <form class="form">
         <input class="input" type="text" name="name" placeholder="Votre nom" required>
