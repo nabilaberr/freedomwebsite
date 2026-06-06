@@ -8,6 +8,7 @@ window.addEventListener('load',function(){
   const loader=document.getElementById('loader');
   if(loader) setTimeout(()=>loader.classList.add('hide'),500);
 });
+
 document.addEventListener('click',function(e){
   const nav=document.getElementById('mainNav');
   const lang=document.getElementById('langMenu');
@@ -46,6 +47,20 @@ if(counterSection){
   }, { threshold: 0.35 });
   observer.observe(counterSection);
 }
+
+function revealOnScroll(){
+  const items = document.querySelectorAll('.product-card, .impact-card, .step, .stat');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('in-view');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.18 });
+  items.forEach(item => observer.observe(item));
+}
+revealOnScroll();
 
 if (window.navigation && 'navigate' in window.navigation) {
   document.addEventListener('click', (e) => {
