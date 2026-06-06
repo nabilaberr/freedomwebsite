@@ -453,3 +453,39 @@ button,input,textarea{font:inherit}
 .form .textarea::placeholder {
   color: #666;
 }
+/* Force visible text in cards */
+.section.light .step,
+.section.light .step h3,
+.section.light .step p,
+.section.light .step a,
+.section.light address,
+.section.light .product-card,
+.section.light .product-card h3,
+.section.light .product-card p,
+.section.light .product-body,
+.section.light .product-body h3,
+.section.light .product-body p {
+  color: #111 !important;
+}
+
+.section.light .step,
+.section.light .product-card,
+.section.light .product-body {
+  background: #fff !important;
+}
+
+.section.light .step a {
+  color: #0f7b4e !important;
+  text-decoration: none;
+}
+
+.section.light .input,
+.section.light .textarea {
+  color: #111 !important;
+  background: #fff !important;
+}
+
+.section.light .input::placeholder,
+.section.light .textarea::placeholder {
+  color: #666 !important;
+}
