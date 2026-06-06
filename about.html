@@ -1,107 +1,54 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" dir="ltr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Freedom Recycling | À Propos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freedom Recycling | À propos</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="loader" id="loader"><div class="recycle-icon"></div></div>
 <header class="header">
   <div class="container nav-wrap">
-    <a class="logo" href="index.html"><img src="assets/logo.png" alt="Freedom Recycling"></a>
-    <nav class="nav">
-      <a href="index.html">ACCUEIL</a>
-      <a href="about.html" class="active">À PROPOS</a>
-      <a href="process.html">PROCESSUS</a>
-      <a href="products.html">PRODUITS</a>
-      <a href="sustainability.html">DURABILITÉ</a>
-      <a href="certifications.html">CERTIFICATIONS</a>
-      <a href="contact.html">CONTACT</a>
-    </nav>
-    <div class="top-actions">
+    <a class="logo" href="index.html"><img src="logo.png" alt="Freedom Recycling"></a>
+    <div class="header-right">
       <div class="lang-dropdown">
         <button class="lang-btn" onclick="toggleLangMenu()">FR ▾</button>
         <div class="lang-menu" id="langMenu">
-          <a href="about.html">Français</a>
-          <a href="about-en.html">English</a>
-          <a href="about-ar.html">العربية</a>
+          <a href="about.html">Français</a><a href="about-en.html">English</a><a href="about-ar.html">العربية</a>
         </div>
       </div>
-      <a href="contact.html" class="btn btn-outline">DEMANDER UN DEVIS</a>
+      <a href="contact.html" class="btn btn-outline quote-btn">DEMANDER UN DEVIS</a>
+      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open menu"><span></span><span></span><span></span></button>
     </div>
+    <nav class="nav" id="mainNav">
+      <a href="index.html">ACCUEIL</a><a href="about.html" class="active">À PROPOS</a><a href="process.html">PROCESSUS</a><a href="products.html">PRODUITS</a><a href="sustainability.html">DURABILITÉ</a><a href="certifications.html">CERTIFICATIONS</a><a href="contact.html">CONTACT</a>
+    </nav>
   </div>
 </header>
 
-<section class="section light page-top">
-  <div class="container">
-    <div class="section-label">À PROPOS</div>
-    <h2>Notre Mission</h2>
-    <div class="page-card">
-      <p style="line-height:1.9;margin-bottom:16px;">Chez Freedom Recycling, nous transformons les déchets de bouteilles en plastique PET post-consommation et post-industriels en matières premières recyclées de haute qualité.</p>
-      <p style="line-height:1.9;margin-bottom:16px;">Basée à Berrouaghia, en Algérie, notre entreprise dispose d’une infrastructure performante dédiée à la collecte, au tri, au lavage et à la valorisation des déchets plastiques.</p>
-      <p style="line-height:1.9;margin-bottom:16px;">Grâce à des procédés de recyclage rigoureux, nous produisons des flocons de PET recyclé destinés à diverses applications industrielles.</p>
-      <p style="line-height:1.9;margin-bottom:16px;">Ces flocons sont réutilisés par nos clients dans la fabrication de films alimentaires, de barquettes alimentaires, de fibres textiles et de nombreux autres produits, contribuant ainsi à réduire la dépendance aux ressources vierges.</p>
-      <p style="line-height:1.9;font-weight:700;color:#21c35e;">Freedom Recycling — Transformer les déchets d’aujourd’hui en ressources de demain.</p>
+<section class="section dark" style="padding-top:130px;">
+  <div class="container process-wrap">
+    <div>
+      <div class="section-label">À PROPOS</div>
+      <h2>Une entreprise tournée vers l'avenir</h2>
+      <p class="lead">Freedom Recycling développe des solutions de recyclage modernes pour transformer les déchets plastiques en ressources utiles et durables.</p>
     </div>
+    <div class="impact-card reveal"><img src="about-1.jpg" alt="À propos de Freedom Recycling"><h3>Notre mission</h3><p>Créer de la valeur à partir des déchets tout en soutenant l'économie circulaire en Algérie.</p></div>
   </div>
 </section>
 
-<section class="section dark">
-  <div class="container">
-    <div class="section-header">
-      <div><div class="section-label">LOCALISATION</div><h2>SARL Freedom, Zone Industrielle Berrouaghia, Médéa, Algeria</h2></div>
-    </div>
-    <div class="page-card">
-      <iframe src="https://www.google.com/maps?q=SARL%20Freedom%2C%20Zone%20Industrielle%20Berrouaghia%2C%20M%C3%A9d%C3%A9a%2C%20Algeria&output=embed" width="100%" height="420" style="border:0;border-radius:18px;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-    </div>
+<section class="section light">
+  <div class="container impact-grid">
+    <div class="impact-card"><img src="about-2.jpg" alt="Notre vision"><h3>Notre vision</h3><p>Devenir une référence régionale dans le recyclage des plastiques.</p></div>
+    <div class="impact-card"><img src="about-3.jpg" alt="Notre équipe"><h3>Notre équipe</h3><p>Une équipe engagée, technique et orientée qualité.</p></div>
   </div>
 </section>
 
-<section class="section dark">
-  <div class="container">
-    <div class="section-header">
-      <div><div class="section-label">VIDÉO</div><h2>Notre installation</h2></div>
-    </div>
-    <div class="page-card">
-      <video controls playsinline style="width:100%;border-radius:18px;">
-        <source src="assets/about-video.mp4" type="video/mp4">
-      </video>
-    </div>
-  </div>
-</section>
-
-<section class="section dark">
-  <div class="container">
-    <div class="section-header">
-      <div><div class="section-label">ABOUT</div><h2>Company overview</h2></div>
-    </div>
-    <div class="page-grid">
-      <div class="page-card"><img src="assets/p1.jpg" alt="P1" style="border-radius:18px;margin-bottom:18px;"><h3 style="font-size:22px;margin-bottom:10px;">P1</h3><p style="line-height:1.8;color:#d2d2d2;">A visual of our facility and recycling operations.</p></div>
-      <div class="page-card"><img src="assets/p2.jpg" alt="P2" style="border-radius:18px;margin-bottom:18px;"><h3 style="font-size:22px;margin-bottom:10px;">P2</h3><p style="line-height:1.8;color:#d2d2d2;">A second image highlighting our production environment.</p></div>
-    </div>
-  </div>
-</section>
-<footer class="footer">
-  <div class="social-stack">
-    <a class="social-link" href="YOUR-LINKEDIN-LINK" target="_blank" rel="noopener">
-      <img src="assets/lin.png" alt="LinkedIn">
-      <span>LinkedIn</span>
-    </a>
-    <a class="social-link" href="YOUR-FACEBOOK-LINK" target="_blank" rel="noopener">
-      <img src="assets/fcb.png" alt="Facebook">
-      <span>Facebook</span>
-    </a>
-  </div>
-  <div style="margin-top:18px;">© 2026 Freedom Recycling</div>
-</footer>
-
-<script>
-function toggleLangMenu(){document.getElementById('langMenu').classList.toggle('show')}
-document.addEventListener('click',function(e){const d=document.querySelector('.lang-dropdown');if(d&&!d.contains(e.target)){document.getElementById('langMenu').classList.remove('show')}})
-</script>
+<footer class="footer">© 2026 Freedom Recycling</footer>
+<script src="script.js"></script>
 </body>
 </html>
