@@ -11,11 +11,14 @@
 </head>
 <body>
 <div class="loader" id="loader"><div class="recycle-icon"></div></div>
+
 <header class="header">
   <div class="container nav-wrap">
-    <a class="logo" href="index.html"><img src="logo.png" alt="Freedom Recycling"></a>
-    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open menu"><span></span><span></span><span></span></button>
-    <div class="top-actions">
+    <a class="logo" href="index.html">
+      <img src="logo.png" alt="Freedom Recycling">
+    </a>
+
+    <div class="header-right">
       <div class="lang-dropdown">
         <button class="lang-btn" onclick="toggleLangMenu()">FR ▾</button>
         <div class="lang-menu" id="langMenu">
@@ -24,8 +27,14 @@
           <a href="index-ar.html">العربية</a>
         </div>
       </div>
-      <a href="contact.html" class="btn btn-outline">DEMANDER UN DEVIS</a>
+
+      <a href="contact.html" class="btn btn-outline quote-btn">DEMANDER UN DEVIS</a>
+
+      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+
     <nav class="nav" id="mainNav">
       <a href="index.html" class="active">ACCUEIL</a>
       <a href="about.html">À PROPOS</a>
@@ -39,36 +48,32 @@
 </header>
 
 <section class="hero">
-  <div class="hero-video-wrap">
-    <video class="bg-video" autoplay muted loop playsinline poster="assets/hero.jpg">
+  <div class="hero-media">
+    <video class="hero-video" autoplay muted loop playsinline poster="assets/hero-mobile.jpg">
       <source src="hero-vide.mp4" type="video/mp4">
     </video>
   </div>
+  <div class="hero-overlay"></div>
+
   <div class="hero-content container">
     <div class="hero-copy">
       <div class="kicker">ÉCONOMIE CIRCULAIRE EN ALGÉRIE</div>
-      <h1>Transformer les déchets plastiques<span>en valeur durable</span></h1>
+      <h1>TRANSFORMER LES DÉCHETS PLASTIQUES <span>EN VALEUR DURABLE</span></h1>
       <p>Freedom Recycling développe des solutions de recyclage innovantes et responsables pour créer des matières premières de haute qualité.</p>
       <div class="hero-actions">
         <a href="process.html" class="btn btn-primary">DÉCOUVRIR NOTRE PROCESSUS</a>
         <a href="contact.html" class="btn btn-dark">NOUS CONTACTER</a>
       </div>
     </div>
-    <div class="hero-panel">
-      <div class="panel-title">Impact annuel</div>
-      <div class="panel-item"><strong>25,000+</strong><span>Tonnes recyclées chaque année.</span></div>
-      <div class="panel-item"><strong>45,000+</strong><span>Tonnes de CO₂ évitées chaque année.</span></div>
-      <div class="panel-item"><strong>100+</strong><span>Employés engagés pour un avenir durable.</span></div>
-    </div>
   </div>
 </section>
 
 <section class="stats">
   <div class="container stats-grid">
-    <div class="stat"><div class="stat-value">25,000+</div><div class="stat-title">TONNES RECYCLÉES</div><div class="stat-subtitle">chaque année</div></div>
-    <div class="stat"><div class="stat-value">45,000+</div><div class="stat-title">TONNES DE CO₂ ÉVITÉES</div><div class="stat-subtitle">chaque année</div></div>
-    <div class="stat"><div class="stat-value">1.2 MILLIARDS+</div><div class="stat-title">BOUTEILLES EN PLASTIQUE</div><div class="stat-subtitle">recyclées chaque année</div></div>
-    <div class="stat"><div class="stat-value">100+</div><div class="stat-title">EMPLOYÉS ENGAGÉS</div><div class="stat-subtitle">pour un avenir durable</div></div>
+    <div class="stat"><div class="stat-value counter" data-target="25000">0</div><div class="stat-title">TONNES RECYCLÉES</div><div class="stat-subtitle">chaque année</div></div>
+    <div class="stat"><div class="stat-value counter" data-target="45000">0</div><div class="stat-title">TONNES DE CO₂ ÉVITÉES</div><div class="stat-subtitle">chaque année</div></div>
+    <div class="stat"><div class="stat-value counter" data-target="1200000000">0</div><div class="stat-title">BOUTEILLES EN PLASTIQUE</div><div class="stat-subtitle">recyclées chaque année</div></div>
+    <div class="stat"><div class="stat-value counter" data-target="100">0</div><div class="stat-title">EMPLOYÉS ENGAGÉS</div><div class="stat-subtitle">pour un avenir durable</div></div>
   </div>
 </section>
 
@@ -110,9 +115,9 @@
       <a href="products.html" class="btn btn-outline">VOIR TOUS LES PRODUITS</a>
     </div>
     <div class="product-grid">
-      <div class="product-card"><img src="product-1.jpg" alt="Product 1"><div class="product-body"><h3>Produit 1</h3><p>Flocons PET recyclés pour applications industrielles.</p></div></div>
-      <div class="product-card"><img src="product-2.jpg" alt="Product 2"><div class="product-body"><h3>Produit 2</h3><p>Granulés recyclés de qualité pour différents usages.</p></div></div>
-      <div class="product-card"><img src="product-3.jpg" alt="Product 3"><div class="product-body"><h3>Produit 3</h3><p>Balles plastiques préparées pour la transformation.</p></div></div>
+      <div class="product-card"><img src="assets/product-1.jpg" alt="Produit 1"><div class="product-body"><h3>Produit 1</h3><p>Flocons PET recyclés pour applications industrielles.</p></div></div>
+      <div class="product-card"><img src="assets/product-2.jpg" alt="Produit 2"><div class="product-body"><h3>Produit 2</h3><p>Granulés recyclés de qualité pour différents usages.</p></div></div>
+      <div class="product-card"><img src="assets/product-3.jpg" alt="Produit 3"><div class="product-body"><h3>Produit 3</h3><p>Balles plastiques préparées pour la transformation.</p></div></div>
     </div>
   </div>
 </section>
@@ -124,6 +129,7 @@
   </div>
   <div style="margin-top:18px;">© 2026 Freedom Recycling</div>
 </footer>
+
 <script src="script.js"></script>
 </body>
 </html>
