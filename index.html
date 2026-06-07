@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Freedom Recycling | Accueil</title>
+  <title>Freedom Recycling | Home</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,22 +14,22 @@
     <a class="logo" href="index.html"><img src="assets/logo.png" alt="Freedom Recycling"></a>
     <div class="header-right">
       <div class="lang-dropdown">
-        <button class="lang-btn" onclick="toggleLangMenu()">FR ▾</button>
+        <button class="lang-btn" onclick="toggleLangMenu()">EN ▾</button>
         <div class="lang-menu" id="langMenu">
-          <a href="index.html">Français</a>
-          <a href="index-en.html">English</a>
+          <a href="index.html">English</a>
+          <a href="index-fr.html">Français</a>
           <a href="index-ar.html">العربية</a>
         </div>
       </div>
-      <a href="contact.html" class="btn btn-outline quote-btn">DEMANDER UN DEVIS</a>
+      <a href="contact.html" class="btn btn-outline quote-btn">REQUEST A QUOTE</a>
       <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open menu"><span></span><span></span><span></span></button>
     </div>
     <nav class="nav" id="mainNav">
-      <a href="index.html" class="active">ACCUEIL</a>
-      <a href="about.html">À PROPOS</a>
-      <a href="process.html">PROCESSUS</a>
-      <a href="products.html">PRODUITS</a>
-      <a href="sustainability.html">DURABILITÉ</a>
+      <a href="index.html" class="active">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="process.html">PROCESS</a>
+      <a href="products.html">PRODUCTS</a>
+      <a href="sustainability.html">SUSTAINABILITY</a>
       <a href="certifications.html">CERTIFICATIONS</a>
       <a href="contact.html">CONTACT</a>
     </nav>
@@ -37,13 +37,15 @@
 </header>
 
 <section class="hero">
-  <div class="hero-media" style="background:url('assets/hero.jpg') center/cover no-repeat;"></div>
+  <video class="hero-video" autoplay muted loop playsinline poster="assets/hero.jpg">
+    <source src="assets/hero.mp4" type="video/mp4">
+  </video>
   <div class="hero-overlay"></div>
   <div class="container hero-content">
     <div class="hero-copy">
       <div class="kicker">SARL FREEDOM RECYCLING</div>
       <h1>Plastic recycling for a cleaner circular economy</h1>
-      <p>We transform plastic waste into valuable recycled materials with a focus on quality, traceability, and sustainability.</p>
+      <p>We transform plastic waste into high-quality recycled materials for industrial use with a focus on sustainability and traceability.</p>
       <a href="products.html" class="btn btn-primary">VIEW PRODUCTS</a>
     </div>
   </div>
@@ -75,7 +77,14 @@
   </div>
 </section>
 
-<footer class="footer">© 2026 Freedom Recycling</footer>
+<footer class="footer">
+  <div>© 2026 Freedom Recycling</div>
+  <div class="social-links">
+    <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+    <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</footer>
+
 <script src="script.js"></script>
 </body>
 </html>
