@@ -1,70 +1,69 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Freedom Recycling | À propos</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <title>Freedom Recycling | About</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="loader" id="loader"><div class="recycle-icon"></div></div>
+
 <header class="header">
   <div class="container nav-wrap">
-    <a class="logo" href="index.html"><img src="logo.png" alt="Freedom Recycling"></a>
+    <a class="logo" href="index.html"><img src="logo1.png" alt="Freedom Recycling"></a>
     <div class="header-right">
       <div class="lang-dropdown">
-        <button class="lang-btn" onclick="toggleLangMenu()">FR ▾</button>
+        <button class="lang-btn" onclick="toggleLangMenu()">EN ▾</button>
         <div class="lang-menu" id="langMenu">
-          <a href="about.html">Français</a><a href="about-en.html">English</a><a href="about-ar.html">العربية</a>
+          <a href="about.html">English</a>
+          <a href="about-fr.html">Français</a>
+          <a href="about-ar.html">العربية</a>
         </div>
       </div>
-      <a href="contact.html" class="btn btn-outline quote-btn">DEMANDER UN DEVIS</a>
       <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open menu"><span></span><span></span><span></span></button>
     </div>
     <nav class="nav" id="mainNav">
-      <a href="index.html">ACCUEIL</a><a href="about.html" class="active">À PROPOS</a><a href="process.html">PROCESSUS</a><a href="products.html">PRODUITS</a><a href="sustainability.html">DURABILITÉ</a><a href="certifications.html">CERTIFICATIONS</a><a href="contact.html">CONTACT</a>
+      <a href="index.html">HOME</a>
+      <a href="about.html" class="active">ABOUT</a>
+      <a href="process.html">PROCESS</a>
+      <a href="products.html">PRODUCTS</a>
+      <a href="sustainability.html">SUSTAINABILITY</a>
+      <a href="certifications.html">CERTIFICATIONS</a>
+      <a href="contact.html">CONTACT</a>
     </nav>
   </div>
 </header>
 
-<section class="section dark" style="padding-top:130px;">
-  <div class="container process-wrap">
-    <div>
-      <div class="section-label">À PROPOS</div>
-      <h2>Une entreprise tournée vers l'avenir</h2>
-      <p class="lead">Freedom Recycling développe des solutions de recyclage modernes pour transformer les déchets plastiques en ressources utiles et durables.</p>
-    </div>
-    <div class="impact-card reveal"><img src="P2.png" alt="À propos de Freedom Recycling"><h3>Notre mission</h3><p>Créer de la valeur à partir des déchets tout en soutenant l'économie circulaire en Algérie.</p></div>
-  </div>
-</section>
-  <section class="hero">
-  <div class="hero-media">
-    <video class="hero-video" autoplay muted loop playsinline poster="assets/about-video-poster.jpg">
-      <source src="about-vide.mp4" type="video/mp4">
-    </video>
-  </div>
+<section class="hero">
+  <video class="hero-video" autoplay muted loop playsinline poster="assets/about-poster.jpg">
+    <source src="assets/about-vide.mp4" type="video/mp4">
+  </video>
   <div class="hero-overlay"></div>
-
-  <div class="hero-content container">
+  <div class="container hero-content">
     <div class="hero-copy">
-      <div class="kicker">À PROPOS</div>
-      <h1>UNE ENTREPRISE <span>TOURNÉE VERS L’AVENIR</span></h1>
-      <p>Freedom Recycling développe des solutions modernes pour transformer les déchets plastiques en ressources utiles et durables.</p>
+      <div class="kicker">ABOUT US</div>
+      <h1>Built on quality, sustainability, and trust</h1>
+      <p>Freedom Recycling is focused on transforming plastic waste into useful recycled materials for industry.</p>
     </div>
   </div>
 </section>
 
 <section class="section light">
   <div class="container impact-grid">
-    <div class="impact-card"><img src="impact-3.png" alt="Notre vision"><h3>Notre vision</h3><p>Devenir une référence régionale dans le recyclage des plastiques.</p></div>
-    <div class="impact-card"><img src="P1.png" alt="Notre équipe"><h3>Notre équipe</h3><p>Une équipe engagée, technique et orientée qualité.</p></div>
+    <div class="step"><h3>Mission</h3><p>Reduce waste and create value from recycled materials.</p></div>
+    <div class="step"><h3>Vision</h3><p>Support circular industry with reliable recycled feedstock.</p></div>
+    <div class="step"><h3>Values</h3><p>Quality, transparency, and sustainability.</p></div>
   </div>
 </section>
 
-<footer class="footer">© 2026 Freedom Recycling</footer>
+<footer class="footer">
+  <div>© 2026 Freedom Recycling</div>
+  <div class="social-links">
+    <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener"><img src="fcb.png" alt="Facebook">Facebook</a>
+    <a href="https://www.linkedin.com/company/yourcompany" target="_blank" rel="noopener"><img src="lin.png" alt="LinkedIn">LinkedIn</a>
+  </div>
+</footer>
 <script src="script.js"></script>
 </body>
 </html>
