@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +13,15 @@
   <div class="container nav-wrap">
     <a class="logo" href="index.html"><img src="logo1.png" alt="Freedom Recycling"></a>
     <div class="header-right">
+      <div class="lang-dropdown">
+        <button class="lang-btn" onclick="toggleLangMenu()">EN ▾</button>
+        <div class="lang-menu" id="langMenu">
+          <a href="products.html">English</a>
+          <a href="products-fr.html">Français</a>
+          <a href="products-ar.html">العربية</a>
+        </div>
+      </div>
+      <a href="contact.html" class="btn btn-outline quote-btn">REQUEST A QUOTE</a>
       <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open menu"><span></span><span></span><span></span></button>
     </div>
     <nav class="nav" id="mainNav">
@@ -27,27 +36,75 @@
   </div>
 </header>
 
-<section class="section dark" style="padding-top:130px;">
+<section class="section light page-top">
   <div class="container">
-    <div class="section-label">PRODUCTS</div>
-    <h2>Our recycled output</h2>
-    <p class="lead">Clean, consistent, and ready for industrial applications.</p>
+    <div style="max-width: 800px; margin: 0 auto 48px;">
+      <div class="section-label">PRODUCTS</div>
+      <h2 style="text-align: center; margin-bottom: 18px;">Recycled Plastic Materials</h2>
+      <p class="lead" style="text-align: center; margin: 0;">High-quality recycled pellets and flakes for industrial manufacturing.</p>
+    </div>
+    
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="product-body">
+          <h3>HDPE Pellets</h3>
+          <p>High-density polyethylene granules for injection molding and extrusion.</p>
+          <p style="margin-top: 12px; font-size: 14px; color: var(--muted);"><strong>Applications:</strong> Bottles, containers, pipes</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-body">
+          <h3>PET Flakes</h3>
+          <p>Clean polyethylene terephthalate flakes for fiber and sheet production.</p>
+          <p style="margin-top: 12px; font-size: 14px; color: var(--muted);"><strong>Applications:</strong> Textiles, packaging, strapping</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-body">
+          <h3>PP Pellets</h3>
+          <p>Polypropylene granules for automotive and consumer goods manufacturing.</p>
+          <p style="margin-top: 12px; font-size: 14px; color: var(--muted);"><strong>Applications:</strong> Auto parts, household items</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-body">
+          <h3>LDPE Flakes</h3>
+          <p>Low-density polyethylene flakes for film and flexible packaging.</p>
+          <p style="margin-top: 12px; font-size: 14px; color: var(--muted);"><strong>Applications:</strong> Films, bags, flexible packaging</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-body">
+          <h3>PS Pellets</h3>
+          <p>Polystyrene granules for insulation and packaging applications.</p>
+          <p style="margin-top: 12px; font-size: 14px; color: var(--muted);"><strong>Applications:</strong> Insulation, packaging, signage</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-body">
+          <h3>Mixed Plastic</h3>
+          <p>Custom recycled blends for specific industrial requirements.</p>
+          <p style="margin-top: 12px; font-size: 14px; color: var(--muted);"><strong>Applications:</strong> Custom manufacturing</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="section light">
-  <div class="container product-grid">
-    <div class="product-card">
-      <img src="assets/product-1.jpg" alt="PET flakes">
-      <div class="product-body"><h3>PET Flakes</h3><p>Recycled PET flakes for industrial reuse.</p></div>
-    </div>
-    <div class="product-card">
-      <img src="assets/product-2.jpg" alt="Recycled pellets">
-      <div class="product-body"><h3>Recycled Pellets</h3><p>Uniform pellets for manufacturing supply chains.</p></div>
-    </div>
-    <div class="product-card">
-      <img src="assets/product-3.jpg" alt="Plastic bales">
-      <div class="product-body"><h3>Plastic Bales</h3><p>Sorted plastic bales prepared for further processing.</p></div>
+<section class="section dark">
+  <div class="container">
+    <div class="process-wrap">
+      <div>
+        <div class="section-label">QUALITY</div>
+        <h2>Certified recycled materials</h2>
+        <p class="lead">Our products meet industry standards for recycled content and performance.</p>
+        <p style="color: #d6e2dd; margin-top: 16px;">We provide certification and documentation for all shipments to support your sustainability reporting.</p>
+      </div>
+      <div class="contact-card">
+        <h3>Need a specific material?</h3>
+        <p>Tell us your requirements and we'll find the right solution.</p>
+        <a href="contact.html" class="btn btn-primary" style="margin-top: 16px;">REQUEST A QUOTE</a>
+      </div>
     </div>
   </div>
 </section>
@@ -56,7 +113,7 @@
   <div>© 2026 Freedom Recycling</div>
   <div class="social-links">
     <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener"><img src="fcb.png" alt="Facebook">Facebook</a>
-    <a href="https://www.linkedin.com/company/yourcompany" target="_blank" rel="noopener"><img src="linkedin.png" alt="LinkedIn">LinkedIn</a>
+    <a href="https://www.linkedin.com/company/yourcompany" target="_blank" rel="noopener"><img src="lin.png" alt="LinkedIn">LinkedIn</a>
   </div>
 </footer>
 <script src="script.js"></script>
