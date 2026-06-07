@@ -3,20 +3,33 @@ document.addEventListener('DOMContentLoaded', function () {
   const menuBtn = document.querySelector('.menu-toggle');
   const loader = document.getElementById('loader');
   const video = document.querySelector('.hero-video');
+  const langBtn = document.querySelector('.lang-btn');
+  const langMenu = document.getElementById('langMenu');
 
   if (menuBtn && nav) {
     menuBtn.addEventListener('click', function (e) {
       e.stopPropagation();
       nav.classList.toggle('open');
+      if (langMenu) langMenu.style.display = 'none';
     });
   }
 
   document.addEventListener('click', function (e) {
-    if (!nav || !menuBtn) return;
-    if (nav.classList.contains('open') && !nav.contains(e.target) && !menuBtn.contains(e.target)) {
+    if (nav && menuBtn && nav.classList.contains('open') && !nav.contains(e.target) && !menuBtn.contains(e.target)) {
       nav.classList.remove('open');
     }
+    if (langMenu && langBtn && !langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+      langMenu.style.display = 'none';
+    }
   });
+
+  if (langBtn && langMenu) {
+    langBtn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      langMenu.style.display = langMenu.style.display === 'block' ? 'none' : 'block';
+      if (nav) nav.classList.remove('open');
+    });
+  }
 
   if (loader) {
     window.addEventListener('load', function () {
@@ -37,9 +50,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     tryPlay();
 
-    video.addEventListener('ended', function () {
-      this.currentTime = 0;
-      tryPlay();
-    });
+    video.addEventListener('error', function () {});
   }
 });
