@@ -82,6 +82,7 @@ header{
   cursor:pointer;
 }
 
+/* Language Dropdown */
 .lang-dropdown{
   position:relative;
 }
