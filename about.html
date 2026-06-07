@@ -11,16 +11,8 @@
 
 <header class="header">
   <div class="container nav-wrap">
-    <a class="logo" href="index.html"><img src="logo1.png" alt="Freedom Recycling"></a>
+    <a class="logo" href="index.html"><img src="assets/logo.png" alt="Freedom Recycling"></a>
     <div class="header-right">
-      <div class="lang-dropdown">
-        <button class="lang-btn" onclick="toggleLangMenu()">EN ▾</button>
-        <div class="lang-menu" id="langMenu">
-          <a href="about.html">English</a>
-          <a href="about-fr.html">Français</a>
-          <a href="about-ar.html">العربية</a>
-        </div>
-      </div>
       <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open menu"><span></span><span></span><span></span></button>
     </div>
     <nav class="nav" id="mainNav">
@@ -35,25 +27,57 @@
   </div>
 </header>
 
-<section class="hero">
-  <video class="hero-video" autoplay muted loop playsinline poster="about-poster.jpg">
+<section class="hero about-hero">
+  <video class="hero-video" autoplay muted loop playsinline poster="assets/about-poster.jpg">
     <source src="about-vide.mp4" type="video/mp4">
   </video>
   <div class="hero-overlay"></div>
   <div class="container hero-content">
     <div class="hero-copy">
-      <div class="kicker">ABOUT US</div>
-      <h1>Built on quality, sustainability, and trust</h1>
-      <p>Freedom Recycling is focused on transforming plastic waste into useful recycled materials for industry.</p>
+      <div class="kicker">ABOUT FREEDOM RECYCLING</div>
+      <h1>Turning plastic waste into premium recycled PET flakes</h1>
+      <p>Founded in 2020 in Berrouaghia, Algeria, Freedom Recycling specializes in recycling post-consumer and post-industrial PET bottles into high-quality materials for industry.</p>
+      <a href="contact.html" class="btn btn-primary">CONTACT US</a>
     </div>
   </div>
 </section>
 
 <section class="section light">
-  <div class="container impact-grid">
-    <div class="step"><h3>Mission</h3><p>Reduce waste and create value from recycled materials.</p></div>
-    <div class="step"><h3>Vision</h3><p>Support circular industry with reliable recycled feedstock.</p></div>
-    <div class="step"><h3>Values</h3><p>Quality, transparency, and sustainability.</p></div>
+  <div class="container about-grid">
+    <div class="step">
+      <h3>Who we are</h3>
+      <p>Freedom Recycling is dedicated to transforming plastic waste into valuable resources for a cleaner environment and a more sustainable future.</p>
+    </div>
+    <div class="step">
+      <h3>What we produce</h3>
+      <p>We produce premium recycled PET flakes that meet high industry standards for consistent quality and purity.</p>
+    </div>
+    <div class="step">
+      <h3>Where they are used</h3>
+      <p>Our flakes are used in textiles, food packaging, and beverage packaging applications.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section dark">
+  <div class="container process-wrap">
+    <div>
+      <div class="section-label">TECHNOLOGY</div>
+      <h2>Advanced optical sorting for purity and quality</h2>
+      <p class="lead">We use Bühler optical sorting technology, including two SORTEX A units and one SORTEX N unit, to achieve precise color separation and effective contaminant removal.</p>
+    </div>
+    <div class="step contact-card">
+      <h3>Circular economy</h3>
+      <p>Every bottle we recycle helps reduce plastic pollution, conserve natural resources, and give plastic a second life.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section light">
+  <div class="container">
+    <div class="section-label">PARTNER WITH US</div>
+    <h2>Ready to support sustainable solutions</h2>
+    <p class="lead" style="color:var(--muted)">If you need a trusted recycling partner for PET flakes and circular material solutions, we’re ready to work with you.</p>
   </div>
 </section>
 
