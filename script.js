@@ -1,6 +1,5 @@
 function toggleMenu() {
-  const nav = document.getElementById('mainNav');
-  nav.classList.toggle('open');
+  document.getElementById('mainNav').classList.toggle('open');
 }
 
 function toggleLangMenu() {
