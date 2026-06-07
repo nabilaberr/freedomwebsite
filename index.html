@@ -1,90 +1,91 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Freedom Recycling | Home</title>
+  <title>Freedom - Home</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="loader" id="loader"><div class="recycle-icon"></div></div>
-
-<header class="header">
-  <div class="container nav-wrap">
-    <a class="logo" href="index.html"><img src="logo1.png" alt="Freedom Recycling"></a>
-    <div class="header-right">
+  
+  <div id="loader">Loading...</div>
+  
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">Freedom</a>
+      
+      <nav class="nav-links" id="mainNav">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      
       <div class="lang-dropdown">
-       <button class="lang-btn">FR ▾</button>>
+        <button class="lang-btn" onclick="toggleLangMenu()">FR ▾</button>
         <div class="lang-menu" id="langMenu">
-  <a href="index.html">English</a>
-  <a href="index-fr.html">Français</a>
-  <a href="index-ar.html">العربية</a>
-</div>
+          <a href="index.html">English</a>
+          <a href="index-fr.html">Français</a>
+          <a href="index-ar.html">العربية</a>
+        </div>
       </div>
-      <a href="contact.html" class="btn btn-outline quote-btn">REQUEST A QUOTE</a>
-      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open menu"><span></span><span></span><span></span></button>
+      
+      <button class="menu-toggle" aria-label="Toggle menu">
+        ☰
+      </button>
     </div>
-    <nav class="nav" id="mainNav">
-      <a href="index.html" class="active">HOME</a>
-      <a href="about.html">ABOUT</a>
-      <a href="process.html">PROCESS</a>
-      <a href="products.html">PRODUCTS</a>
-      <a href="sustainability.html">SUSTAINABILITY</a>
-      <a href="certifications.html">CERTIFICATIONS</a>
-      <a href="contact.html">CONTACT</a>
-    </nav>
-  </div>
-</header>
-
-<section class="hero">
-  <video class="hero-video" autoplay muted loop playsinline poster="assets/hero.jpg">
-    <source src="hero-vide.mp4" type="video/mp4">
-  </video>
-  <div class="hero-overlay"></div>
-  <div class="container hero-content">
-    <div class="hero-copy">
-      <div class="kicker">SARL FREEDOM RECYCLING</div>
-      <h1>Plastic recycling for a cleaner circular economy</h1>
-      <p>We transform plastic waste into high-quality recycled materials for industrial use with a focus on sustainability and traceability.</p>
-      <a href="products.html" class="btn btn-primary">VIEW PRODUCTS</a>
+  </header>
+  
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <h1>Find Your Freedom</h1>
+        <p>Discover the path to personal and financial freedom with our expert guidance and resources.</p>
+        <div class="btn-row">
+          <a href="contact.html" class="btn btn-primary">Get Started</a>
+          <a href="about.html" class="btn btn-secondary">Learn More</a>
+        </div>
+      </div>
+      <div class="hero-video">
+        <video autoplay muted loop playsinline poster="assets/hero-poster.jpg">
+          <source src="assets/hero-video.mp4" type="video/mp4">
+        </video>
+      </div>
     </div>
-  </div>
-</section>
-
-<section class="section light">
-  <div class="container">
-    <div class="section-label">WHAT WE DO</div>
-    <h2>Built for industrial recycling needs</h2>
-    <div class="impact-grid" style="margin-top:26px;">
-      <div class="step"><div class="circle">01</div><h3>Collection</h3><p>We collect and prepare plastic materials for processing.</p></div>
-      <div class="step"><div class="circle">02</div><h3>Processing</h3><p>Materials are sorted, cleaned, and transformed into recycled feedstock.</p></div>
-      <div class="step"><div class="circle">03</div><h3>Supply</h3><p>We deliver consistent recycled products for industrial use.</p></div>
+  </section>
+  
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-subtitle">We provide comprehensive solutions to help you achieve your goals.</p>
+      
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>Financial Planning</h3>
+          <p>Strategic advice for building wealth and securing your future.</p>
+        </div>
+        <div class="card">
+          <h3>Personal Development</h3>
+          <p>Tools and resources for growth and self-improvement.</p>
+        </div>
+        <div class="card">
+          <h3>Business Consulting</h3>
+          <p>Expert guidance to help your business thrive.</p>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
-
-<section class="section dark">
-  <div class="container process-wrap">
-    <div>
-      <div class="section-label">ABOUT US</div>
-      <h2>Reliable recycling with a professional approach</h2>
-      <p class="lead">Freedom Recycling supports responsible manufacturing by turning waste into usable raw materials.</p>
+  </section>
+  
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>© 2026 Freedom. All rights reserved.</div>
     </div>
-    <div class="step" style="background:#fff;color:#111;">
-      <h3>Our focus</h3>
-      <p>Quality, sustainability, and customer trust.</p>
-    </div>
-  </div>
-</section>
-
-<footer class="footer">
-  <div>© 2026 Freedom Recycling</div>
-  <div class="social-links">
-    <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
-    <a href="https://www.linkedin.com/in/freedom-recycling-87064b3a9/" target="_blank" rel="noopener">LinkedIn</a>
-  </div>
-</footer>
-
-<script src="script.js"></script>
+  </footer>
+  
+  <script src="script.js"></script>
 </body>
 </html>
