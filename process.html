@@ -1,50 +1,109 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Freedom Recycling | Processus</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freedom Recycling | Process</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
-    <div class="container nav-wrap">
-      <a class="logo" href="index.html"><img src="assets/logo.png" alt="Freedom Recycling"></a>
-      <nav class="nav">
-        <a href="index.html">ACCUEIL</a>
-        <a href="about.html">À PROPOS</a>
-        <a href="process.html" class="active">PROCESSUS</a>
-        <a href="products.html">PRODUITS</a>
-        <a href="sustainability.html">DURABILITÉ</a>
-        <a href="#">CERTIFICATIONS</a>
-        <a href="#">ACTUALITÉS</a>
-        <a href="contact.html">CONTACT</a>
-      </nav>
-      <a href="contact.html" class="btn btn-outline">DEMANDER UN DEVIS</a>
-    </div>
-  </header>
+<div class="loader" id="loader"><div class="recycle-icon"></div></div>
 
-  <section class="section light page-top">
-    <div class="container process-wrap">
+<header class="header">
+  <div class="container nav-wrap">
+    <a class="logo" href="index.html"><img src="logo1.png" alt="Freedom Recycling"></a>
+    <div class="header-right">
+      <div class="lang-dropdown">
+        <button class="lang-btn" onclick="toggleLangMenu()">EN ▾</button>
+        <div class="lang-menu" id="langMenu">
+          <a href="process.html">English</a>
+          <a href="process-fr.html">Français</a>
+          <a href="process-ar.html">العربية</a>
+        </div>
+      </div>
+      <a href="contact.html" class="btn btn-outline quote-btn">REQUEST A QUOTE</a>
+      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+    <nav class="nav" id="mainNav">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="process.html" class="active">PROCESS</a>
+      <a href="products.html">PRODUCTS</a>
+      <a href="sustainability.html">SUSTAINABILITY</a>
+      <a href="certifications.html">CERTIFICATIONS</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+  </div>
+</header>
+
+<section class="section light page-top">
+  <div class="container">
+    <div style="max-width: 800px; margin: 0 auto 48px;">
+      <div class="section-label">PROCESS</div>
+      <h2 style="text-align: center; margin-bottom: 18px;">Our Recycling Process</h2>
+      <p class="lead" style="text-align: center; margin: 0;">Every step is organized to guarantee the quality of recycled materials and consistent shipments.</p>
+    </div>
+    
+    <div class="process-steps">
+      <div class="step-card">
+        <div class="circle">01</div>
+        <h3>Collection</h3>
+        <p>Plastic waste collected responsibly from industrial and commercial sources.</p>
+      </div>
+      <div class="step-card">
+        <div class="circle">02</div>
+        <h3>Sorting</h3>
+        <p>Manual and mechanical separation of materials by type and quality.</p>
+      </div>
+      <div class="step-card">
+        <div class="circle">03</div>
+        <h3>Washing</h3>
+        <p>Removal of impurities with hot water washing and cleaning.</p>
+      </div>
+      <div class="step-card">
+        <div class="circle">04</div>
+        <h3>Crushing</h3>
+        <p>Transformation into homogeneous flakes for further processing.</p>
+      </div>
+      <div class="step-card">
+        <div class="circle">05</div>
+        <h3>Extrusion</h3>
+        <p>Conversion into recycled pellets/granules for industrial use.</p>
+      </div>
+      <div class="step-card">
+        <div class="circle">06</div>
+        <h3>Quality Control</h3>
+        <p>Final quality checks before shipment to ensure consistency.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section dark">
+  <div class="container">
+    <div class="process-wrap">
       <div>
-        <div class="section-label">PROCESSUS</div>
-        <h2>Une production maîtrisée</h2>
-        <p class="lead">Chaque étape est organisée pour garantir la qualité des matières recyclées et la régularité des expéditions.</p>
+        <div class="section-label">WHY IT MATTERS</div>
+        <h2>Transparent, traceable recycling</h2>
+        <p class="lead">We track materials from collection to final product, ensuring sustainability and quality.</p>
+        <p style="color: #d6e2dd; margin-top: 16px;">Our process supports the circular economy by transforming waste into valuable raw materials for manufacturing.</p>
       </div>
-      <div class="steps">
-        <div class="step"><div class="circle">01</div><h3>Collecte</h3><p>Déchets plastiques récupérés de manière responsable.</p></div>
-        <div class="step"><div class="circle">02</div><h3>Tri</h3><p>Séparation manuelle et mécanique des matériaux.</p></div>
-        <div class="step"><div class="circle">03</div><h3>Lavage</h3><p>Élimination des impuretés avec lavage à chaud.</p></div>
-        <div class="step"><div class="circle">04</div><h3>Broyage</h3><p>Transformation en paillettes homogènes.</p></div>
-        <div class="step"><div class="circle">05</div><h3>Extrusion</h3><p>Conversion en granulés recyclés.</p></div>
-        <div class="step"><div class="circle">06</div><h3>Qualité</h3><p>Contrôle final avant expédition.</p></div>
+      <div class="contact-card">
+        <h3>Ready to work with us?</h3>
+        <p>Contact us to discuss your recycling needs.</p>
+        <a href="contact.html" class="btn btn-primary" style="margin-top: 16px;">CONTACT US</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer class="footer">© 2026 Freedom Recycling</footer>
+<footer class="footer">
+  <div>© 2026 Freedom Recycling</div>
+  <div class="social-links">
+    <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener"><img src="fcb.png" alt="Facebook">Facebook</a>
+    <a href="https://www.linkedin.com/company/yourcompany" target="_blank" rel="noopener"><img src="lin.png" alt="LinkedIn">LinkedIn</a>
+  </div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
