@@ -204,9 +204,15 @@ button,input,textarea{font:inherit}
   letter-spacing:-.04em;
   color:#fff;
 }
-.hero p,.lead{
+.hero p{
   font-size:18px;
   color:#d7e3de;
+  max-width:64ch;
+}
+
+.lead{
+  font-size:18px;
+  color:#cfe1da;
   max-width:64ch;
 }
 .hero h1 span{color:#7fe3b3}
