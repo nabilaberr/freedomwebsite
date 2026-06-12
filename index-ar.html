@@ -4,22 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Freedom Recycling | الرئيسية</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="loader" id="loader"><div class="recycle-icon"></div></div>
+
 <header class="header">
   <div class="container nav-wrap">
-    <a class="logo" href="index-ar.html"><img src="logo.png" alt="Freedom Recycling"></a>
+    <a class="logo" href="index-ar.html"><img src="logo1.png" alt="Freedom Recycling"></a>
     <div class="header-right">
       <div class="lang-dropdown">
         <button class="lang-btn" onclick="toggleLangMenu()">AR ▾</button>
         <div class="lang-menu" id="langMenu">
-          <a href="index.html">Français</a>
-          <a href="index-en.html">English</a>
+          <a href="index.html">English</a>
+          <a href="index-fr.html">Français</a>
           <a href="index-ar.html">العربية</a>
         </div>
       </div>
@@ -39,35 +37,69 @@
 </header>
 
 <section class="hero">
-  <div class="hero-media">
-    <video class="hero-video" autoplay muted loop playsinline poster="assets/hero-mobile.jpg">
-      <source src="assets/hero-video.mp4" type="video/mp4">
-    </video>
-  </div>
+  <video class="hero-video" autoplay muted loop playsinline poster="hero.jpg">
+    <source src="hero-vide.mp4" type="video/mp4">
+  </video>
   <div class="hero-overlay"></div>
-  <div class="hero-content container">
+  <div class="container hero-content">
     <div class="hero-copy">
-      <div class="kicker">الاقتصاد الدائري في الجزائر</div>
-      <h1>تحويل النفايات البلاستيكية <span>إلى قيمة مستدامة</span></h1>
-      <p>تطوّر Freedom Recycling حلول إعادة تدوير مبتكرة ومسؤولة لإنتاج مواد خام عالية الجودة.</p>
-      <div class="hero-actions">
-        <a href="process-ar.html" class="btn btn-primary">اكتشف عمليتنا</a>
-        <a href="contact-ar.html" class="btn btn-dark">تواصل معنا</a>
-      </div>
+      <div class="kicker">SARL FREEDOM RECYCLING</div>
+      <h1>إعادة تدوير البلاستيك من أجل اقتصاد دائري أنظف</h1>
+      <p>نحوّل النفايات البلاستيكية إلى مواد معاد تدويرها عالية الجودة للاستخدام الصناعي، مع التركيز على الاستدامة وإمكانية التتبع.</p>
+      <a href="contact-ar.html" class="btn btn-primary">اتصل بنا</a>
     </div>
   </div>
 </section>
 
 <section class="stats">
   <div class="container stats-grid">
-    <div class="stat"><div class="stat-value counter" data-target="25000">0</div><div class="stat-title">طن معاد تدويره</div><div class="stat-subtitle">كل سنة</div></div>
-    <div class="stat"><div class="stat-value counter" data-target="45000">0</div><div class="stat-title">طن من CO₂ تم تجنبه</div><div class="stat-subtitle">كل سنة</div></div>
-    <div class="stat"><div class="stat-value counter" data-target="1200000000">0</div><div class="stat-title">زجاجة بلاستيكية</div><div class="stat-subtitle">تُعاد سنويًا</div></div>
-    <div class="stat"><div class="stat-value counter" data-target="100">0</div><div class="stat-title">موظفًا ملتزمًا</div><div class="stat-subtitle">لمستقبل مستدام</div></div>
+    <div class="stat">
+      <div class="stat-value counter" data-target="18000">0</div>
+      <div class="stat-title">أطنان معاد تدويرها</div>
+      <div class="stat-subtitle">كل سنة</div>
+    </div>
+
+    <div class="stat">
+      <div class="stat-value counter" data-target="45000">0</div>
+      <div class="stat-title">أطنان من CO₂ تم تجنبها</div>
+      <div class="stat-subtitle">كل سنة</div>
+    </div>
+
+    <div class="stat">
+      <div class="stat-value counter" data-target="1200000000">0</div>
+      <div class="stat-title">زجاجات بلاستيكية</div>
+      <div class="stat-subtitle">معاد تدويرها كل سنة</div>
+    </div>
+
+    <div class="stat">
+      <div class="stat-value counter" data-target="100">0</div>
+      <div class="stat-title">موظفون ملتزمون</div>
+      <div class="stat-subtitle">من أجل مستقبل مستدام</div>
+    </div>
   </div>
 </section>
 
-<footer class="footer"><div>© 2026 Freedom Recycling</div></footer>
+<section class="section dark">
+  <div class="container process-wrap">
+    <div>
+      <div class="section-label">من نحن</div>
+      <h2>إعادة تدوير موثوقة بأسلوب احترافي</h2>
+      <p class="lead">تدعم Freedom Recycling التصنيع المسؤول من خلال تحويل النفايات إلى مواد خام قابلة للاستخدام.</p>
+    </div>
+    <div class="step contact-card">
+      <h3>تركيزنا</h3>
+      <p>الجودة، الاستدامة، وثقة العملاء.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div>© 2026 Freedom Recycling</div>
+  <div class="social-links">
+    <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener"><img src="fcb.png" alt="Facebook">Facebook</a>
+    <a href="https://www.linkedin.com/company/yourcompany" target="_blank" rel="noopener"><img src="lin.png" alt="LinkedIn">LinkedIn</a>
+  </div>
+</footer>
 <script src="script.js"></script>
 </body>
 </html>
