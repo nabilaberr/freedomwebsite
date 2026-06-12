@@ -4,21 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Freedom Recycling | الشهادات</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="loader" id="loader"><div class="recycle-icon"></div></div>
+
 <header class="header">
   <div class="container nav-wrap">
-    <a class="logo" href="index-ar.html"><img src="assets/logo.png" alt="Freedom Recycling"></a>
+    <a class="logo" href="index-ar.html"><img src="logo1.png" alt="Freedom Recycling"></a>
     <div class="header-right">
-      <div class="lang-dropdown"><button class="lang-btn" onclick="toggleLangMenu()">AR ▾</button><div class="lang-menu" id="langMenu"><a href="certifications.html">Français</a><a href="certifications-en.html">English</a><a href="certifications-ar.html">العربية</a></div></div>
+      <div class="lang-dropdown">
+        <button class="lang-btn" onclick="toggleLangMenu()">AR ▾</button>
+        <div class="lang-menu" id="langMenu">
+          <a href="certifications.html">English</a>
+          <a href="certifications-fr.html">Français</a>
+          <a href="certifications-ar.html">العربية</a>
+        </div>
+      </div>
       <a href="contact-ar.html" class="btn btn-outline quote-btn">اطلب عرض سعر</a>
       <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open menu"><span></span><span></span><span></span></button>
     </div>
     <nav class="nav" id="mainNav">
-      <a href="index-ar.html">الرئيسية</a><a href="about-ar.html">من نحن</a><a href="process-ar.html">العملية</a><a href="products-ar.html">المنتجات</a><a href="sustainability-ar.html">الاستدامة</a><a href="certifications-ar.html" class="active">الشهادات</a><a href="contact-ar.html">اتصل بنا</a>
+      <a href="index-ar.html">الرئيسية</a>
+      <a href="about-ar.html">من نحن</a>
+      <a href="process-ar.html">العملية</a>
+      <a href="products-ar.html">المنتجات</a>
+      <a href="sustainability-ar.html">الاستدامة</a>
+      <a href="certifications-ar.html" class="active">الشهادات</a>
+      <a href="contact-ar.html">اتصل بنا</a>
     </nav>
   </div>
 </header>
@@ -26,20 +39,64 @@
 <section class="section dark" style="padding-top:130px;">
   <div class="container">
     <div class="section-label">الشهادات</div>
-    <h2>الجودة والالتزام</h2>
-    <p class="lead">نعمل وفق معايير عالية لضمان الجودة والسلامة وقابلية التتبع.</p>
+    <h2>التزامنا بالجودة والمسؤولية</h2>
+    <p class="lead">نعمل وفق معايير جودة وبيئة وسلامة مهنية تدعم الثقة في منتجاتنا وعملياتنا.</p>
   </div>
 </section>
 
 <section class="section light">
-  <div class="container impact-grid">
-    <div class="impact-card"><img src="assets/cert-1.jpg" alt="الجودة"><h3>الجودة</h3><p>إجراءات صارمة لضمان جودة ثابتة.</p></div>
-    <div class="impact-card"><img src="assets/cert-2.jpg" alt="السلامة"><h3>السلامة</h3><p>الالتزام بالقواعد والممارسات الصناعية الجيدة.</p></div>
-    <div class="impact-card"><img src="assets/cert-3.jpg" alt="التتبع"><h3>التتبع</h3><p>متابعة واضحة للمواد في كل مرحلة.</p></div>
+  <div class="container product-grid">
+    <div class="product-card">
+      <img src="cert-1.jpg" alt="شهادة ISO 9001">
+      <div class="product-body">
+        <h3>ISO 9001: إدارة الجودة</h3>
+        <p>تؤكد هذه الشهادة التزامنا بالحفاظ على نظام إدارة جودة فعال يضمن ثبات الأداء وتحسين العمليات بشكل مستمر.</p>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="cert-2.jpg" alt="شهادة ISO 14001">
+      <div class="product-body">
+        <h3>ISO 14001: الإدارة البيئية</h3>
+        <p>تعكس هذه الشهادة نهجنا المسؤول في تقليل الأثر البيئي وتحسين ممارسات الاستدامة في جميع مراحل العمل.</p>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="cert-3.jpg" alt="شهادة ISO 45001">
+      <div class="product-body">
+        <h3>ISO 45001: السلامة والصحة المهنية</h3>
+        <p>نلتزم ببيئة عمل آمنة تحمي الموظفين وتدعم أفضل ممارسات الصحة والسلامة في الموقع وفي كل مرحلة تشغيلية.</p>
+      </div>
+    </div>
   </div>
 </section>
 
-<footer class="footer">© 2026 Freedom Recycling</footer>
+<section class="section dark">
+  <div class="container">
+    <div class="process-wrap">
+      <div>
+        <div class="section-label">الشفافية</div>
+        <h2>وثائق وتقارير داعمة</h2>
+        <p class="lead">نوفر وثائق وشهادات داعمة لعملائنا عند الحاجة، بما يساعد على تعزيز الموثوقية وتسهيل متطلبات الامتثال.</p>
+        <p style="color:#d6e2dd;margin-top:16px;">نؤمن بأن الجودة ليست مجرد شهادة، بل هي التزام يومي في كل تفصيل من تفاصيل العمل.</p>
+      </div>
+      <div class="step contact-card">
+        <h3>هل تحتاج إلى نسخة من الشهادات؟</h3>
+        <p>تواصل معنا وسنزوّدك بالمعلومات والوثائق المتاحة.</p>
+        <a href="contact-ar.html" class="btn btn-primary" style="margin-top:16px;">اتصل بنا</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div>© 2026 Freedom Recycling</div>
+  <div class="social-links">
+    <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener"><img src="fcb.png" alt="Facebook">Facebook</a>
+    <a href="https://www.linkedin.com/company/yourcompany" target="_blank" rel="noopener"><img src="lin.png" alt="LinkedIn">LinkedIn</a>
+  </div>
+</footer>
 <script src="script.js"></script>
 </body>
 </html>
