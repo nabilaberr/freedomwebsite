@@ -214,7 +214,7 @@ button,input,textarea{font:inherit}
 .section{padding:84px 0}
 .section.light{background:var(--bg);color:var(--text)}
 .section.dark{background:var(--bg-dark);color:#fff}
-.section.dark .lead,.section.dark p{color:#93a39b}
+.section.dark .lead,.section.dark p{color:#21302f}
 .section.light h2,.section.dark h2{
   font-size:clamp(30px,4vw,52px);
   letter-spacing:-.03em;
