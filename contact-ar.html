@@ -4,51 +4,92 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Freedom Recycling | اتصل بنا</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="loader" id="loader"><div class="recycle-icon"></div></div>
+
 <header class="header">
   <div class="container nav-wrap">
-    <a class="logo" href="index-ar.html"><img src="logo.png" alt="Freedom Recycling"></a>
+    <a class="logo" href="index-ar.html"><img src="logo1.png" alt="Freedom Recycling"></a>
     <div class="header-right">
-      <div class="lang-dropdown"><button class="lang-btn" onclick="toggleLangMenu()">AR ▾</button><div class="lang-menu" id="langMenu"><a href="contact.html">Français</a><a href="contact-en.html">English</a><a href="contact-ar.html">العربية</a></div></div>
+      <div class="lang-dropdown">
+        <button class="lang-btn" onclick="toggleLangMenu()">AR ▾</button>
+        <div class="lang-menu" id="langMenu">
+          <a href="contact.html">English</a>
+          <a href="contact-fr.html">Français</a>
+          <a href="contact-ar.html">العربية</a>
+        </div>
+      </div>
       <a href="contact-ar.html" class="btn btn-outline quote-btn">اطلب عرض سعر</a>
       <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open menu"><span></span><span></span><span></span></button>
     </div>
     <nav class="nav" id="mainNav">
-      <a href="index-ar.html">الرئيسية</a><a href="about-ar.html">من نحن</a><a href="process-ar.html">العملية</a><a href="products-ar.html">المنتجات</a><a href="sustainability-ar.html">الاستدامة</a><a href="certifications-ar.html">الشهادات</a><a href="contact-ar.html" class="active">اتصل بنا</a>
+      <a href="index-ar.html">الرئيسية</a>
+      <a href="about-ar.html">من نحن</a>
+      <a href="process-ar.html">العملية</a>
+      <a href="products-ar.html">المنتجات</a>
+      <a href="sustainability-ar.html">الاستدامة</a>
+      <a href="certifications-ar.html">الشهادات</a>
+      <a href="contact-ar.html" class="active">اتصل بنا</a>
     </nav>
   </div>
 </header>
 
 <section class="section dark" style="padding-top:130px;">
-  <div class="container process-wrap">
-    <div>
-      <div class="section-label">اتصل بنا</div>
-      <h2>لنناقش مشروعك</h2>
-      <p class="lead">أرسل لنا طلبك وسيرد عليك فريقنا بسرعة.</p>
-      <div class="impact-grid" style="margin-top:26px;">
-        <div class="step" style="opacity:1;transform:none;"><h3>البريد الإلكتروني</h3><p>contact@freedomrecycling.com</p></div>
-        <div class="step" style="opacity:1;transform:none;"><h3>الهاتف</h3><p>+213 00 00 00 00</p></div>
-        <div class="step" style="opacity:1;transform:none;"><h3>الموقع</h3><p>الجزائر</p></div>
-      </div>
+  <div class="container">
+    <div class="section-label">اتصل بنا</div>
+    <h2>تواصل معنا</h2>
+    <p class="lead">إذا كنت بحاجة إلى شريك موثوق في إعادة التدوير أو لديك أي استفسار حول منتجاتنا، يسعدنا التواصل معك.</p>
+  </div>
+</section>
+
+<section class="section light">
+  <div class="container contact-grid">
+    <div class="contact-card step">
+      <h3>معلومات التواصل</h3>
+      <address>
+        Freedom Recycling<br>
+        Berrouaghia, Algeria<br><br>
+        الهاتف: <a href="tel:+213000000000">+213 00 00 00 00</a><br>
+        البريد الإلكتروني: <a href="mailto:info@freedomrecycling.com">info@freedomrecycling.com</a>
+      </address>
     </div>
-    <div class="step" style="opacity:1;transform:none;background:#fff;">
-      <h3>نموذج الاتصال</h3>
+
+    <div class="contact-card step">
+      <h3>أرسل لنا رسالة</h3>
       <form class="form">
-        <input class="input" type="text" name="name" placeholder="اسمك" required>
-        <input class="input" type="email" name="email" placeholder="بريدك الإلكتروني" required>
-        <input class="input" type="text" name="subject" placeholder="الموضوع">
-        <textarea class="textarea" name="message" placeholder="رسالتك" required></textarea>
-        <button class="btn btn-primary" type="submit">إرسال</button>
+        <input class="input" type="text" name="name" placeholder="الاسم الكامل">
+        <input class="input" type="email" name="email" placeholder="البريد الإلكتروني">
+        <input class="input" type="tel" name="phone" placeholder="رقم الهاتف">
+        <textarea class="textarea" name="message" placeholder="اكتب رسالتك هنا"></textarea>
+        <button type="submit" class="btn btn-primary">إرسال</button>
       </form>
     </div>
   </div>
 </section>
 
-<footer class="footer">© 2026 Freedom Recycling</footer>
+<section class="section dark">
+  <div class="container process-wrap">
+    <div>
+      <div class="section-label">جاهزون للمساعدة</div>
+      <h2>نرحب باستفساراتك ومشاريعك</h2>
+      <p class="lead">سواء كنت تبحث عن رقائق PET معاد تدويرها أو حلول مخصصة، فريقنا جاهز لدعمك.</p>
+    </div>
+    <div class="step contact-card">
+      <h3>نحن هنا من أجلك</h3>
+      <p>تواصل معنا اليوم وسنرد عليك في أقرب وقت ممكن.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div>© 2026 Freedom Recycling</div>
+  <div class="social-links">
+    <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener"><img src="fcb.png" alt="Facebook">Facebook</a>
+    <a href="https://www.linkedin.com/company/yourcompany" target="_blank" rel="noopener"><img src="lin.png" alt="LinkedIn">LinkedIn</a>
+  </div>
+</footer>
 <script src="script.js"></script>
 </body>
 </html>
