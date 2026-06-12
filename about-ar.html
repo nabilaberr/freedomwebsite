@@ -1,83 +1,129 @@
 <!DOCTYPE html>
-<html lang="ar">
-<head>...</head>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freedom Recycling | من نحن</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
+
+<div class="loader" id="loader"><div class="recycle-icon"></div></div>
+
 <header class="header">
   <div class="container nav-wrap">
-    <a class="logo" href="index-ar.html"><img src="assets/logo.png" alt="Freedom Recycling"></a>
-    <nav class="nav">
-      <a href="index-ar.html">الرئيسية</a>
-      <a href="about-ar.html" class="active">من نحن</a>
-      <a href="process.html">العملية</a>
+    <a class="logo" href="index.html"><img src="logo1.png" alt="Freedom Recycling"></a>
+
+    <div class="header-right">
+      <button class="menu-toggle" onclick="toggleMenu()" aria-label="فتح القائمة">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav class="nav" id="mainNav">
+      <a href="index.html">الرئيسية</a>
+      <a href="about.html" class="active">من نحن</a>
+      <a href="process.html">عملية الإنتاج</a>
       <a href="products.html">المنتجات</a>
       <a href="sustainability.html">الاستدامة</a>
       <a href="certifications.html">الشهادات</a>
-      <a href="contact-ar.html">تواصل</a>
+      <a href="contact.html">اتصل بنا</a>
     </nav>
-    <div class="top-actions">
-      <div class="lang-dropdown">
-        <button class="lang-btn" onclick="toggleLangMenu()">AR ▾</button>
-        <div class="lang-menu" id="langMenu">
-          <a href="about.html">Français</a>
-          <a href="about-en.html">English</a>
-          <a href="about-ar.html">العربية</a>
-        </div>
-      </div>
-      <a href="contact-ar.html" class="btn btn-outline">اطلب عرض سعر</a>
-    </div>
   </div>
 </header>
 
-<section class="section light page-top">
-  <div class="container">
-    <div class="section-label">من نحن</div>
-    <h2>رسالتنا</h2>
-    <div class="page-card">
-      <p style="line-height:1.9;margin-bottom:16px;">تحول Freedom Recycling نفايات زجاجات PET بعد الاستهلاك وبعد الصناعة إلى مواد خام معاد تدويرها عالية الجودة.</p>
-      <p style="line-height:1.9;margin-bottom:16px;">تقع الشركة في برج بوعريريج، الجزائر، وتدير بنية تحتية قوية مخصصة للجمع والفرز والغسل وإعادة التدوير.</p>
-      <p style="line-height:1.9;margin-bottom:16px;">من خلال عمليات إعادة تدوير دقيقة، ننتج رقائق PET معاد تدويرها للتطبيقات الصناعية.</p>
-      <p style="line-height:1.9;margin-bottom:16px;">تُستخدم هذه الرقائق في تصنيع الأفلام الغذائية والصواني والألياف النسيجية وغيرها من المنتجات، مما يقلل الاعتماد على الموارد البكر.</p>
-      <p style="line-height:1.9;font-weight:700;color:#21c35e;">Freedom Recycling — تحويل نفايات اليوم إلى موارد الغد.</p>
+<section class="hero about-hero">
+  <video class="hero-video" autoplay muted loop playsinline poster="assets/about-poster.jpg">
+    <source src="about-vide.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay"></div>
+
+  <div class="container hero-content">
+    <div class="hero-copy">
+      <div class="kicker">حول فريدوم ريسايكلينغ</div>
+      <h1>تحويل النفايات البلاستيكية إلى رقائق PET معاد تدويرها عالية الجودة</h1>
+      <p>
+        تأسست سنة 2020 في البرواقية، الجزائر، وتختص شركة Freedom Recycling في إعادة تدوير
+        زجاجات PET بعد الاستهلاك والصناعة وتحويلها إلى مواد عالية الجودة موجهة للصناعة.
+      </p>
+      <a href="contact.html" class="btn btn-primary">اتصل بنا</a>
     </div>
+  </div>
+</section>
+
+<section class="section light">
+  <div class="container about-grid">
+    
+    <div class="step">
+      <h3>من نحن</h3>
+      <p>
+        تعمل Freedom Recycling على تحويل النفايات البلاستيكية إلى موارد قيمة من أجل بيئة أنظف ومستقبل أكثر استدامة.
+      </p>
+    </div>
+
+    <div class="step">
+      <h3>ما الذي ننتجه</h3>
+      <p>
+        ننتج رقائق PET معاد تدويرها عالية الجودة تلبي معايير الصناعة من حيث النقاء والثبات.
+      </p>
+    </div>
+
+    <div class="step">
+      <h3>أين تُستخدم منتجاتنا</h3>
+      <p>
+        تُستخدم رقائقنا في مجالات النسيج، وتغليف المواد الغذائية، وتغليف المشروبات.
+      </p>
+    </div>
+
   </div>
 </section>
 
 <section class="section dark">
-  <div class="container">
-    <div class="section-header">
-      <div><div class="section-label">الموقع</div><h2>SARL Freedom, Zone Industrielle Berrouaghia, Médéa, Algeria</h2></div>
+  <div class="container process-wrap">
+    
+    <div>
+      <div class="section-label">التكنولوجيا</div>
+      <h2>فرز بصري متقدم لضمان النقاء والجودة</h2>
+      <p class="lead">
+        نستخدم تقنية الفرز البصري من Bühler، بما في ذلك وحدتين SORTEX A ووحدة SORTEX N،
+        لتحقيق فصل دقيق للألوان وإزالة فعالة للشوائب.
+      </p>
     </div>
-    <div class="page-card">
-      <iframe src="https://www.google.com/maps?q=SARL%20Freedom%2C%20Zone%20Industrielle%20Berrouaghia%2C%20M%C3%A9d%C3%A9a%2C%20Algeria&output=embed" width="100%" height="420" style="border:0;border-radius:18px;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+
+    <div class="step contact-card">
+      <h3>الاقتصاد الدائري</h3>
+      <p>
+        كل زجاجة نقوم بإعادة تدويرها تساعد في تقليل التلوث البلاستيكي، والحفاظ على الموارد الطبيعية، ومنح البلاستيك حياة جديدة.
+      </p>
     </div>
+
   </div>
 </section>
 
-<section class="section dark">
+<section class="section light">
   <div class="container">
-    <div class="section-header">
-      <div><div class="section-label">فيديو</div><h2>المصنع</h2></div>
-    </div>
-    <div class="page-card">
-      <video controls playsinline style="width:100%;border-radius:18px;">
-        <source src="assets/about-video.mp4" type="video/mp4">
-      </video>
-    </div>
+    <div class="section-label">تعاون معنا</div>
+    <h2>جاهزون لدعم الحلول المستدامة</h2>
+    <p class="lead" style="color:var(--muted)">
+      إذا كنت تبحث عن شريك موثوق في إعادة تدوير PET وحلول المواد الدائرية، نحن جاهزون للعمل معك.
+    </p>
   </div>
 </section>
 
-<section class="section dark">
-  <div class="container">
-    <div class="page-grid">
-      <div class="page-card"><img src="assets/p1.jpg" alt="P1" style="border-radius:18px;margin-bottom:18px;"><h3 style="font-size:22px;margin-bottom:10px;">P1</h3><p style="line-height:1.8;color:#d2d2d2;">صورة توضح منشأتنا وعمليات إعادة التدوير.</p></div>
-      <div class="page-card"><img src="assets/p2.jpg" alt="P2" style="border-radius:18px;margin-bottom:18px;"><h3 style="font-size:22px;margin-bottom:10px;">P2</h3><p style="line-height:1.8;color:#d2d2d2;">صورة ثانية توضح بيئة الإنتاج لدينا.</p></div>
-    </div>
-  </div>
-</section>
+<footer class="footer">
+  <div>© 2026 Freedom Recycling</div>
 
-<script>
-function toggleLangMenu(){document.getElementById('langMenu').classList.toggle('show')}
-document.addEventListener('click',function(e){const d=document.querySelector('.lang-dropdown');if(d&&!d.contains(e.target)){document.getElementById('langMenu').classList.remove('show')}})
-</script>
+  <div class="social-links">
+    <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener">
+      <img src="fcb.png" alt="Facebook">فيسبوك
+    </a>
+
+    <a href="https://www.linkedin.com/company/yourcompany" target="_blank" rel="noopener">
+      <img src="lin.png" alt="LinkedIn">لينكدإن
+    </a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
