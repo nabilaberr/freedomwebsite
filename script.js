@@ -1,86 +1,79 @@
-/* =========================================
-   Freedom Recycling
-   Main JavaScript
-========================================= */
-
-// Toggle mobile menu
 function toggleMenu() {
-  const nav = document.getElementById('mainNav');
-  if (!nav) return;
-  nav.classList.toggle('open');
+  const nav = document.getElementById("mainNav");
+
+  if (nav) {
+    nav.classList.toggle("open");
+  }
 }
 
-// Toggle language dropdown
 function toggleLangMenu() {
-  const menu = document.getElementById('langMenu');
-  if (!menu) return;
-  menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+  const menu = document.getElementById("langMenu");
+
+  if (menu) {
+    menu.style.display = menu.style.display === "block" ? "none" : "block";
+  }
 }
 
-// Close language dropdown when clicking outside
-window.addEventListener('click', function (e) {
-  const menu = document.getElementById('langMenu');
-  const btn = document.querySelector('.lang-btn');
-  if (menu && btn && !btn.contains(e.target) && !menu.contains(e.target)) {
-    menu.style.display = 'none';
+window.addEventListener("click", function (event) {
+  const menu = document.getElementById("langMenu");
+  const button = document.querySelector(".lang-btn");
+
+  if (menu && button && !button.contains(event.target) && !menu.contains(event.target)) {
+    menu.style.display = "none";
   }
 });
 
-// Hide loader when page is loaded
-window.addEventListener('load', function () {
-  const loader = document.getElementById('loader');
-  if (loader) loader.style.display = 'none';
+window.addEventListener("load", function () {
+  const loader = document.getElementById("loader");
+
+  if (loader) {
+    loader.style.display = "none";
+  }
 });
 
-// Animated counters
-document.addEventListener('DOMContentLoaded', function () {
-  const counters = document.querySelectorAll('.counter');
+document.addEventListener("DOMContentLoaded", function () {
+  const counters = document.querySelectorAll(".counter");
 
-  const animateCounter = (counter) => {
-    const target = +counter.getAttribute('data-target');
-    if (!target || isNaN(target)) return;
-
+  function animateCounter(counter) {
+    const target = Number(counter.getAttribute("data-target"));
     const duration = 1800;
     const startTime = performance.now();
 
-    const update = (currentTime) => {
+    function updateCounter(currentTime) {
       const progress = Math.min((currentTime - startTime) / duration, 1);
       const value = Math.floor(progress * target);
 
       counter.textContent = value.toLocaleString();
 
       if (progress < 1) {
-        requestAnimationFrame(update);
+        requestAnimationFrame(updateCounter);
+      } else {
+        counter.textContent = target.toLocaleString();
       }
-    };
-
-    requestAnimationFrame(update);
-  };
-
-  const observer = new IntersectionObserver(
-    (entries, obs) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          animateCounter(entry.target);
-          obs.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.4 }
-  );
-
-  counters.forEach((counter) => observer.observe(counter));
-});
-
-// Optional: smooth scroll for anchor links
-document.querySelectorAll('a[href^="#"]').forEach((link) => {
-  link.addEventListener('click', function (e) {
-    const targetId = this.getAttribute('href');
-    if (targetId === '#') return;
-    const target = document.querySelector(targetId);
-    if (target) {
-      e.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
-  });
+
+    requestAnimationFrame(updateCounter);
+  }
+
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver(
+      function (entries, obs) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            animateCounter(entry.target);
+            obs.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.35 }
+    );
+
+    counters.forEach(function (counter) {
+      observer.observe(counter);
+    });
+  } else {
+    counters.forEach(function (counter) {
+      animateCounter(counter);
+    });
+  }
 });
