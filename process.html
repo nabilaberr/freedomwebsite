@@ -1,118 +1,301 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Freedom Recycling | Process</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<div class="loader" id="loader"><div class="recycle-icon"></div></div>
 
-<header class="header">
-  <div class="container nav-wrap">
-    <a class="logo" href="index.html"><img src="logo1.png" alt="Freedom Recycling"></a>
-    <div class="header-right">
-      <div class="lang-dropdown">
-        <button class="lang-btn" onclick="toggleLangMenu()">EN ▾</button>
-        <div class="lang-menu" id="langMenu">
-          <a href="process.html">English</a>
-          <a href="process-fr.html">Français</a>
-          <a href="process-ar.html">العربية</a>
+<body>
+  <div class="loader" id="loader">
+    <div class="recycle-icon"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-wrap">
+
+      <a class="logo" href="index.html">
+        <img src="logo1.png" alt="Freedom Recycling">
+      </a>
+
+      <nav class="nav" id="mainNav">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="process.html" class="active">OUR PROCESS</a>
+        <a href="products.html">PRODUCTS</a>
+        <a href="sustainability.html">SUSTAINABILITY</a>
+        <a href="certifications.html">CERTIFICATIONS</a>
+        <a href="contact.html">CONTACT US</a>
+      </nav>
+
+      <div class="header-right">
+        <div class="lang-dropdown">
+          <button
+            class="lang-btn"
+            type="button"
+            onclick="toggleLangMenu()"
+            aria-label="Choose language"
+          >
+            EN ▾
+          </button>
+
+          <div class="lang-menu" id="langMenu">
+            <a href="process.html">English</a>
+            <a href="process-fr.html">Français</a>
+            <a href="process-ar.html">العربية</a>
+          </div>
+        </div>
+
+        <a href="contact.html" class="btn btn-primary quote-btn">
+          REQUEST A QUOTE
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          onclick="toggleMenu()"
+          aria-label="Open menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container page-hero-content">
+      <div class="section-label">OUR PROCESS</div>
+
+      <h1>
+        Controlled production.
+        <span>Reliable results.</span>
+      </h1>
+
+      <p>
+        Each stage of our process is carefully managed to ensure high-quality
+        recycled materials and consistency in every shipment.
+      </p>
+    </div>
+  </section>
+
+  <!-- Process Steps -->
+  <section class="section process-section">
+    <div class="container">
+
+      <div class="section-heading centered-heading">
+        <div>
+          <div class="section-label">HOW IT WORKS</div>
+          <h2>From plastic waste to valuable materials</h2>
+          <p class="section-description">
+            Our integrated recycling process transforms collected plastic waste
+            into high-quality recycled flakes and pellets.
+          </p>
         </div>
       </div>
-      <a href="contact.html" class="btn btn-outline quote-btn">REQUEST A QUOTE</a>
-      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open menu"><span></span><span></span><span></span></button>
+
+      <div class="process-steps-new">
+
+        <article class="process-card">
+          <div class="process-number">01</div>
+          <div class="process-image">
+            <img src="step-1.png" alt="Plastic waste collection">
+          </div>
+          <h3>Collection</h3>
+          <p>
+            Plastic waste is collected responsibly from post-consumer and
+            industrial sources.
+          </p>
+        </article>
+
+        <article class="process-card">
+          <div class="process-number">02</div>
+          <div class="process-image">
+            <img src="step-2.png" alt="Plastic sorting">
+          </div>
+          <h3>Sorting</h3>
+          <p>
+            Materials are separated through manual inspection and advanced
+            mechanical sorting.
+          </p>
+        </article>
+
+        <article class="process-card">
+          <div class="process-number">03</div>
+          <div class="process-image">
+            <img src="step-3.png" alt="Plastic washing">
+          </div>
+          <h3>Washing</h3>
+          <p>
+            Impurities are removed through an efficient hot-washing process for
+            high material purity.
+          </p>
+        </article>
+
+        <article class="process-card">
+          <div class="process-number">04</div>
+          <div class="process-image">
+            <img src="step-4.png" alt="Plastic grinding">
+          </div>
+          <h3>Grinding</h3>
+          <p>
+            Cleaned material is processed into uniform flakes for further
+            recycling.
+          </p>
+        </article>
+
+        <article class="process-card">
+          <div class="process-number">05</div>
+          <div class="process-image">
+            <img src="step-5.png" alt="Plastic extrusion">
+          </div>
+          <h3>Extrusion</h3>
+          <p>
+            Flakes are transformed into high-quality recycled pellets for
+            industrial applications.
+          </p>
+        </article>
+
+        <article class="process-card">
+          <div class="process-number">06</div>
+          <div class="process-image">
+            <img src="step-6.png" alt="Quality control">
+          </div>
+          <h3>Quality Control</h3>
+          <p>
+            Every batch undergoes final quality checks before shipment to meet
+            customer requirements.
+          </p>
+        </article>
+
+      </div>
+
     </div>
-    <nav class="nav" id="mainNav">
-      <a href="index.html">HOME</a>
-      <a href="about.html">ABOUT</a>
-      <a href="process.html" class="active">PROCESS</a>
-      <a href="products.html">PRODUCTS</a>
-      <a href="sustainability.html">SUSTAINABILITY</a>
-      <a href="certifications.html">CERTIFICATIONS</a>
-      <a href="contact.html">CONTACT</a>
-    </nav>
-  </div>
-</header>
+  </section>
 
-<section class="section light page-top">
-  <div class="container">
-    <div class="page-intro">
-      <div class="section-label">PROCESS</div>
-      <h2>Controlled and Reliable Production</h2>
-      <p class="lead">Each stage of our process is carefully managed to ensure the quality of recycled materials and the consistency of every shipment.</p>
+  <!-- Technology -->
+  <section class="technology-section">
+    <div class="container technology-grid">
+
+      <div class="technology-copy">
+        <div class="section-label">OUR TECHNOLOGY</div>
+
+        <h2>
+          Precision Sortex technology for
+          <span>cleaner recycling</span>
+        </h2>
+
+        <p>
+          Our three Sortex optical sorting machines improve sorting accuracy
+          and enhance the final quality of recycled materials.
+        </p>
+
+        <p>
+          This technology helps us reduce contamination, improve efficiency and
+          deliver more consistent recycled products to industrial customers.
+        </p>
+
+        <a href="contact.html" class="btn btn-primary">
+          CONTACT OUR TEAM →
+        </a>
+      </div>
+
+      <div class="technology-card">
+        <div class="technology-card-top">
+          <div>
+            <div class="section-label">ADVANCED EQUIPMENT</div>
+            <h3>Our 3 Sortex Machines</h3>
+          </div>
+
+          <div class="technology-icon">♻</div>
+        </div>
+
+        <p>
+          A visual overview of our advanced optical sorting technology.
+        </p>
+
+        <div class="technology-images">
+          <img src="machine-1.jpg" alt="Sortex recycling machine 1">
+          <img src="machine-2.jpg" alt="Sortex recycling machine 2">
+          <img src="pic.png" alt="Sortex recycling machine 3">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <img src="logo1.png" alt="Freedom Recycling" class="footer-logo">
+
+        <p>
+          Building a circular future through responsible plastic recycling and
+          high-quality recycled materials.
+        </p>
+
+        <div class="social-links">
+          <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener">
+            <img src="fcb.png" alt="Facebook">
+          </a>
+
+          <a href="https://www.linkedin.com/company/yourcompany" target="_blank" rel="noopener">
+            <img src="lin.png" alt="LinkedIn">
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h3>QUICK LINKS</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="process.html">Our Process</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>OUR PRODUCTS</h3>
+        <a href="products.html">PET Flakes</a>
+        <a href="products.html">Recycled Granules</a>
+        <a href="products.html">Plastic Bales</a>
+        <a href="certifications.html">Certifications</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>CONTACT US</h3>
+        <p>Zone Industrielle, Berrouaghia</p>
+        <p>Médéa, Algeria</p>
+        <a href="mailto:contact@freedomrecycling.com">
+          contact@freedomrecycling.com
+        </a>
+      </div>
+
     </div>
 
-    <div class="process-steps">
-      <div class="step-card">
-        <div class="step-img"><img src="step-1.png" alt="Collection"></div>
-        <h3>Collection</h3>
-        <p>Plastic waste is collected responsibly from post-consumer and industrial sources.</p>
-      </div>
-
-      <div class="step-card">
-        <div class="step-img"><img src="step-2.png" alt="Sorting"></div>
-        <h3>Sorting</h3>
-        <p>Materials are separated through a combination of manual inspection and advanced mechanical sorting.</p>
-      </div>
-
-      <div class="step-card">
-        <div class="step-img"><img src="step-3.png" alt="Washing"></div>
-        <h3>Washing</h3>
-        <p>Impurities are removed through an efficient hot-washing process to achieve high material purity.</p>
-      </div>
-
-      <div class="step-card">
-        <div class="step-img"><img src="step-4.png" alt="Grinding"></div>
-        <h3>Grinding</h3>
-        <p>The cleaned material is processed into uniform flakes for further recycling.</p>
-      </div>
-
-      <div class="step-card">
-        <div class="step-img"><img src="step-5.png" alt="Extrusion"></div>
-        <h3>Extrusion</h3>
-        <p>The flakes are transformed into high-quality recycled pellets suitable for industrial applications.</p>
-      </div>
-
-      <div class="step-card">
-        <div class="step-img"><img src="step-6.png" alt="Quality Control"></div>
-        <h3>Quality Control</h3>
-        <p>Every batch undergoes final quality checks before shipment to ensure compliance with customer requirements.</p>
+    <div class="footer-bottom">
+      <div class="container">
+        © 2026 Freedom Recycling. All Rights Reserved.
       </div>
     </div>
-  </div>
-</section>
+  </footer>
 
-<section class="section dark">
-  <div class="container process-wrap">
-    <div>
-      <div class="section-label">OUR TECHNOLOGY</div>
-      <h2>Precision Sortex Technology for Cleaner Recycling</h2>
-      <p class="lead">Our three Sortex optical sorting machines enhance sorting accuracy and improve the final quality of recycled materials.</p>
-      <p>This advanced technology enables us to achieve higher efficiency, reduce contamination, and deliver more consistent products to our industrial customers.</p>
-    </div>
-
-    <div class="tech-card">
-      <h3>Our 3 Sortex Machines</h3>
-      <p>A visual overview of our advanced sorting technology.</p>
-
-      <div class="tech-grid">
-        <img src="machine-1.jpg" alt="Sortex machine 1">
-        <img src="machine-2.jpg" alt="Sortex machine 2">
-        <img src="pic.png" alt="Sortex machine 3">
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer class="footer">
-  <div>© 2026 Freedom Recycling</div>
-  <div class="social-links">
-    <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener"><img src="fcb.png" alt="Facebook">Facebook</a>
-    <a href="https://www.linkedin.com/company/yourcompany" target="_blank" rel="noopener"><img src="lin.png" alt="LinkedIn">LinkedIn</a>
-  </div>
-</footer>
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
