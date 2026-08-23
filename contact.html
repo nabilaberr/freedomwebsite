@@ -3,113 +3,307 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Freedom Recycling | Contact</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<div class="loader" id="loader"><div class="recycle-icon"></div></div>
+  <div class="loader" id="loader">
+    <div class="recycle-icon"></div>
+  </div>
 
-<header class="header">
-  <div class="container nav-wrap">
-    <a class="logo" href="index.html"><img src="logo1.png" alt="Freedom Recycling"></a>
-    <div class="header-right">
-      <div class="lang-dropdown">
-        <button class="lang-btn" onclick="toggleLangMenu()">EN ▾</button>
-        <div class="lang-menu" id="langMenu">
-          <a href="contact.html">English</a>
-          <a href="contact-fr.html">Français</a>
-          <a href="contact-ar.html">العربية</a>
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-wrap">
+
+      <a class="logo" href="index.html">
+        <img src="logo1.png" alt="Freedom Recycling">
+      </a>
+
+      <nav class="nav" id="mainNav">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="process.html">OUR PROCESS</a>
+        <a href="products.html">PRODUCTS</a>
+        <a href="sustainability.html">SUSTAINABILITY</a>
+        <a href="certifications.html">CERTIFICATIONS</a>
+        <a href="contact.html" class="active">CONTACT US</a>
+      </nav>
+
+      <div class="header-right">
+        <div class="lang-dropdown">
+          <button
+            class="lang-btn"
+            type="button"
+            onclick="toggleLangMenu()"
+            aria-label="Choose language"
+          >
+            EN ▾
+          </button>
+
+          <div class="lang-menu" id="langMenu">
+            <a href="contact.html">English</a>
+            <a href="contact-fr.html">Français</a>
+            <a href="contact-ar.html">العربية</a>
+          </div>
+        </div>
+
+        <a href="contact.html" class="btn btn-primary quote-btn">
+          REQUEST A QUOTE
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          onclick="toggleMenu()"
+          aria-label="Open menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container page-hero-content">
+      <div class="section-label">CONTACT US</div>
+
+      <h1>
+        Let’s build a more
+        <span>circular future together.</span>
+      </h1>
+
+      <p>
+        Send your request to Freedom Recycling and our team will respond as
+        soon as possible.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Content -->
+  <section class="section contact-section">
+    <div class="container contact-layout">
+
+      <!-- Company Information -->
+      <div class="contact-details">
+
+        <div class="section-label">OUR DETAILS</div>
+
+        <h2>Freedom Recycling SARL</h2>
+
+        <p class="contact-intro">
+          We are ready to discuss recycled material supply, collection,
+          partnerships and industrial recycling projects.
+        </p>
+
+        <div class="contact-info-grid">
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon">☎</div>
+            <div>
+              <h3>Phone</h3>
+              <a href="tel:+21300000000">+213 00 00 00 00</a>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon">✉</div>
+            <div>
+              <h3>Email</h3>
+              <a href="mailto:contact@freedomrecycling.com">
+                contact@freedomrecycling.com
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon">⌖</div>
+            <div>
+              <h3>Location</h3>
+              <p>Berrouaghia, Médéa, Algeria</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="address-card">
+          <div class="address-icon">⌖</div>
+
+          <div>
+            <h3>Our Address</h3>
+
+            <address>
+              Freedom Recycling SARL<br>
+              Zone Industrielle, Berrouaghia<br>
+              Wilaya de Médéa, Algeria
+            </address>
+          </div>
+        </div>
+
+        <div class="contact-social">
+          <h3>FOLLOW US</h3>
+
+          <div class="social-links contact-social-links">
+            <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener">
+              <img src="fcb.png" alt="Facebook">
+              <span>Facebook</span>
+            </a>
+
+            <a href="https://www.linkedin.com/company/yourcompany" target="_blank" rel="noopener">
+              <img src="lin.png" alt="LinkedIn">
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Form and Map -->
+      <div class="contact-right">
+
+        <div class="contact-form-card">
+          <div class="section-label">SEND A MESSAGE</div>
+          <h2>How can we help?</h2>
+
+          <form class="form">
+            <div class="form-row">
+              <input
+                class="input"
+                type="text"
+                name="name"
+                placeholder="Your name"
+                required
+              >
+
+              <input
+                class="input"
+                type="email"
+                name="email"
+                placeholder="Your email"
+                required
+              >
+            </div>
+
+            <input
+              class="input"
+              type="text"
+              name="subject"
+              placeholder="Subject"
+            >
+
+            <textarea
+              class="textarea"
+              name="message"
+              placeholder="Tell us about your project or request"
+              required
+            ></textarea>
+
+            <button class="btn btn-primary form-submit" type="submit">
+              SEND MESSAGE →
+            </button>
+          </form>
+        </div>
+
+        <div class="map-card">
+          <div class="map-card-header">
+            <div>
+              <div class="section-label">VISIT US</div>
+              <h3>Our Location</h3>
+            </div>
+
+            <div class="map-icon">⌖</div>
+          </div>
+
+          <div class="map-box">
+            <iframe
+              src="https://www.google.com/maps?q=Berrouaghia,+Medea,+Algeria&output=embed"
+              width="100%"
+              height="330"
+              style="border:0;display:block;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Freedom Recycling location map"
+            ></iframe>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <img src="logo1.png" alt="Freedom Recycling" class="footer-logo">
+
+        <p>
+          Building a circular future through responsible plastic recycling and
+          high-quality recycled materials.
+        </p>
+
+        <div class="social-links">
+          <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener">
+            <img src="fcb.png" alt="Facebook">
+          </a>
+
+          <a href="https://www.linkedin.com/company/yourcompany" target="_blank" rel="noopener">
+            <img src="lin.png" alt="LinkedIn">
+          </a>
         </div>
       </div>
-      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open menu"><span></span><span></span><span></span></button>
-    </div>
-    <nav class="nav" id="mainNav">
-      <a href="index.html">HOME</a>
-      <a href="about.html">ABOUT</a>
-      <a href="process.html">PROCESS</a>
-      <a href="products.html">PRODUCTS</a>
-      <a href="sustainability.html">SUSTAINABILITY</a>
-      <a href="certifications.html">CERTIFICATIONS</a>
-      <a href="contact.html" class="active">CONTACT</a>
-    </nav>
-  </div>
-</header>
 
-<section class="section dark" style="padding-top:130px;">
-  <div class="container">
-    <div class="section-label">CONTACT</div>
-    <h2>Let’s talk about your project</h2>
-    <p class="lead">Send your request and our team will reply as soon as possible.</p>
-  </div>
-</section>
-
-<section class="section light">
-  <div class="container contact-grid">
-    <div>
-      <div class="section-label">OUR DETAILS</div>
-      <h2>Freedom Recycling SARL</h2>
-      <p class="lead" style="color:var(--muted)">Zone Industrielle, Berrouaghia, Médéa, Algeria.</p>
-
-      <div class="impact-grid" style="margin-top:26px;">
-        <div class="step contact-card"><h3>Phone</h3><p><a href="tel:+21300000000">+213 00 00 00 00</a></p></div>
-        <div class="step contact-card"><h3>Email</h3><p><a href="mailto:contact@freedomrecycling.com">contact@freedomrecycling.com</a></p></div>
-        <div class="step contact-card"><h3>Location</h3><p>Zone Industrielle, Berrouaghia, Médéa</p></div>
+      <div class="footer-column">
+        <h3>QUICK LINKS</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="process.html">Our Process</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact Us</a>
       </div>
 
-      <div class="step contact-card" style="margin-top:22px;">
-        <h3>Address</h3>
-        <address>
-          Freedom Recycling SARL<br>
-          Zone Industrielle, Berrouaghia<br>
-          Wilaya de Médéa, Algeria
-        </address>
+      <div class="footer-column">
+        <h3>OUR PRODUCTS</h3>
+        <a href="products.html">PET Flakes</a>
+        <a href="products.html">Recycled Granules</a>
+        <a href="products.html">Plastic Bales</a>
+        <a href="certifications.html">Certifications</a>
       </div>
 
-      <div class="step contact-card" style="margin-top:22px;">
-        <h3>Social</h3>
-        <div class="social-links" style="justify-content:flex-start;margin-top:12px;">
-          <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener"><img src="fcb.png" alt="Facebook">Facebook</a>
-          <a href="https://www.linkedin.com/company/yourcompany" target="_blank" rel="noopener"><img src="lin.png" alt="LinkedIn">LinkedIn</a>
-        </div>
+      <div class="footer-column">
+        <h3>CONTACT US</h3>
+        <p>Zone Industrielle, Berrouaghia</p>
+        <p>Médéa, Algeria</p>
+        <a href="mailto:contact@freedomrecycling.com">
+          contact@freedomrecycling.com
+        </a>
       </div>
+
     </div>
 
-    <div>
-      <div class="step contact-card">
-        <h3>Google Maps</h3>
-        <div class="map-box" style="margin-top:16px;">
-          <iframe
-            src="https://www.google.com/maps?q=Berrouaghia,+Medea,+Algeria&output=embed"
-            width="100%"
-            height="340"
-            style="border:0;display:block;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
-
-      <div class="step contact-card" style="margin-top:22px;">
-        <h3>Contact Form</h3>
-        <form class="form" style="margin-top:14px;">
-          <input class="input" type="text" placeholder="Your name" required>
-          <input class="input" type="email" placeholder="Your email" required>
-          <input class="input" type="text" placeholder="Subject">
-          <textarea class="textarea" placeholder="Your message" required></textarea>
-          <button class="btn btn-primary" type="submit">SEND MESSAGE</button>
-        </form>
+    <div class="footer-bottom">
+      <div class="container">
+        © 2026 Freedom Recycling. All Rights Reserved.
       </div>
     </div>
-  </div>
-</section>
+  </footer>
 
-<footer class="footer">
-  <div>© 2026 Freedom Recycling</div>
-  <div class="social-links">
-    <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener"><img src="fcb.png" alt="Facebook">Facebook</a>
-    <a href="https://www.linkedin.com/company/yourcompany" target="_blank" rel="noopener"><img src="lin.png" alt="LinkedIn">LinkedIn</a>
-  </div>
-</footer>
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
