@@ -1,3 +1,8 @@
+/* =========================================
+   Freedom Recycling - Main JavaScript
+========================================= */
+
+/* Mobile navigation */
 function toggleMenu() {
   const nav = document.getElementById("mainNav");
 
@@ -6,6 +11,7 @@ function toggleMenu() {
   }
 }
 
+/* Language dropdown */
 function toggleLangMenu() {
   const menu = document.getElementById("langMenu");
 
@@ -14,23 +20,49 @@ function toggleLangMenu() {
   }
 }
 
+/* Close language dropdown and mobile menu when clicking outside */
 window.addEventListener("click", function (event) {
-  const menu = document.getElementById("langMenu");
-  const button = document.querySelector(".lang-btn");
+  const languageMenu = document.getElementById("langMenu");
+  const languageButton = document.querySelector(".lang-btn");
+  const navigation = document.getElementById("mainNav");
+  const menuButton = document.querySelector(".menu-toggle");
 
-  if (menu && button && !button.contains(event.target) && !menu.contains(event.target)) {
-    menu.style.display = "none";
+  if (
+    languageMenu &&
+    languageButton &&
+    !languageButton.contains(event.target) &&
+    !languageMenu.contains(event.target)
+  ) {
+    languageMenu.style.display = "none";
+  }
+
+  if (
+    navigation &&
+    menuButton &&
+    navigation.classList.contains("open") &&
+    !navigation.contains(event.target) &&
+    !menuButton.contains(event.target)
+  ) {
+    navigation.classList.remove("open");
   }
 });
 
-window.addEventListener("load", function () {
-  const loader = document.getElementById("loader");
+/* Close mobile menu after selecting a navigation link */
+document.addEventListener("DOMContentLoaded", function () {
+  const navigationLinks = document.querySelectorAll("#mainNav a");
 
-  if (loader) {
-    loader.style.display = "none";
-  }
+  navigationLinks.forEach(function (link) {
+    link.addEventListener("click", function () {
+      const navigation = document.getElementById("mainNav");
+
+      if (navigation) {
+        navigation.classList.remove("open");
+      }
+    });
+  });
 });
 
+/* Animated statistics counters */
 document.addEventListener("DOMContentLoaded", function () {
   const counters = document.querySelectorAll(".counter");
 
@@ -76,4 +108,17 @@ document.addEventListener("DOMContentLoaded", function () {
       animateCounter(counter);
     });
   }
+});
+
+/* Hide animated loader after all page files are ready */
+window.addEventListener("load", function () {
+  const loader = document.getElementById("loader");
+
+  if (!loader) return;
+
+  loader.classList.add("hide");
+
+  setTimeout(function () {
+    loader.style.display = "none";
+  }, 500);
 });
