@@ -1,122 +1,351 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="fr" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Freedom Recycling | العملية</title>
-   <link rel="stylesheet" href="style.css?v=25">
-</head>
-<body>
-<div class="loader" id="loader"><div class="recycle-icon"></div></div>
 
-<header class="header">
-  <div class="container nav-wrap">
-    <a class="logo" href="index-ar.html"><img src="logo.png" alt="Freedom Recycling"></a>
-    <div class="header-right">
-      <div class="lang-dropdown">
-        <button class="lang-btn" onclick="toggleLangMenu()">AR ▾</button>
-        <div class="lang-menu" id="langMenu">
-          <a href="process.html">English</a>
-          <a href="process-fr.html">Français</a>
-          <a href="process-ar.html">العربية</a>
+  <title>Freedom Recycling | Processus</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css?v=25">
+</head>
+
+<body>
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-content">
+      <img src="logo.png" alt="Freedom Recycling" class="loader-logo">
+      <div class="recycle-loader">♻</div>
+      <p>Recycler pour un avenir meilleur</p>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-wrap">
+
+      <a class="logo" href="index-fr.html">
+        <img src="logo.png" alt="Freedom Recycling">
+      </a>
+
+      <nav class="nav" id="mainNav">
+        <a href="index-fr.html">ACCUEIL</a>
+        <a href="about-fr.html">À PROPOS</a>
+        <a href="process-fr.html" class="active">PROCESSUS</a>
+        <a href="products-fr.html">PRODUITS</a>
+        <a href="sustainability-fr.html">DURABILITÉ</a>
+        <a href="certifications-fr.html">CERTIFICATIONS</a>
+        <a href="contact-fr.html">CONTACT</a>
+      </nav>
+
+      <div class="header-right">
+        <div class="lang-dropdown">
+          <button
+            class="lang-btn"
+            type="button"
+            onclick="toggleLangMenu()"
+            aria-label="Choisir la langue"
+          >
+            FR ▾
+          </button>
+
+          <div class="lang-menu" id="langMenu">
+            <a href="process.html">English</a>
+            <a href="process-fr.html">Français</a>
+            <a href="process-ar.html">العربية</a>
+          </div>
+        </div>
+
+        <a href="contact-fr.html" class="btn btn-primary quote-btn">
+          DEMANDER UN DEVIS
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          onclick="toggleMenu()"
+          aria-label="Ouvrir le menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container page-hero-content">
+      <div class="section-label">NOTRE PROCESSUS</div>
+
+      <h1>
+        Une production maîtrisée.
+        <span>Des résultats fiables.</span>
+      </h1>
+
+      <p>
+        Chaque étape de notre processus est rigoureusement contrôlée afin de
+        garantir des matières recyclées de haute qualité et une régularité dans
+        chaque expédition.
+      </p>
+    </div>
+  </section>
+
+  <!-- Process Steps -->
+  <section class="section process-section">
+    <div class="container">
+
+      <div class="section-heading centered-heading">
+        <div>
+          <div class="section-label">COMMENT ÇA MARCHE</div>
+
+          <h2>Des déchets plastiques aux matières valorisées</h2>
+
+          <p class="section-description">
+            Notre processus de recyclage intégré transforme les déchets
+            plastiques collectés en paillettes et granulés recyclés de haute
+            qualité.
+          </p>
         </div>
       </div>
-      <a href="contact-ar.html" class="btn btn-outline quote-btn">اطلب عرض سعر</a>
-      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open menu"><span></span><span></span><span></span></button>
-    </div>
-    <nav class="nav" id="mainNav">
-      <a href="index-ar.html">الرئيسية</a>
-      <a href="about-ar.html">من نحن</a>
-      <a href="process-ar.html" class="active">العملية الإنتاجية</a>
-      <a href="products-ar.html">المنتجات</a>
-      <a href="sustainability-ar.html">الاستدامة</a>
-      <a href="certifications-ar.html">الشهادات</a>
-      <a href="contact-ar.html">اتصل بنا</a>
-    </nav>
-  </div>
-</header>
 
-<section class="hero">
-  <div class="hero-overlay"></div>
-  <div class="container hero-content">
-    <div class="hero-copy">
-      <div class="kicker">عملية إعادة التدوير</div>
-      <h1>سلسلة قيمة مسؤولة من الجمع إلى التحويل</h1>
-      <p>نحوّل النفايات البلاستيكية إلى مواد أولية معاد تدويرها عالية الجودة من خلال عملية مضبوطة ومعتمدة.</p>
-      <a href="contact-ar.html" class="btn btn-primary">اتصل بنا</a>
-    </div>
-  </div>
-</section>
+      <div class="process-steps-new">
 
-<section class="section light page-top">
-  <div class="container">
-    <div class="page-intro">
-      <div class="section-label">العملية</div>
-      <h2>إنتاج مضبوط وموثوق</h2>
-      <p class="lead">تتم إدارة كل مرحلة من مراحل العملية بعناية لضمان جودة المواد المعاد تدويرها وثبات كل شحنة.</p>
-    </div>
+        <article class="process-card">
+          <div class="process-number">01</div>
 
-    <div class="process-steps">
-      <div class="step-card">
-        <div class="step-img"><img src="step-1.png" alt="الجمع"></div>
-        <h3>الجمع</h3>
-        <p>يتم جمع النفايات البلاستيكية بشكل مسؤول من المصادر بعد الاستهلاك والمصادر الصناعية.</p>
+          <div class="process-image">
+            <img src="step-1.png" alt="Collecte des déchets plastiques">
+          </div>
+
+          <h3>Collecte</h3>
+
+          <p>
+            Les déchets plastiques sont collectés de manière responsable auprès
+            de sources post-consommation et industrielles.
+          </p>
+        </article>
+
+        <article class="process-card">
+          <div class="process-number">02</div>
+
+          <div class="process-image">
+            <img src="step-2.png" alt="Tri du plastique">
+          </div>
+
+          <h3>Tri</h3>
+
+          <p>
+            Les matériaux sont séparés grâce à une combinaison d’inspection
+            manuelle et de tri mécanique avancé.
+          </p>
+        </article>
+
+        <article class="process-card">
+          <div class="process-number">03</div>
+
+          <div class="process-image">
+            <img src="step-3.png" alt="Lavage du plastique">
+          </div>
+
+          <h3>Lavage</h3>
+
+          <p>
+            Les impuretés sont éliminées grâce à un lavage efficace à chaud afin
+            d’obtenir une matière très pure.
+          </p>
+        </article>
+
+        <article class="process-card">
+          <div class="process-number">04</div>
+
+          <div class="process-image">
+            <img src="step-4.png" alt="Broyage du plastique">
+          </div>
+
+          <h3>Broyage</h3>
+
+          <p>
+            La matière nettoyée est transformée en paillettes uniformes pour la
+            suite du processus de recyclage.
+          </p>
+        </article>
+
+        <article class="process-card">
+          <div class="process-number">05</div>
+
+          <div class="process-image">
+            <img src="step-5.png" alt="Extrusion du plastique">
+          </div>
+
+          <h3>Extrusion</h3>
+
+          <p>
+            Les paillettes sont transformées en granulés recyclés de haute
+            qualité adaptés aux applications industrielles.
+          </p>
+        </article>
+
+        <article class="process-card">
+          <div class="process-number">06</div>
+
+          <div class="process-image">
+            <img src="step-6.png" alt="Contrôle qualité">
+          </div>
+
+          <h3>Contrôle qualité</h3>
+
+          <p>
+            Chaque lot est soumis à des contrôles finaux avant expédition afin
+            de répondre aux exigences de nos clients.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Technology -->
+  <section class="technology-section">
+    <div class="container technology-grid">
+
+      <div class="technology-copy">
+        <div class="section-label">NOTRE TECHNOLOGIE</div>
+
+        <h2>
+          La technologie Sortex de précision pour un
+          <span>recyclage plus propre</span>
+        </h2>
+
+        <p>
+          Nos trois machines de tri optique Sortex améliorent la précision du
+          tri et la qualité finale de nos matières recyclées.
+        </p>
+
+        <p>
+          Cette technologie nous permet de réduire la contamination,
+          d’améliorer l’efficacité et de fournir des produits plus homogènes à
+          nos clients industriels.
+        </p>
+
+        <a href="contact-fr.html" class="btn btn-primary">
+          CONTACTER NOTRE ÉQUIPE →
+        </a>
       </div>
 
-      <div class="step-card">
-        <div class="step-img"><img src="step-2.png" alt="الفرز"></div>
-        <h3>الفرز</h3>
-        <p>تُفصل المواد من خلال مزيج من الفحص اليدوي والفرز الميكانيكي المتقدم.</p>
+      <div class="technology-card">
+        <div class="technology-card-top">
+          <div>
+            <div class="section-label">ÉQUIPEMENTS AVANCÉS</div>
+            <h3>Nos 3 machines Sortex</h3>
+          </div>
+
+          <div class="technology-icon">♻</div>
+        </div>
+
+        <p>
+          Un aperçu visuel de notre technologie avancée de tri optique.
+        </p>
+
+        <div class="technology-images">
+          <img src="machine-1.jpg" alt="Machine Sortex 1">
+          <img src="machine-2.jpg" alt="Machine Sortex 2">
+          <img src="pic.png" alt="Machine Sortex 3">
+        </div>
       </div>
 
-      <div class="step-card">
-        <div class="step-img"><img src="step-3.png" alt="الغسل"></div>
-        <h3>الغسل</h3>
-        <p>تُزال الشوائب عبر عملية غسيل ساخن فعالة للحصول على نقاء عالٍ للمواد.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <img src="logo1.png" alt="Freedom Recycling" class="footer-logo">
+
+        <p>
+          Construire un avenir circulaire grâce au recyclage responsable du
+          plastique et à des matières recyclées de haute qualité.
+        </p>
+
+        <div class="social-links">
+          <a
+            href="https://www.facebook.com/yourpage"
+            target="_blank"
+            rel="noopener"
+            aria-label="Facebook"
+          >
+            <img src="fcb.png" alt="Facebook">
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/freedom-recycling-87064b3a9"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+          >
+            <img src="lin.png" alt="LinkedIn">
+          </a>
+        </div>
       </div>
 
-      <div class="step-card">
-        <div class="step-img"><img src="step-4.png" alt="الطحن"></div>
-        <h3>الطحن</h3>
-        <p>تتم معالجة المادة النظيفة إلى رقائق متجانسة لمراحل إعادة التدوير التالية.</p>
+      <div class="footer-column">
+        <h3>LIENS RAPIDES</h3>
+        <a href="index-fr.html">Accueil</a>
+        <a href="about-fr.html">À propos</a>
+        <a href="process-fr.html">Notre processus</a>
+        <a href="products-fr.html">Produits</a>
+        <a href="contact-fr.html">Contact</a>
       </div>
 
-      <div class="step-card">
-        <div class="step-img"><img src="step-5.png" alt="البثق"></div>
-        <h3>البثق</h3>
-        <p>تتحول الرقائق إلى حبيبات معاد تدويرها عالية الجودة مناسبة للتطبيقات الصناعية.</p>
+      <div class="footer-column">
+        <h3>NOS PRODUITS</h3>
+        <a href="products-fr.html">Paillettes PET</a>
+        <a href="products-fr.html">Granulés recyclés</a>
+        <a href="products-fr.html">Balles plastiques</a>
+        <a href="certifications-fr.html">Certifications</a>
       </div>
 
-      <div class="step-card">
-        <div class="step-img"><img src="step-6.png" alt="مراقبة الجودة"></div>
-        <h3>مراقبة الجودة</h3>
-        <p>تخضع كل دفعة لفحوصات نهائية قبل الشحن لضمان مطابقتها لمتطلبات العملاء.</p>
+      <div class="footer-column">
+        <h3>CONTACTEZ-NOUS</h3>
+        <p>Zone Industrielle, Berrouaghia</p>
+        <p>Médéa, Algérie</p>
+
+        <a href="mailto:contact@freedomrecycling.com">
+          contact@freedomrecycling.com
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        © 2026 Freedom Recycling. Tous droits réservés.
       </div>
     </div>
-  </div>
-</section>
+  </footer>
 
-<section class="section dark">
-  <div class="container process-wrap">
-    <div>
-      <div class="section-label">التكنولوجيا</div>
-      <h2>فرز بصري للحصول على جودة ثابتة</h2>
-      <p class="lead">تساعد أنظمة الفرز البصري Bühler لدينا على تحسين نقاء المنتج النهائي وتقليل الشوائب غير المرغوب فيها في المادة المعاد تدويرها.</p>
-    </div>
-    <div class="step contact-card">
-      <h3>النتيجة</h3>
-      <p>رقائق PET نظيفة ومتجانسة ومناسبة للتطبيقات الصناعية.</p>
-    </div>
-  </div>
-</section>
+  <!-- WhatsApp -->
+  <a
+    href="https://wa.me/213555123456?text=Bonjour%20Freedom%20Recycling%2C%20je%20souhaite%20obtenir%20plus%20d%27informations%20sur%20votre%20processus%20de%20recyclage."
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener"
+    aria-label="Contacter Freedom Recycling sur WhatsApp"
+  >
+    <img src="whatsapp.png" alt="WhatsApp">
+    <span class="whatsapp-text">WhatsApp</span>
+  </a>
 
-<footer class="footer">
-  <div>© 2026 Freedom Recycling</div>
-  <div class="social-links">
-    <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener"><img src="fcb.png" alt="Facebook">Facebook</a>
-    <a href="https://www.linkedin.com/company/yourcompany" target="_blank" rel="noopener"><img src="lin.png" alt="LinkedIn">LinkedIn</a>
-  </div>
-</footer>
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
