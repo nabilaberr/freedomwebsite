@@ -313,7 +313,7 @@ p {
 }
 
 /* =========================================
-   Home Hero
+   Homepage Hero
 ========================================= */
 
 .hero {
@@ -330,6 +330,7 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
 
 .hero-overlay {
@@ -1427,6 +1428,54 @@ p {
 }
 
 /* =========================================
+   Floating WhatsApp Button
+========================================= */
+
+.whatsapp-float {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 2000;
+
+  min-height: 54px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 18px;
+
+  border: 3px solid #ffffff;
+  border-radius: 999px;
+  background: #25d366;
+  color: #ffffff;
+
+  box-shadow: 0 10px 26px rgba(37, 211, 102, 0.34);
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-4px);
+  background: #1ebc57;
+  box-shadow: 0 15px 32px rgba(37, 211, 102, 0.45);
+}
+
+.whatsapp-float img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+
+.whatsapp-text {
+  white-space: nowrap;
+}
+
+/* =========================================
    Tablet
 ========================================= */
 
@@ -1591,38 +1640,45 @@ p {
     line-height: 1.1;
   }
 
-  /* Mobile home hero */
+  /* Mobile Hero Video */
 
   .hero,
   .hero-content {
-    min-height: 570px;
+    min-height: 620px;
   }
 
   .hero {
-    background: var(--green-light);
+    background: #dcefe2;
   }
 
   .hero-video,
   .hero-media {
-    opacity: 0.35;
+    opacity: 1;
+    object-fit: cover;
+    object-position: 70% center;
   }
 
   .hero-overlay {
     background: linear-gradient(
       180deg,
-      rgba(248, 252, 249, 0.9) 0%,
-      rgba(248, 252, 249, 0.82) 60%,
-      rgba(248, 252, 249, 0.75) 100%
+      rgba(248, 252, 249, 0.72) 0%,
+      rgba(248, 252, 249, 0.52) 48%,
+      rgba(248, 252, 249, 0.35) 100%
     );
   }
 
   .hero-content {
     display: block;
-    padding: 76px 0 45px;
+    padding: 82px 0 45px;
   }
 
   .hero-copy {
     max-width: 100%;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.64);
+    backdrop-filter: blur(4px);
   }
 
   .hero h1 {
@@ -1653,16 +1709,16 @@ p {
   .hero-benefits {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 12px;
-    margin-top: 28px;
+    gap: 10px;
+    margin-top: 24px;
   }
 
   .benefit {
     width: 100%;
-    padding: 10px 12px;
+    padding: 9px 10px;
     border: 1px solid rgba(35, 139, 77, 0.18);
     border-radius: 13px;
-    background: rgba(255, 255, 255, 0.65);
+    background: rgba(255, 255, 255, 0.5);
   }
 
   .benefit-icon {
@@ -1675,7 +1731,7 @@ p {
     display: none;
   }
 
-  /* Mobile statistics */
+  /* Mobile Statistics */
 
   .stats {
     margin-top: 0;
@@ -1721,7 +1777,7 @@ p {
     font-size: 10px;
   }
 
-  /* Mobile About and Products */
+  /* Mobile About */
 
   .about-home {
     padding-top: 55px;
@@ -1756,6 +1812,8 @@ p {
     min-height: 50px;
   }
 
+  /* Mobile Products */
+
   .products-section,
   .products-home {
     padding: 58px 0;
@@ -1789,7 +1847,7 @@ p {
     padding: 16px;
   }
 
-  /* Mobile inner page hero */
+  /* Mobile Inner Page Hero */
 
   .page-hero {
     min-height: 330px;
@@ -2041,10 +2099,32 @@ p {
     padding: 15px 0;
     font-size: 10px;
   }
+
+  /* Mobile WhatsApp */
+
+  .whatsapp-float {
+    right: 16px;
+    bottom: 16px;
+    width: 58px;
+    height: 58px;
+    min-height: 58px;
+    justify-content: center;
+    padding: 0;
+    border-radius: 50%;
+  }
+
+  .whatsapp-float img {
+    width: 29px;
+    height: 29px;
+  }
+
+  .whatsapp-text {
+    display: none;
+  }
 }
 
 /* =========================================
-   Small Phones: 320px to 390px
+   Small Phones
 ========================================= */
 
 @media (max-width: 390px) {
@@ -2086,73 +2166,8 @@ p {
     grid-template-columns: 1fr;
   }
 }
+
 /* =========================================
-   Floating WhatsApp Button
-========================================= */
-
-.whatsapp-float {
-  position: fixed;
-  right: 24px;
-  bottom: 24px;
-  z-index: 2000;
-
-  min-height: 54px;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 0 18px;
-
-  border: 3px solid #ffffff;
-  border-radius: 999px;
-  background: #25d366;
-  color: #ffffff;
-
-  box-shadow: 0 10px 26px rgba(37, 211, 102, 0.34);
-  font-size: 14px;
-  font-weight: 800;
-  line-height: 1;
-
-  transition:
-    transform 0.2s ease,
-    background 0.2s ease,
-    box-shadow 0.2s ease;
-}
-
-.whatsapp-float:hover {
-  transform: translateY(-4px);
-  background: #1ebc57;
-  box-shadow: 0 15px 32px rgba(37, 211, 102, 0.45);
-}
-
-.whatsapp-float img {
-  width: 25px;
-  height: 25px;
-  object-fit: contain;
-}
-
-.whatsapp-text {
-  white-space: nowrap;
-}
-
-@media (max-width: 768px) {
-  .whatsapp-float {
-    right: 16px;
-    bottom: 16px;
-
-    width: 58px;
-    height: 58px;
-    min-height: 58px;
-    justify-content: center;
-    padding: 0;
-
-    border-radius: 50%;
-  }
-
-  .whatsapp-float img {
-    width: 29px;
-    height: 29px;
-  }
-   /* =========================================
    Arabic / RTL Support
 ========================================= */
 
@@ -2202,19 +2217,38 @@ html[dir="rtl"] .whatsapp-float {
   left: 24px;
 }
 
+html[dir="rtl"] .process-number {
+  right: 17px;
+  left: auto;
+}
+
 @media (max-width: 768px) {
+  html[dir="rtl"] .nav {
+    right: 0;
+    left: 0;
+  }
+
   html[dir="rtl"] .whatsapp-float {
     right: auto;
     left: 16px;
   }
 
-  html[dir="rtl"] .nav {
-    right: 0;
-    left: 0;
+  html[dir="rtl"] .process-number {
+    right: 13px;
+    left: auto;
   }
-}
 
-  .whatsapp-text {
-    display: none;
+  html[dir="rtl"] .hero-video,
+  html[dir="rtl"] .hero-media {
+    object-position: 30% center;
+  }
+
+  html[dir="rtl"] .hero-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(248, 252, 249, 0.72) 0%,
+      rgba(248, 252, 249, 0.52) 48%,
+      rgba(248, 252, 249, 0.35) 100%
+    );
   }
 }
