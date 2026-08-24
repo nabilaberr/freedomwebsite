@@ -1414,7 +1414,7 @@ html[dir="rtl"] .whatsapp-float {
     min-width: 100% !important;
     min-height: 100% !important;
 
-    transform: translate(-50%, -50%) scale(1.08);
+    transform: translate(-50%, -50%) scale(1.18);
     transform-origin: center;
 
     object-fit: cover !important;
