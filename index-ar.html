@@ -3,103 +3,431 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Freedom Recycling | الرئيسية</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="loader" id="loader"><div class="recycle-icon"></div></div>
 
-<header class="header">
-  <div class="container nav-wrap">
-    <a class="logo" href="index-ar.html"><img src="logo1.png" alt="Freedom Recycling"></a>
-    <div class="header-right">
-      <div class="lang-dropdown">
-        <button class="lang-btn" onclick="toggleLangMenu()">AR ▾</button>
-        <div class="lang-menu" id="langMenu">
-          <a href="index.html">English</a>
-          <a href="index-fr.html">Français</a>
-          <a href="index-ar.html">العربية</a>
+  <title>Freedom Recycling | الرئيسية</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css?v=22">
+
+  <style>
+    html[dir="rtl"] body {
+      font-family: "Cairo", Arial, sans-serif;
+    }
+
+    html[dir="rtl"] .nav {
+      margin-left: 0;
+      margin-right: auto;
+    }
+
+    html[dir="rtl"] .header-right {
+      margin-right: 0;
+      margin-left: auto;
+    }
+
+    html[dir="rtl"] .hero-overlay {
+      background: linear-gradient(
+        270deg,
+        rgba(248, 252, 249, 0.97) 0%,
+        rgba(248, 252, 249, 0.88) 42%,
+        rgba(248, 252, 249, 0.25) 75%,
+        rgba(248, 252, 249, 0.08) 100%
+      );
+    }
+
+    html[dir="rtl"] .image-label {
+      right: auto;
+      left: 18px;
+    }
+
+    html[dir="rtl"] .page-hero::after {
+      right: auto;
+      left: 7%;
+    }
+
+    @media (max-width: 768px) {
+      html[dir="rtl"] .nav {
+        right: 0;
+        left: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="loader" id="loader">
+    <div class="recycle-icon"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-wrap">
+
+      <a class="logo" href="index-ar.html">
+        <img src="logo.png" alt="Freedom Recycling">
+      </a>
+
+      <nav class="nav" id="mainNav">
+        <a href="index-ar.html" class="active">الرئيسية</a>
+        <a href="about-ar.html">من نحن</a>
+        <a href="process-ar.html">مراحل التدوير</a>
+        <a href="products-ar.html">المنتجات</a>
+        <a href="sustainability-ar.html">الاستدامة</a>
+        <a href="certifications-ar.html">الشهادات</a>
+        <a href="contact-ar.html">اتصل بنا</a>
+      </nav>
+
+      <div class="header-right">
+        <div class="lang-dropdown">
+          <button
+            class="lang-btn"
+            type="button"
+            onclick="toggleLangMenu()"
+            aria-label="اختيار اللغة"
+          >
+            AR ▾
+          </button>
+
+          <div class="lang-menu" id="langMenu">
+            <a href="index.html">English</a>
+            <a href="index-fr.html">Français</a>
+            <a href="index-ar.html">العربية</a>
+          </div>
+        </div>
+
+        <a href="contact-ar.html" class="btn btn-primary quote-btn">
+          اطلب عرض سعر
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          onclick="toggleMenu()"
+          aria-label="فتح القائمة"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <video
+      class="hero-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="metadata"
+      poster="hero.jpg"
+    >
+      <source src="hero-vide.mp4" type="video/mp4">
+      متصفحك لا يدعم تشغيل الفيديو.
+    </video>
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <div class="hero-copy">
+
+        <div class="kicker">شركة فريدوم ريسايكلينغ</div>
+
+        <h1>
+          إعادة تدوير البلاستيك من أجل
+          <span>اقتصاد دائري أنظف</span>
+        </h1>
+
+        <p>
+          نحول النفايات البلاستيكية إلى مواد معاد تدويرها عالية الجودة
+          للاستخدام الصناعي، مع التركيز على الاستدامة وإمكانية التتبع.
+        </p>
+
+        <div class="hero-actions">
+          <a href="products-ar.html" class="btn btn-primary">
+            منتجاتنا
+          </a>
+
+          <a href="contact-ar.html" class="btn btn-white">
+            اتصل بنا
+          </a>
+        </div>
+
+        <div class="hero-benefits">
+          <div class="benefit">
+            <div class="benefit-icon">♻</div>
+            <div>
+              <strong>حلول مستدامة</strong>
+              <span>من أجل مستقبل أفضل</span>
+            </div>
+          </div>
+
+          <div class="benefit">
+            <div class="benefit-icon">✓</div>
+            <div>
+              <strong>جودة عالية</strong>
+              <span>معايير دقيقة</span>
+            </div>
+          </div>
+
+          <div class="benefit">
+            <div class="benefit-icon">♧</div>
+            <div>
+              <strong>التزام بيئي</strong>
+              <span>تدوير مسؤول</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="hero-badge">
+        <div class="badge-icon">♻</div>
+        <span>
+          إعادة التدوير<br>
+          من أجل غدٍ<br>
+          أفضل
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics -->
+  <section class="stats">
+    <div class="container stats-grid">
+
+      <div class="stat">
+        <div class="stat-icon">♻</div>
+        <div>
+          <div class="stat-value">
+            <span class="counter" data-target="18000">0</span>+
+          </div>
+          <div class="stat-title">طن معاد تدويره</div>
+          <div class="stat-subtitle">سنوياً</div>
         </div>
       </div>
-      <a href="contact-ar.html" class="btn btn-outline quote-btn">اطلب عرض سعر</a>
-      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open menu"><span></span><span></span><span></span></button>
-    </div>
-    <nav class="nav" id="mainNav">
-      <a href="index-ar.html" class="active">الرئيسية</a>
-      <a href="about-ar.html">من نحن</a>
-      <a href="process-ar.html">العملية الإنتاجية</a>
-      <a href="products-ar.html">المنتجات</a>
-      <a href="sustainability-ar.html">الاستدامة</a>
-      <a href="certifications-ar.html">الشهادات</a>
-      <a href="contact-ar.html">اتصل بنا</a>
-    </nav>
-  </div>
-</header>
 
-<section class="hero">
-  <video class="hero-video" autoplay muted loop playsinline poster="hero.jpg">
-    <source src="hero-vide.mp4" type="video/mp4">
-  </video>
-  <div class="hero-overlay"></div>
-  <div class="container hero-content">
-    <div class="hero-copy">
-      <div class="kicker">SARL FREEDOM RECYCLING</div>
-      <h1>إعادة تدوير البلاستيك من أجل اقتصاد دائري أنظف</h1>
-      <p>نحوّل النفايات البلاستيكية إلى مواد معاد تدويرها عالية الجودة للاستخدام الصناعي، مع التركيز على الاستدامة وإمكانية التتبع.</p>
-      <a href="contact-ar.html" class="btn btn-primary">اتصل بنا</a>
-    </div>
-  </div>
-</section>
+      <div class="stat">
+        <div class="stat-icon">♻</div>
+        <div>
+          <div class="stat-value">
+            <span class="counter" data-target="27000">0</span>+
+          </div>
+          <div class="stat-title">طن من انبعاثات CO₂ تم تجنبها</div>
+          <div class="stat-subtitle">سنوياً</div>
+        </div>
+      </div>
 
-<section class="stats">
-  <div class="container stats-grid">
-    <div class="stat">
-      <div class="stat-value counter" data-target="18000">0</div>
-      <div class="stat-title">أطنان معاد تدويرها</div>
-      <div class="stat-subtitle">كل سنة</div>
+      <div class="stat">
+        <div class="stat-icon">♧</div>
+        <div>
+          <div class="stat-value">
+            <span class="counter" data-target="540000000">0</span>+
+          </div>
+          <div class="stat-title">قارورة بلاستيكية</div>
+          <div class="stat-subtitle">يتم تدويرها سنوياً</div>
+        </div>
+      </div>
+
+      <div class="stat">
+        <div class="stat-icon">◎</div>
+        <div>
+          <div class="stat-value">
+            <span class="counter" data-target="100">0</span>+
+          </div>
+          <div class="stat-title">موظف</div>
+          <div class="stat-subtitle">ملتزمون بالاستدامة</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section about-home">
+    <div class="container about-grid">
+
+      <div class="about-copy">
+        <div class="section-label">من نحن</div>
+
+        <h2>
+          شركة ملتزمة من أجل
+          <span>مستقبل مستدام</span>
+        </h2>
+
+        <p>
+          تقوم فريدوم ريسايكلينغ بتحويل النفايات البلاستيكية إلى مواد أولية
+          معاد تدويرها ذات قيمة. نعمل مع التركيز على الجودة والاستدامة والأداء
+          الصناعي والمسؤولية البيئية.
+        </p>
+
+        <a href="about-ar.html" class="btn btn-primary">
+          اكتشف المزيد ←
+        </a>
+      </div>
+
+      <div class="about-image">
+        <img
+          src="machine-1.jpg"
+          alt="منشأة إعادة التدوير فريدوم ريسايكلينغ"
+        >
+
+        <div class="image-label">
+          <span>♻</span>
+          إعادة تدوير مسؤولة
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="section products-section">
+    <div class="container">
+
+      <div class="section-heading">
+        <div>
+          <div class="section-label">منتجاتنا</div>
+          <h2>مواد معاد تدويرها عالية الجودة</h2>
+        </div>
+
+        <a href="products-ar.html" class="view-link">
+          عرض جميع المنتجات ←
+        </a>
+      </div>
+
+      <div class="products-grid">
+
+        <article class="product-card">
+          <img src="product-1.jpg" alt="رقائق PET زرقاء">
+
+          <div class="product-content">
+            <div class="product-icon">♻</div>
+
+            <div>
+              <h3>رقائق PET زرقاء</h3>
+              <p>مواد معاد تدويرها عالية الجودة للتطبيقات الصناعية.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="product-2.jpg" alt="رقائق PET شفافة">
+
+          <div class="product-content">
+            <div class="product-icon">♻</div>
+
+            <div>
+              <h3>رقائق PET شفافة</h3>
+              <p>بلاستيك PET معاد تدويره عالي الجودة لعمليات التصنيع.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="machine-2.jpg" alt="آلة إعادة تدوير فريدوم ريسايكلينغ">
+
+          <div class="product-content">
+            <div class="product-icon">♻</div>
+
+            <div>
+              <h3>حبيبات معاد تدويرها</h3>
+              <p>مواد أولية معاد تدويرها موثوقة للاستخدام الصناعي.</p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="products-button">
+        <a href="products-ar.html" class="btn btn-primary">
+          عرض جميع المنتجات ←
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <img src="logo.png" alt="Freedom Recycling" class="footer-logo">
+
+        <p>
+          نبني مستقبلاً دائرياً من خلال إعادة تدوير البلاستيك بطريقة مسؤولة
+          وإنتاج مواد معاد تدويرها عالية الجودة.
+        </p>
+
+        <div class="social-links">
+          <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener">
+            <img src="fcb.png" alt="Facebook">
+          </a>
+
+          <a href="https://www.linkedin.com/company/yourcompany" target="_blank" rel="noopener">
+            <img src="lin.png" alt="LinkedIn">
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h3>روابط سريعة</h3>
+        <a href="index-ar.html">الرئيسية</a>
+        <a href="about-ar.html">من نحن</a>
+        <a href="process-ar.html">مراحل التدوير</a>
+        <a href="products-ar.html">المنتجات</a>
+        <a href="sustainability-ar.html">الاستدامة</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>منتجاتنا</h3>
+        <a href="products-ar.html">رقائق PET</a>
+        <a href="products-ar.html">حبيبات معاد تدويرها</a>
+        <a href="products-ar.html">بالات بلاستيكية</a>
+        <a href="certifications-ar.html">الشهادات</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>اتصل بنا</h3>
+        <p>الجزائر</p>
+        <a href="mailto:contact@freedomrecyclingdz.com">
+          contact@freedomrecyclingdz.com
+        </a>
+        <a href="https://freedomrecyclingdz.com">
+          freedomrecyclingdz.com
+        </a>
+      </div>
+
     </div>
 
-    <div class="stat">
-      <div class="stat-value counter" data-target="27000">0</div>
-      <div class="stat-title">أطنان من CO₂ تم تجنبها</div>
-      <div class="stat-subtitle">كل سنة</div>
+    <div class="footer-bottom">
+      <div class="container">
+        © 2026 Freedom Recycling. جميع الحقوق محفوظة.
+      </div>
     </div>
+  </footer>
 
-    <div class="stat">
-      <div class="stat-value counter" data-target="540000000">0</div>
-      <div class="stat-title">قارورات بلاستيكية</div>
-      <div class="stat-subtitle">معاد تدويرها كل سنة</div>
-    </div>
+  <!-- WhatsApp -->
+  <a
+    href="https://wa.me/213555123456?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D9%81%D8%B1%D9%8A%D8%AF%D9%88%D9%85%20%D8%B1%D9%8A%D8%B3%D8%A7%D9%8A%D9%83%D9%84%D9%8A%D9%86%D8%BA%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D9%85%D8%B2%D9%8A%D8%AF%20%D9%85%D9%86%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA%20%D8%AD%D9%88%D9%84%20%D9%85%D9%88%D8%A7%D8%AF%D9%83%D9%85%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%AF%20%D8%AA%D8%AF%D9%88%D9%8A%D8%B1%D9%87%D8%A7."
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener"
+    aria-label="التواصل مع Freedom Recycling عبر واتساب"
+  >
+    <img src="whatsapp.png" alt="واتساب">
+    <span class="whatsapp-text">واتساب</span>
+  </a>
 
-    <div class="stat">
-      <div class="stat-value counter" data-target="100">0</div>
-      <div class="stat-title">موظفون ملتزمون</div>
-      <div class="stat-subtitle">من أجل مستقبل مستدام</div>
-    </div>
-  </div>
-</section>
-
-<section class="section dark">
-  <div class="container process-wrap">
-    <div>
-      <div class="section-label">من نحن</div>
-      <h2>إعادة تدوير موثوقة بأسلوب احترافي</h2>
-      <p class="lead">تدعم Freedom Recycling التصنيع المسؤول من خلال تحويل النفايات إلى مواد خام قابلة للاستخدام.</p>
-    </div>
-    <div class="step contact-card">
-      <h3>تركيزنا</h3>
-      <p>الجودة، الاستدامة، وثقة العملاء.</p>
-    </div>
-  </div>
-</section>
-
-<footer class="footer">
-  <div>© 2026 Freedom Recycling</div>
-  <div class="social-links">
-    <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener"><img src="fcb.png" alt="Facebook">Facebook</a>
-    <a href="https://www.linkedin.com/company/yourcompany" target="_blank" rel="noopener"><img src="lin.png" alt="LinkedIn">LinkedIn</a>
-  </div>
-</footer>
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
