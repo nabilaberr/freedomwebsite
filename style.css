@@ -2152,6 +2152,67 @@ p {
     width: 29px;
     height: 29px;
   }
+   /* =========================================
+   Arabic / RTL Support
+========================================= */
+
+html[dir="rtl"] body {
+  font-family: "Cairo", Arial, sans-serif;
+  text-align: right;
+}
+
+html[dir="rtl"] .nav {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+html[dir="rtl"] .header-right {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+html[dir="rtl"] .hero-overlay {
+  background: linear-gradient(
+    270deg,
+    rgba(248, 252, 249, 0.97) 0%,
+    rgba(248, 252, 249, 0.88) 42%,
+    rgba(248, 252, 249, 0.25) 75%,
+    rgba(248, 252, 249, 0.08) 100%
+  );
+}
+
+html[dir="rtl"] .image-label,
+html[dir="rtl"] .about-image-tag {
+  right: auto;
+  left: 18px;
+}
+
+html[dir="rtl"] .page-hero::after {
+  right: auto;
+  left: 7%;
+}
+
+html[dir="rtl"] .lang-menu {
+  right: auto;
+  left: 0;
+}
+
+html[dir="rtl"] .whatsapp-float {
+  right: auto;
+  left: 24px;
+}
+
+@media (max-width: 768px) {
+  html[dir="rtl"] .whatsapp-float {
+    right: auto;
+    left: 16px;
+  }
+
+  html[dir="rtl"] .nav {
+    right: 0;
+    left: 0;
+  }
+}
 
   .whatsapp-text {
     display: none;
