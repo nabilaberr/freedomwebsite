@@ -1,110 +1,318 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Freedom Recycling | Products</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="style.css?v=25">
 </head>
+
 <body>
-<div class="loader" id="loader"><div class="recycle-icon"></div></div>
-
-<header class="header">
-  <div class="container nav-wrap">
-    <a class="logo" href="index.html"><img src="logo.png" alt="Freedom Recycling"></a>
-    <div class="header-right">
-      <div class="lang-dropdown">
-        <button class="lang-btn" onclick="toggleLangMenu()">EN ▾</button>
-        <div class="lang-menu" id="langMenu">
-          <a href="products.html">English</a>
-          <a href="products-fr.html">Français</a>
-          <a href="products-ar.html">العربية</a>
-        </div>
-      </div>
-      <a href="contact.html" class="btn btn-outline quote-btn">REQUEST A QUOTE</a>
-      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open menu"><span></span><span></span><span></span></button>
-    </div>
-    <nav class="nav" id="mainNav">
-      <a href="index.html">HOME</a>
-      <a href="about.html">ABOUT</a>
-      <a href="process.html">PROCESS</a>
-      <a href="products.html" class="active">PRODUCTS</a>
-      <a href="sustainability.html">SUSTAINABILITY</a>
-      <a href="certifications.html">CERTIFICATIONS</a>
-      <a href="contact.html">CONTACT</a>
-    </nav>
-  </div>
-</header>
-
-<section class="section light page-top">
-  <div class="container">
-    <div class="page-intro">
-      <div class="section-label">PRODUCTS</div>
-      <h2>Recycled Plastic Materials</h2>
-      <p class="lead">High-quality recycled PET products for industrial manufacturing and sustainable packaging applications.</p>
-    </div>
-
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="product-1.jpg" alt="Flocons de PET recyclé">
-        <div class="product-body">
-          <h3>Recycled PET Flakes</h3>
-          <p>Our recycled PET flakes are produced through an advanced and environmentally responsible recycling process. Sourced from post-consumer and post-industrial PET plastic bottles, the material is carefully sorted, washed, and processed to achieve high purity standards. Versatile and sustainable, these flakes are widely used in food-grade films, food trays, textile fibers, packaging, and many other industrial applications.</p>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="product-2.jpg" alt="Broyat de préforme transparent">
-        <div class="product-body">
-          <h3>Transparent PET Preform Regrind</h3>
-          <p>Our transparent PET preform regrind provides a reliable and versatile solution for a wide range of manufacturing applications. Produced from recycled PET preforms, it offers excellent transparency, consistent quality, and dependable performance for packaging, injection-molded products, and other industrial uses</p>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="PRE.jpg" alt="Broyat de préforme bleu clair">
-        <div class="product-body">
-          <h3>Light Blue PET Preform Regrind</h3>
-          <p>Freedom Recycling’s light blue PET preform regrind is produced from high-quality recycled PET preforms. This material is ideal for applications requiring a distinctive color while delivering the environmental benefits of recycling. It offers consistent quality and reliable performance for a variety of industrial manufacturing processes.</p>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="product-3.jpg" alt="PET flakes colored">
-        <div class="product-body">
-          <h3>PET Flakes Colored</h3>
-          <p>Our colored PET flakes are carefully sorted and processed to deliver reliable recycled material for industrial use. They are suitable for a range of manufacturing applications where color consistency and recycled content are important.</p>
-        </div>
-      </div>
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-content">
+      <img src="logo.png" alt="Freedom Recycling" class="loader-logo">
+      <div class="recycle-loader">♻</div>
+      <p>Recycling for a better tomorrow</p>
     </div>
   </div>
-</section>
 
-<section class="section dark">
-  <div class="container">
-    <div class="process-wrap">
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-wrap">
+
+      <a class="logo" href="index.html">
+        <img src="logo.png" alt="Freedom Recycling">
+      </a>
+
+      <nav class="nav" id="mainNav">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="process.html">OUR PROCESS</a>
+        <a href="products.html" class="active">PRODUCTS</a>
+        <a href="sustainability.html">SUSTAINABILITY</a>
+        <a href="certifications.html">CERTIFICATIONS</a>
+        <a href="contact.html">CONTACT US</a>
+      </nav>
+
+      <div class="header-right">
+        <div class="lang-dropdown">
+          <button
+            class="lang-btn"
+            type="button"
+            onclick="toggleLangMenu()"
+            aria-label="Choose language"
+          >
+            EN ▾
+          </button>
+
+          <div class="lang-menu" id="langMenu">
+            <a href="products.html">English</a>
+            <a href="products-fr.html">Français</a>
+            <a href="products-ar.html">العربية</a>
+          </div>
+        </div>
+
+        <a href="contact.html" class="btn btn-primary quote-btn">
+          REQUEST A QUOTE
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          onclick="toggleMenu()"
+          aria-label="Open menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container page-hero-content">
+      <div class="section-label">OUR PRODUCTS</div>
+
+      <h1>
+        High-quality
+        <span>recycled plastic materials</span>
+      </h1>
+
+      <p>
+        High-quality recycled PET products for industrial manufacturing,
+        sustainable packaging, and circular economy applications.
+      </p>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="section products-section">
+    <div class="container">
+
+      <div class="section-heading centered-heading">
+        <div>
+          <div class="section-label">RECYCLED MATERIALS</div>
+
+          <h2>Solutions for industrial requirements</h2>
+
+          <p class="section-description">
+            Our recycled materials are designed to deliver quality, consistency,
+            and reliable performance across a wide range of industrial
+            applications.
+          </p>
+        </div>
+      </div>
+
+      <div class="products-grid">
+
+        <!-- Product 1 -->
+        <article class="product-card">
+          <img src="product-1.jpg" alt="Recycled PET Flakes">
+
+          <div class="product-content">
+            <div class="product-icon">♻</div>
+
+            <div>
+              <h3>Recycled PET Flakes</h3>
+
+              <p>
+                Our recycled PET flakes are produced through an advanced and
+                environmentally responsible recycling process. Sourced from
+                post-consumer and post-industrial PET bottles, the material is
+                carefully sorted, washed, and processed to achieve high purity
+                standards. These versatile flakes are widely used in food-grade
+                films, food trays, textile fibers, packaging, and other
+                industrial applications.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="product-card">
+          <img src="product-2.jpg" alt="Transparent PET Preform Regrind">
+
+          <div class="product-content">
+            <div class="product-icon">♻</div>
+
+            <div>
+              <h3>Transparent PET Preform Regrind</h3>
+
+              <p>
+                Our transparent PET preform regrind provides a reliable and
+                versatile solution for a wide range of manufacturing
+                applications. Produced from recycled PET preforms, it offers
+                excellent transparency, consistent quality, and dependable
+                performance for packaging, injection-molded products, and other
+                industrial uses.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product-card">
+          <img src="PRE.jpg" alt="Light Blue PET Preform Regrind">
+
+          <div class="product-content">
+            <div class="product-icon">♻</div>
+
+            <div>
+              <h3>Light Blue PET Preform Regrind</h3>
+
+              <p>
+                Freedom Recycling’s light blue PET preform regrind is produced
+                from high-quality recycled PET preforms. This material is ideal
+                for applications requiring a distinctive color while delivering
+                the environmental benefits of recycling. It offers consistent
+                quality and reliable performance for a variety of industrial
+                manufacturing processes.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 4 -->
+        <article class="product-card">
+          <img src="product-3.jpg" alt="Colored PET Flakes">
+
+          <div class="product-content">
+            <div class="product-icon">♻</div>
+
+            <div>
+              <h3>Colored PET Flakes</h3>
+
+              <p>
+                Our colored PET flakes are carefully sorted and processed to
+                deliver reliable recycled material for industrial use. They are
+                suitable for a range of manufacturing applications where color
+                consistency and recycled content are important.
+              </p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Quality Banner -->
+  <section class="quality-banner">
+    <div class="container quality-banner-grid">
+
       <div>
         <div class="section-label">QUALITY</div>
         <h2>Certified recycled materials</h2>
-        <p class="lead">Our products meet industry standards for recycled content and performance.</p>
-        <p style="color:#d6e2dd;margin-top:16px;">We provide certification and documentation for all shipments to support your sustainability reporting.</p>
       </div>
-      <div class="tech-card">
-        <h3>Need a specific material?</h3>
-        <p>Tell us your requirements and we'll find the right solution.</p>
-        <a href="contact.html" class="btn btn-primary" style="margin-top:16px;">REQUEST A QUOTE</a>
+
+      <p>
+        Our products meet industry standards for recycled content, quality, and
+        performance. We provide documentation and certifications for all
+        shipments to support your sustainability goals and reporting.
+      </p>
+
+      <a href="contact.html" class="btn btn-primary">
+        REQUEST A QUOTE →
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <img src="logo1.png" alt="Freedom Recycling" class="footer-logo">
+
+        <p>
+          Building a circular future through responsible plastic recycling and
+          high-quality recycled materials.
+        </p>
+
+        <div class="social-links">
+          <a
+            href="https://www.facebook.com/yourpage"
+            target="_blank"
+            rel="noopener"
+            aria-label="Facebook"
+          >
+            <img src="fcb.png" alt="Facebook">
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/freedom-recycling-87064b3a9"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+          >
+            <img src="lin.png" alt="LinkedIn">
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h3>QUICK LINKS</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="process.html">Our Process</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>OUR PRODUCTS</h3>
+        <a href="products.html">PET Flakes</a>
+        <a href="products.html">PET Preform Regrind</a>
+        <a href="products.html">Recycled Granules</a>
+        <a href="certifications.html">Certifications</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>CONTACT US</h3>
+        <p>Zone Industrielle, Berrouaghia</p>
+        <p>Médéa, Algeria</p>
+
+        <a href="mailto:contact@freedomrecycling.com">
+          contact@freedomrecycling.com
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        © 2026 Freedom Recycling. All Rights Reserved.
       </div>
     </div>
-  </div>
-</section>
+  </footer>
 
-<footer class="footer">
-  <div>© 2026 Freedom Recycling</div>
-  <div class="social-links">
-    <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener"><img src="fcb.png" alt="Facebook">Facebook</a>
-    <a href="https://www.linkedin.com/company/yourcompany" target="_blank" rel="noopener"><img src="lin.png" alt="LinkedIn">LinkedIn</a>
-  </div>
-</footer>
-<script src="script.js"></script>
+  <!-- Floating WhatsApp -->
+  <a
+    href="https://wa.me/213555123456?text=Hello%20Freedom%20Recycling%2C%20I%20would%20like%20a%20quote%20for%20your%20recycled%20materials."
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener"
+    aria-label="Contact Freedom Recycling on WhatsApp"
+  >
+    <img src="whatsapp.png" alt="WhatsApp">
+    <span class="whatsapp-text">WhatsApp</span>
+  </a>
+
+  <script src="script.js"></script>
 </body>
 </html>
