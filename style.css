@@ -113,6 +113,10 @@ p {
    Loader
 ========================================= */
 
+/* =========================================
+   Recycling Animated Page Loader
+========================================= */
+
 .loader {
   position: fixed;
   inset: 0;
@@ -120,21 +124,86 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.97);
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(231, 245, 235, 0.92) 0%,
+      rgba(255, 255, 255, 0.98) 58%,
+      #ffffff 100%
+    );
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.45s ease, visibility 0.45s ease;
 }
 
-.recycle-icon {
-  width: 54px;
-  height: 54px;
-  border: 6px solid var(--green);
-  border-top-color: transparent;
+.loader.hide {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.loader-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.recycle-loader {
+  width: 96px;
+  height: 96px;
+  display: grid;
+  place-items: center;
+  border: 3px solid rgba(35, 139, 77, 0.18);
   border-radius: 50%;
-  animation: recycle-spin 0.8s linear infinite;
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(18, 104, 58, 0.15);
+  color: var(--green);
+  font-size: 55px;
+  line-height: 1;
+  animation: recycle-rotate 1.3s linear infinite;
 }
 
-@keyframes recycle-spin {
+.loader-content p {
+  margin: 0;
+  color: var(--green-dark);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  animation: loader-fade 1.3s ease-in-out infinite;
+}
+
+@keyframes recycle-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-fade {
+  0%,
+  100% {
+    opacity: 0.45;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .recycle-loader,
+  .loader-content p {
+    animation: none;
+  }
+
+  .loader {
+    transition: none;
   }
 }
 
