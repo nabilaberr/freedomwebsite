@@ -3,49 +3,278 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Freedom Recycling | Certifications</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="style.css?v=25">
 </head>
+
 <body>
-<div class="loader" id="loader"><div class="recycle-icon"></div></div>
-<header class="header">
-  <div class="container nav-wrap">
-    <a class="logo" href="index-en.html"><img src="logo.png" alt="Freedom Recycling"></a>
-    <div class="header-right">
-      <div class="lang-dropdown"><button class="lang-btn" onclick="toggleLangMenu()">FR▾</button><div class="lang-menu" id="langMenu"><a href="certifications.html">Français</a><a href="certifications-en.html">English</a><a href="certifications-ar.html">العربية</a></div></div>
-      <a href="contact-en.html" class="btn btn-outline quote-btn">REQUEST A QUOTE</a>
-      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open menu"><span></span><span></span><span></span></button>
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-content">
+      <img src="logo.png" alt="Freedom Recycling" class="loader-logo">
+      <div class="recycle-loader">♻</div>
+      <p>Recycler pour un avenir meilleur</p>
     </div>
-       <nav class="nav" id="mainNav">
-  <a href="index-fr.html">ACCUEIL</a>
-  <a href="about-fr.html" class="active">À PROPOS</a>
-  <a href="process-fr.html">PROCESSUS</a>
-  <a href="products-fr.html">PRODUITS</a>
-  <a href="sustainability-fr.html">DURABILITÉ</a>
-  <a href="certifications-fr.html">CERTIFICATIONS</a>
-  <a href="contact-fr.html">CONTACT</a>
-</nav>
   </div>
-</header>
 
-<section class="section dark" style="padding-top:130px;">
-  <div class="container">
-    <div class="section-label">CERTIFICATIONS</div>
-    <h2>Qualité et conformité</h2>
-    <p class="lead">Nous respectons des standards rigoureux pour assurer la qualité, la sécurité et la traçabilité à chaque étape de nos activités.</p>
-  </div>
-</section>
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-wrap">
 
-<section class="section light">
-  <div class="container impact-grid">
-   <div class="impact-card"><img src="sedex-logo.jpg" alt="Qualité"><h3>Qualité</h3><p>Procédures rigoureuses pour assurer une qualité constante.</p></div>
-    <div class="impact-card"><img src="iso-9001-certificate.png" alt="Sécurité"><h3>Sécurité</h3><p>Respect des règles et des bonnes pratiques industrielles.</p></div>
-    <div class="impact-card"><img src="recyclass-logo.png" alt="Traçabilité"><h3>Traçabilité</h3><p>Suivi clair des matières à chaque étape du processus.</p></div>
-  </div>
-</section>
+      <a class="logo" href="index-fr.html">
+        <img src="logo.png" alt="Freedom Recycling">
+      </a>
 
-<footer class="footer">© 2026 Freedom Recycling</footer>
-<script src="script.js"></script>
+      <nav class="nav" id="mainNav">
+        <a href="index-fr.html">ACCUEIL</a>
+        <a href="about-fr.html">À PROPOS</a>
+        <a href="process-fr.html">PROCESSUS</a>
+        <a href="products-fr.html">PRODUITS</a>
+        <a href="sustainability-fr.html">DURABILITÉ</a>
+        <a href="certifications-fr.html" class="active">CERTIFICATIONS</a>
+        <a href="contact-fr.html">CONTACT</a>
+      </nav>
+
+      <div class="header-right">
+        <div class="lang-dropdown">
+          <button
+            class="lang-btn"
+            type="button"
+            onclick="toggleLangMenu()"
+            aria-label="Choisir la langue"
+          >
+            FR ▾
+          </button>
+
+          <div class="lang-menu" id="langMenu">
+            <a href="certifications.html">English</a>
+            <a href="certifications-fr.html">Français</a>
+            <a href="certifications-ar.html">العربية</a>
+          </div>
+        </div>
+
+        <a href="contact-fr.html" class="btn btn-primary quote-btn">
+          DEMANDER UN DEVIS
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          onclick="toggleMenu()"
+          aria-label="Ouvrir le menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container page-hero-content">
+      <div class="section-label">CERTIFICATIONS</div>
+
+      <h1>
+        Qualité, conformité et
+        <span>traçabilité complète</span>
+      </h1>
+
+      <p>
+        Nous travaillons selon des normes exigeantes afin de garantir la
+        qualité, la sécurité et une traçabilité complète à chaque étape de nos
+        processus de recyclage.
+      </p>
+    </div>
+  </section>
+
+  <!-- Certification Cards -->
+  <section class="section certification-section">
+    <div class="container">
+
+      <div class="section-heading centered-heading">
+        <div>
+          <div class="section-label">NOS ENGAGEMENTS</div>
+
+          <h2>Des standards fiables et maîtrisés</h2>
+
+          <p class="section-description">
+            Nos systèmes garantissent une qualité constante, des opérations
+            plus sûres, des chaînes d’approvisionnement transparentes et un
+            recyclage responsable.
+          </p>
+        </div>
+      </div>
+
+      <div class="certification-grid">
+
+        <article class="certification-card">
+          <div class="certificate-image">
+            <img src="sedex-logo.jpg" alt="Certification Sedex">
+          </div>
+
+          <div class="certificate-icon">✓</div>
+
+          <h3>Qualité</h3>
+
+          <p>
+            Des procédures rigoureuses et un contrôle continu garantissent une
+            qualité constante, une grande fiabilité et la confiance de nos
+            clients.
+          </p>
+        </article>
+
+        <article class="certification-card">
+          <div class="certificate-image">
+            <img src="iso-9001-certificate.png" alt="Certificat ISO 9001">
+          </div>
+
+          <div class="certificate-icon">✓</div>
+
+          <h3>Sécurité</h3>
+
+          <p>
+            Nous appliquons les meilleures pratiques du secteur et des normes
+            strictes pour protéger nos collaborateurs, nos partenaires et nos
+            opérations.
+          </p>
+        </article>
+
+        <article class="certification-card">
+          <div class="certificate-image">
+            <img src="recyclass-logo.png" alt="Certification RecyClass">
+          </div>
+
+          <div class="certificate-icon">✓</div>
+
+          <h3>Traçabilité</h3>
+
+          <p>
+            Le suivi des matières à chaque étape assure la transparence, la
+            responsabilité et la conformité tout au long de notre processus de
+            recyclage.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Quality Promise -->
+  <section class="quality-banner">
+    <div class="container quality-banner-grid">
+
+      <div>
+        <div class="section-label">NOTRE PROMESSE</div>
+        <h2>Des matières fiables pour des industries responsables</h2>
+      </div>
+
+      <p>
+        Freedom Recycling combine des processus contrôlés, un approvisionnement
+        responsable et un suivi qualité rigoureux afin de fournir des matières
+        recyclées fiables à ses clients.
+      </p>
+
+      <a href="contact-fr.html" class="btn btn-primary">
+        DEMANDER UN DEVIS →
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <img src="logo1.png" alt="Freedom Recycling" class="footer-logo">
+
+        <p>
+          Construire un avenir circulaire grâce au recyclage responsable du
+          plastique et à des matières recyclées de haute qualité.
+        </p>
+
+        <div class="social-links">
+          <a
+            href="https://www.facebook.com/yourpage"
+            target="_blank"
+            rel="noopener"
+            aria-label="Facebook"
+          >
+            <img src="fcb.png" alt="Facebook">
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/freedom-recycling-87064b3a9"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+          >
+            <img src="lin.png" alt="LinkedIn">
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h3>LIENS RAPIDES</h3>
+        <a href="index-fr.html">Accueil</a>
+        <a href="about-fr.html">À propos</a>
+        <a href="process-fr.html">Processus</a>
+        <a href="products-fr.html">Produits</a>
+        <a href="contact-fr.html">Contact</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>NOS PRODUITS</h3>
+        <a href="products-fr.html">Paillettes PET</a>
+        <a href="products-fr.html">Granulés recyclés</a>
+        <a href="products-fr.html">Balles plastiques</a>
+        <a href="certifications-fr.html">Certifications</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>CONTACTEZ-NOUS</h3>
+        <p>Zone Industrielle, Berrouaghia</p>
+        <p>Médéa, Algérie</p>
+
+        <a href="mailto:contact@freedomrecycling.com">
+          contact@freedomrecycling.com
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        © 2026 Freedom Recycling. Tous droits réservés.
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp -->
+  <a
+    href="https://wa.me/213555123456?text=Bonjour%20Freedom%20Recycling%2C%20je%20souhaite%20obtenir%20des%20informations%20sur%20vos%20certifications."
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener"
+    aria-label="Contacter Freedom Recycling sur WhatsApp"
+  >
+    <img src="whatsapp.png" alt="WhatsApp">
+    <span class="whatsapp-text">WhatsApp</span>
+  </a>
+
+  <script src="script.js"></script>
 </body>
 </html>
