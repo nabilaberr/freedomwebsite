@@ -1,118 +1,317 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Freedom Recycling | Processus</title>
+
+  <title>Freedom Recycling | Produits</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="style.css?v=25">
 </head>
-<body>
-<div class="loader" id="loader"><div class="recycle-icon"></div></div>
 
-<header class="header">
-  <div class="container nav-wrap">
-    <a class="logo" href="index.html"><img src="logo.png" alt="Freedom Recycling"></a>
-    <div class="header-right">
-      <div class="lang-dropdown">
-        <button class="lang-btn" onclick="toggleLangMenu()">FR ▾</button>
-        <div class="lang-menu" id="langMenu">
-          <a href="process.html">English</a>
-          <a href="process-fr.html">Français</a>
-          <a href="process-ar.html">العربية</a>
+<body>
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-content">
+      <img src="logo.png" alt="Freedom Recycling" class="loader-logo">
+      <div class="recycle-loader">♻</div>
+      <p>Recycler pour un avenir meilleur</p>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-wrap">
+
+      <a class="logo" href="index-fr.html">
+        <img src="logo.png" alt="Freedom Recycling">
+      </a>
+
+      <nav class="nav" id="mainNav">
+        <a href="index-fr.html">ACCUEIL</a>
+        <a href="about-fr.html">À PROPOS</a>
+        <a href="process-fr.html">PROCESSUS</a>
+        <a href="products-fr.html" class="active">PRODUITS</a>
+        <a href="sustainability-fr.html">DURABILITÉ</a>
+        <a href="certifications-fr.html">CERTIFICATIONS</a>
+        <a href="contact-fr.html">CONTACT</a>
+      </nav>
+
+      <div class="header-right">
+        <div class="lang-dropdown">
+          <button
+            class="lang-btn"
+            type="button"
+            onclick="toggleLangMenu()"
+            aria-label="Choisir la langue"
+          >
+            FR ▾
+          </button>
+
+          <div class="lang-menu" id="langMenu">
+            <a href="products.html">English</a>
+            <a href="products-fr.html">Français</a>
+            <a href="products-ar.html">العربية</a>
+          </div>
+        </div>
+
+        <a href="contact-fr.html" class="btn btn-primary quote-btn">
+          DEMANDER UN DEVIS
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          onclick="toggleMenu()"
+          aria-label="Ouvrir le menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="page-hero">
+    <div class="container page-hero-content">
+      <div class="section-label">NOS PRODUITS</div>
+
+      <h1>
+        Des matières plastiques recyclées
+        <span>de haute qualité</span>
+      </h1>
+
+      <p>
+        Des produits PET recyclés de haute qualité pour la fabrication
+        industrielle et les applications d’emballage durable.
+      </p>
+    </div>
+  </section>
+
+  <!-- Product Cards -->
+  <section class="section products-section">
+    <div class="container">
+
+      <div class="section-heading centered-heading">
+        <div>
+          <div class="section-label">MATIÈRES RECYCLÉES</div>
+
+          <h2>Des solutions adaptées à vos besoins industriels</h2>
+
+          <p class="section-description">
+            Nos matériaux recyclés sont conçus pour offrir qualité, régularité
+            et performance dans de nombreuses applications industrielles.
+          </p>
         </div>
       </div>
-      <a href="contact.html" class="btn btn-outline quote-btn">DEMANDER UN DEVIS</a>
-      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+
+      <div class="products-grid">
+
+        <article class="product-card">
+          <img src="product-1.jpg" alt="Paillettes PET recyclées">
+
+          <div class="product-content">
+            <div class="product-icon">♻</div>
+
+            <div>
+              <h3>Paillettes PET recyclées</h3>
+
+              <p>
+                Nos paillettes PET recyclées sont produites grâce à un processus
+                de recyclage avancé et respectueux de l’environnement. Issues de
+                bouteilles PET post-consommation et post-industrielles, elles
+                sont soigneusement triées, lavées et traitées pour atteindre un
+                haut niveau de pureté. Ces paillettes durables sont utilisées
+                dans les films alimentaires, les barquettes, les fibres
+                textiles, les emballages et de nombreuses applications
+                industrielles.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="product-2.jpg" alt="Broyat de préformes PET transparentes">
+
+          <div class="product-content">
+            <div class="product-icon">♻</div>
+
+            <div>
+              <h3>Broyat de préformes PET transparentes</h3>
+
+              <p>
+                Notre broyat de préformes PET transparentes constitue une
+                solution fiable et polyvalente pour de nombreuses applications
+                de fabrication. Produit à partir de préformes PET recyclées, il
+                offre une excellente transparence, une qualité constante et des
+                performances fiables pour les emballages, les produits moulés
+                par injection et d’autres utilisations industrielles.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="PRE.jpg" alt="Broyat de préformes PET bleu clair">
+
+          <div class="product-content">
+            <div class="product-icon">♻</div>
+
+            <div>
+              <h3>Broyat de préformes PET bleu clair</h3>
+
+              <p>
+                Le broyat de préformes PET bleu clair de Freedom Recycling est
+                produit à partir de préformes PET recyclées de haute qualité.
+                Cette matière est idéale pour les applications nécessitant une
+                couleur distinctive tout en bénéficiant des avantages
+                environnementaux du recyclage. Elle offre une qualité constante
+                et des performances fiables pour différents procédés de
+                fabrication industrielle.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="product-3.jpg" alt="Paillettes PET colorées">
+
+          <div class="product-content">
+            <div class="product-icon">♻</div>
+
+            <div>
+              <h3>Paillettes PET colorées</h3>
+
+              <p>
+                Nos paillettes PET colorées sont soigneusement triées et
+                traitées afin d’offrir une matière recyclée fiable pour les
+                applications industrielles. Elles conviennent à de nombreux
+                procédés de fabrication où la régularité de la couleur et
+                l’utilisation de contenu recyclé sont importantes.
+              </p>
+            </div>
+          </div>
+        </article>
+
+      </div>
     </div>
-  <nav class="nav" id="mainNav">
-  <a href="index-fr.html">ACCUEIL</a>
-  <a href="about-fr.html" class="active">À PROPOS</a>
-  <a href="process-fr.html">PROCESSUS</a>
-  <a href="products-fr.html">PRODUITS</a>
-  <a href="sustainability-fr.html">DURABILITÉ</a>
-  <a href="certifications-fr.html">CERTIFICATIONS</a>
-  <a href="contact-fr.html">CONTACT</a>
-</nav>
-  </div>
-</header>
+  </section>
 
-<section class="section light page-top">
-  <div class="container">
-    <div class="page-intro">
-      <div class="section-label">PROCESSUS</div>
-      <h2>Production maîtrisée et fiable</h2>
-      <p class="lead">Chaque étape de notre processus est soigneusement contrôlée afin d’assurer la qualité des matières recyclées et la régularité de chaque expédition.</p>
+  <!-- Quality Section -->
+  <section class="quality-banner">
+    <div class="container quality-banner-grid">
+
+      <div>
+        <div class="section-label">QUALITÉ</div>
+        <h2>Des matières recyclées certifiées</h2>
+      </div>
+
+      <p>
+        Nos produits répondent aux normes du secteur concernant le contenu
+        recyclé, la qualité et les performances. Nous fournissons les
+        certifications et documents nécessaires pour chaque expédition afin de
+        soutenir vos objectifs de durabilité.
+      </p>
+
+      <a href="contact-fr.html" class="btn btn-primary">
+        DEMANDER UN DEVIS →
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <img src="logo1.png" alt="Freedom Recycling" class="footer-logo">
+
+        <p>
+          Construire un avenir circulaire grâce au recyclage responsable du
+          plastique et à des matières recyclées de haute qualité.
+        </p>
+
+        <div class="social-links">
+          <a
+            href="https://www.facebook.com/yourpage"
+            target="_blank"
+            rel="noopener"
+            aria-label="Facebook"
+          >
+            <img src="fcb.png" alt="Facebook">
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/freedom-recycling-87064b3a9"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+          >
+            <img src="lin.png" alt="LinkedIn">
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h3>LIENS RAPIDES</h3>
+        <a href="index-fr.html">Accueil</a>
+        <a href="about-fr.html">À propos</a>
+        <a href="process-fr.html">Processus</a>
+        <a href="products-fr.html">Produits</a>
+        <a href="contact-fr.html">Contact</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>NOS PRODUITS</h3>
+        <a href="products-fr.html">Paillettes PET</a>
+        <a href="products-fr.html">Broyat de préformes PET</a>
+        <a href="products-fr.html">Granulés recyclés</a>
+        <a href="certifications-fr.html">Certifications</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>CONTACTEZ-NOUS</h3>
+        <p>Zone Industrielle, Berrouaghia</p>
+        <p>Médéa, Algérie</p>
+
+        <a href="mailto:contact@freedomrecycling.com">
+          contact@freedomrecycling.com
+        </a>
+      </div>
+
     </div>
 
-    <div class="process-steps">
-      <div class="step-card">
-        <div class="step-img"><img src="step-1.png" alt="Collecte"></div>
-        <h3>Collecte</h3>
-        <p>Les déchets plastiques sont collectés de manière responsable à partir de sources post-consommation et industrielles.</p>
-      </div>
-
-      <div class="step-card">
-        <div class="step-img"><img src="step-2.png" alt="Tri"></div>
-        <h3>Tri</h3>
-        <p>Les matériaux sont séparés grâce à une combinaison d’inspection manuelle et de tri mécanique avancé.</p>
-      </div>
-
-      <div class="step-card">
-        <div class="step-img"><img src="step-3.png" alt="Lavage"></div>
-        <h3>Lavage</h3>
-        <p>Les impuretés sont éliminées grâce à un lavage à chaud efficace afin d’obtenir une pureté élevée du matériau.</p>
-      </div>
-
-      <div class="step-card">
-        <div class="step-img"><img src="step-4.png" alt="Broyage"></div>
-        <h3>Broyage</h3>
-        <p>Le matériau nettoyé est transformé en flocons uniformes pour les étapes suivantes du recyclage.</p>
-      </div>
-
-      <div class="step-card">
-        <div class="step-img"><img src="step-5.png" alt="Extrusion"></div>
-        <h3>Extrusion</h3>
-        <p>Les flocons sont transformés en granulés recyclés de haute qualité adaptés aux applications industrielles.</p>
-      </div>
-
-      <div class="step-card">
-        <div class="step-img"><img src="step-6.png" alt="Contrôle qualité"></div>
-        <h3>Contrôle qualité</h3>
-        <p>Chaque lot subit des contrôles finaux avant expédition afin de garantir sa conformité aux exigences des clients.</p>
+    <div class="footer-bottom">
+      <div class="container">
+        © 2026 Freedom Recycling. Tous droits réservés.
       </div>
     </div>
-  </div>
-</section>
+  </footer>
 
-<section class="section dark">
-  <div class="container process-wrap">
-    <div>
-      <div class="section-label">NOTRE TECHNOLOGIE</div>
-      <h2>Technologie Sortex de précision pour un recyclage plus propre</h2>
-      <p class="lead">Nos trois machines de tri optique Sortex améliorent la précision du tri et la qualité finale des matières recyclées.</p>
-      <p>Cette technologie avancée nous permet d’atteindre une meilleure efficacité, de réduire la contamination et de fournir des produits plus homogènes à nos clients industriels.</p>
-    </div>
+  <!-- WhatsApp -->
+  <a
+    href="https://wa.me/213555123456?text=Bonjour%20Freedom%20Recycling%2C%20je%20souhaite%20obtenir%20un%20devis%20pour%20vos%20mati%C3%A8res%20recycl%C3%A9es."
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener"
+    aria-label="Contacter Freedom Recycling sur WhatsApp"
+  >
+    <img src="whatsapp.png" alt="WhatsApp">
+    <span class="whatsapp-text">WhatsApp</span>
+  </a>
 
-    <div class="tech-card">
-      <h3>Nos 3 machines Sortex</h3>
-      <p>Aperçu visuel de notre technologie de tri avancée.</p>
-
-      <div class="tech-grid">
-        <img src="machine-1.jpg" alt="Machine Sortex 1">
-        <img src="machine-2.jpg" alt="Machine Sortex 2">
-        <img src="pic.png" alt="Machine Sortex 3">
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer class="footer">
-  <div>© 2026 Freedom Recycling</div>
-  <div class="social-links">
-    <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener"><img src="fcb.png" alt="Facebook">Facebook</a>
-    <a href="https://www.linkedin.com/company/yourcompany" target="_blank" rel="noopener"><img src="lin.png" alt="LinkedIn">LinkedIn</a>
-  </div>
-</footer>
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
