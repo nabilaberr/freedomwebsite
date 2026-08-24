@@ -367,35 +367,42 @@ p {
 }
 
 /* =========================================
-   Homepage Hero
+   Homepage Hero Video
 ========================================= */
 
 .hero {
   position: relative;
   min-height: 640px;
   overflow: hidden;
-  background: var(--green-light);
+  background: #92bca2;
 }
 
 .hero-video,
 .hero-media {
   position: absolute;
   inset: 0;
+  z-index: 0;
   width: 100%;
   height: 100%;
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
   object-fit: cover;
   object-position: center center;
+  filter: brightness(1.05) contrast(1.04) saturate(1.08);
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
+  z-index: 1;
+  pointer-events: none;
   background: linear-gradient(
     90deg,
-    rgba(248, 252, 249, 0.97) 0%,
-    rgba(248, 252, 249, 0.88) 42%,
-    rgba(248, 252, 249, 0.25) 75%,
-    rgba(248, 252, 249, 0.08) 100%
+    rgba(255, 255, 255, 0.84) 0%,
+    rgba(255, 255, 255, 0.62) 36%,
+    rgba(255, 255, 255, 0.16) 61%,
+    rgba(255, 255, 255, 0.02) 100%
   );
 }
 
@@ -431,8 +438,9 @@ p {
 .hero p {
   max-width: 610px;
   margin-bottom: 28px;
-  color: #4d6255;
+  color: #24442f;
   font-size: 17px;
+  font-weight: 500;
 }
 
 .hero-actions {
@@ -459,8 +467,9 @@ p {
   height: 39px;
   display: grid;
   place-items: center;
-  border: 1px solid #a7d4b4;
+  border: 1px solid #87c39d;
   border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
   color: var(--green-dark);
   font-size: 19px;
 }
@@ -477,7 +486,7 @@ p {
 }
 
 .benefit span {
-  color: var(--muted);
+  color: #365642;
 }
 
 .hero-badge {
@@ -789,6 +798,10 @@ p {
   filter: brightness(0) invert(1);
 }
 
+.social-links a img[src="lin.png"] {
+  filter: none;
+}
+
 .footer-bottom {
   padding: 16px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.16);
@@ -798,7 +811,7 @@ p {
 }
 
 /* =========================================
-   WhatsApp Floating Button
+   WhatsApp
 ========================================= */
 
 .whatsapp-float {
@@ -950,17 +963,6 @@ p {
     border-bottom: 0;
   }
 
-  .lang-menu {
-    top: calc(100% + 7px);
-    min-width: 130px;
-  }
-
-  .lang-menu a {
-    min-height: 42px;
-    display: flex;
-    align-items: center;
-  }
-
   .section {
     padding: 58px 0;
   }
@@ -970,28 +972,25 @@ p {
     line-height: 1.1;
   }
 
-  /* Mobile hero with visible video */
+  /* Mobile video: clear and visible */
 
   .hero {
     min-height: 610px;
     height: auto;
-    background: var(--green-light);
   }
 
   .hero-video {
-    display: block !important;
     opacity: 1 !important;
-    visibility: visible !important;
-    object-fit: cover;
+    filter: brightness(1.08) contrast(1.08) saturate(1.15);
     object-position: 72% center;
   }
 
   .hero-overlay {
     background: linear-gradient(
       180deg,
-      rgba(248, 252, 249, 0.77) 0%,
-      rgba(248, 252, 249, 0.64) 52%,
-      rgba(248, 252, 249, 0.54) 100%
+      rgba(255, 255, 255, 0.12) 0%,
+      rgba(255, 255, 255, 0.18) 38%,
+      rgba(5, 47, 24, 0.38) 100%
     );
   }
 
@@ -999,42 +998,45 @@ p {
     min-height: 610px;
     height: auto;
     display: flex;
-    align-items: center;
-    padding: 82px 0 38px;
+    align-items: flex-end;
+    padding: 42px 0 30px;
   }
 
   .hero-copy {
     width: 100%;
     max-width: 100%;
-    padding: 18px;
-    border: 1px solid rgba(255, 255, 255, 0.66);
+    padding: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.36);
     border-radius: 18px;
-    background: rgba(255, 255, 255, 0.56);
+    background: rgba(255, 255, 255, 0.32);
     backdrop-filter: blur(3px);
   }
 
   .hero .kicker {
     margin-bottom: 8px;
-    color: var(--green-dark);
+    color: #ffffff;
     font-size: 10px;
   }
 
   .hero h1 {
     margin-bottom: 12px;
-    color: var(--text);
+    color: var(--white);
     font-size: clamp(34px, 9vw, 46px);
     line-height: 1.06;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.28);
   }
 
   .hero h1 span {
-    color: var(--green);
+    color: #bdf3cb;
   }
 
   .hero p {
     margin-bottom: 18px;
-    color: #35503f;
+    color: rgba(255, 255, 255, 0.94);
     font-size: 14px;
+    font-weight: 500;
     line-height: 1.65;
+    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.24);
   }
 
   .hero-actions {
@@ -1050,13 +1052,11 @@ p {
     font-size: 9px;
   }
 
-  /* Three benefits on mobile */
-
   .hero-benefits {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 7px;
-    margin-top: 22px;
+    margin-top: 20px;
   }
 
   .benefit {
@@ -1066,9 +1066,9 @@ p {
     align-items: center;
     gap: 5px;
     padding: 9px 4px;
-    border: 1px solid rgba(35, 139, 77, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.34);
     border-radius: 12px;
-    background: rgba(255, 255, 255, 0.68);
+    background: rgba(255, 255, 255, 0.22);
     text-align: center;
   }
 
@@ -1076,14 +1076,22 @@ p {
     width: 31px;
     height: 31px;
     flex-shrink: 0;
+    border-color: rgba(255, 255, 255, 0.58);
+    background: rgba(255, 255, 255, 0.18);
+    color: var(--white);
     font-size: 16px;
   }
 
   .benefit strong,
   .benefit span {
+    color: var(--white);
     overflow-wrap: anywhere;
     font-size: 9px;
     line-height: 1.25;
+  }
+
+  .benefit span {
+    color: rgba(255, 255, 255, 0.82);
   }
 
   .hero-badge {
@@ -1217,6 +1225,8 @@ p {
     display: none;
   }
 
+  /* Mobile loader */
+
   .loader-logo {
     width: 145px;
   }
@@ -1283,7 +1293,7 @@ p {
 }
 
 /* =========================================
-   Arabic / RTL Support
+   Arabic / RTL
 ========================================= */
 
 html[dir="rtl"] body {
@@ -1304,10 +1314,10 @@ html[dir="rtl"] .header-right {
 html[dir="rtl"] .hero-overlay {
   background: linear-gradient(
     270deg,
-    rgba(248, 252, 249, 0.97) 0%,
-    rgba(248, 252, 249, 0.88) 42%,
-    rgba(248, 252, 249, 0.25) 75%,
-    rgba(248, 252, 249, 0.08) 100%
+    rgba(255, 255, 255, 0.84) 0%,
+    rgba(255, 255, 255, 0.62) 36%,
+    rgba(255, 255, 255, 0.16) 61%,
+    rgba(255, 255, 255, 0.02) 100%
   );
 }
 
@@ -1340,10 +1350,19 @@ html[dir="rtl"] .whatsapp-float {
   html[dir="rtl"] .hero-video {
     object-position: 30% center;
   }
+
+  html[dir="rtl"] .hero-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.12) 0%,
+      rgba(255, 255, 255, 0.18) 38%,
+      rgba(5, 47, 24, 0.38) 100%
+    );
+  }
 }
 
 /* =========================================
-   Accessibility: Reduce Animation
+   Reduced Motion
 ========================================= */
 
 @media (prefers-reduced-motion: reduce) {
