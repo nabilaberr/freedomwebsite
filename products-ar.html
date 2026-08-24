@@ -3,158 +3,306 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Freedom Recycling | المنتجات</title>
-   <link rel="stylesheet" href="style.css?v=25">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css?v=25">
 </head>
+
 <body>
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-content">
+      <img src="logo.png" alt="Freedom Recycling" class="loader-logo">
+      <div class="recycle-loader">♻</div>
+      <p>إعادة التدوير من أجل غدٍ أفضل</p>
+    </div>
+  </div>
 
-<div class="loader" id="loader"><div class="recycle-icon"></div></div>
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-wrap">
 
-<header class="header">
-  <div class="container nav-wrap">
+      <a class="logo" href="index-ar.html">
+        <img src="logo.png" alt="Freedom Recycling">
+      </a>
 
-    <a class="logo" href="index.html">
-      <img src="logo.png" alt="Freedom Recycling">
-    </a>
+      <nav class="nav" id="mainNav">
+        <a href="index-ar.html">الرئيسية</a>
+        <a href="about-ar.html">من نحن</a>
+        <a href="process-ar.html">مراحل التدوير</a>
+        <a href="products-ar.html" class="active">المنتجات</a>
+        <a href="sustainability-ar.html">الاستدامة</a>
+        <a href="certifications-ar.html">الشهادات</a>
+        <a href="contact-ar.html">اتصل بنا</a>
+      </nav>
 
-    <div class="header-right">
-      <div class="lang-dropdown">
-        <button class="lang-btn" onclick="toggleLangMenu()">AR ▾</button>
-        <div class="lang-menu" id="langMenu">
-          <a href="products-en.html">English</a>
-          <a href="products-fr.html">Français</a>
-          <a href="products-ar.html">العربية</a>
+      <div class="header-right">
+        <div class="lang-dropdown">
+          <button
+            class="lang-btn"
+            type="button"
+            onclick="toggleLangMenu()"
+            aria-label="اختيار اللغة"
+          >
+            AR ▾
+          </button>
+
+          <div class="lang-menu" id="langMenu">
+            <a href="products.html">English</a>
+            <a href="products-fr.html">Français</a>
+            <a href="products-ar.html">العربية</a>
+          </div>
         </div>
+
+        <a href="contact-ar.html" class="btn btn-primary quote-btn">
+          اطلب عرض سعر
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          onclick="toggleMenu()"
+          aria-label="فتح القائمة"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
 
-      <a href="contact.html" class="btn btn-outline quote-btn">طلب عرض سعر</a>
-
-      <button class="menu-toggle" onclick="toggleMenu()" aria-label="فتح القائمة">
-        <span></span><span></span><span></span>
-      </button>
     </div>
+  </header>
 
-    <nav class="nav" id="mainNav">
-      <a href="index-ar.html">الرئيسية</a>
-      <a href="about-ar.html">من نحن</a>
-      <a href="process-ar.html" class="active">العملية الإنتاجية</a>
-      <a href="products-ar.html">المنتجات</a>
-      <a href="sustainability-ar.html">الاستدامة</a>
-      <a href="certifications-ar.html">الشهادات</a>
-      <a href="contact-ar.html">اتصل بنا</a>
-    </nav>
+  <!-- Hero -->
+  <section class="page-hero">
+    <div class="container page-hero-content">
+      <div class="section-label">منتجاتنا</div>
 
-  </div>
-</header>
+      <h1>
+        مواد بلاستيكية معاد تدويرها
+        <span>عالية الجودة</span>
+      </h1>
 
-<section class="section light page-top">
-  <div class="container">
-
-    <div class="page-intro">
-      <div class="section-label">المنتجات</div>
-      <h2>مواد بلاستيكية معاد تدويرها</h2>
-      <p class="lead">
-        منتجات PET معاد تدويرها عالية الجودة موجهة للتصنيع الصناعي وتطبيقات التغليف المستدام.
+      <p>
+        منتجات PET معاد تدويرها بجودة عالية مخصصة للتصنيع الصناعي وتطبيقات
+        التغليف المستدام.
       </p>
     </div>
+  </section>
 
-    <div class="product-grid">
+  <!-- Product Cards -->
+  <section class="section products-section">
+    <div class="container">
 
-      <div class="product-card">
-        <img src="product-1.jpg" alt="رقائق PET معاد تدويرها">
-        <div class="product-body">
-          <h3>رقائق PET معاد تدويرها</h3>
-          <p>
-            يتم إنتاج رقائق PET المعاد تدويرها عبر عملية متقدمة وصديقة للبيئة.
-            يتم جمعها من زجاجات PET بعد الاستهلاك والصناعة، ثم فرزها وغسلها ومعالجتها
-            للحصول على نقاء عالي. تُستخدم في الأفلام الغذائية، العبوات، الألياف النسيجية
-            والعديد من التطبيقات الصناعية الأخرى.
+      <div class="section-heading centered-heading">
+        <div>
+          <div class="section-label">مواد معاد تدويرها</div>
+
+          <h2>حلول تناسب احتياجاتكم الصناعية</h2>
+
+          <p class="section-description">
+            صُممت موادنا المعاد تدويرها لتوفير الجودة والثبات والأداء في مجموعة
+            واسعة من التطبيقات الصناعية.
           </p>
         </div>
       </div>
 
-      <div class="product-card">
-        <img src="product-2.jpg" alt="بلاستيك شفاف من البريفورم">
-        <div class="product-body">
-          <h3>بلاستيك بريفورم PET شفاف (مطحون)</h3>
-          <p>
-            يوفر هذا المنتج حلاً موثوقاً ومتعدد الاستخدامات للتطبيقات الصناعية.
-            يتميز بوضوح عالٍ وجودة ثابتة وأداء جيد في التغليف والقولبة بالحقن
-            والاستخدامات الصناعية المختلفة.
-          </p>
-        </div>
-      </div>
+      <div class="products-grid">
 
-      <div class="product-card">
-        <img src="PRE.jpg" alt="بريفورم أزرق فاتح">
-        <div class="product-body">
-          <h3>بلاستيك بريفورم PET أزرق فاتح (مطحون)</h3>
-          <p>
-            يتم الحصول عليه من بريفورم PET معاد تدويره عالي الجودة.
-            مناسب للتطبيقات التي تتطلب لوناً محدداً مع الحفاظ على مزايا الاستدامة.
-            يوفر جودة ثابتة وأداء موثوق في العمليات الصناعية.
-          </p>
-        </div>
-      </div>
+        <article class="product-card">
+          <img src="product-1.jpg" alt="رقائق PET معاد تدويرها">
 
-      <div class="product-card">
-        <img src="product-3.jpg" alt="رقائق PET ملونة">
-        <div class="product-body">
-          <h3>رقائق PET ملونة</h3>
-          <p>
-            يتم فرز ومعالجة رقائق PET الملونة بعناية لتوفير مادة معاد تدويرها موثوقة للصناعة.
-            مناسبة للتطبيقات التي تتطلب ثبات اللون واستخدام مواد مستدامة.
-          </p>
-        </div>
-      </div>
+          <div class="product-content">
+            <div class="product-icon">♻</div>
 
+            <div>
+              <h3>رقائق PET معاد تدويرها</h3>
+
+              <p>
+                يتم إنتاج رقائق PET المعاد تدويرها لدينا من خلال عملية متقدمة
+                ومسؤولة بيئياً. تُستخرج من زجاجات PET بعد الاستهلاك ومن مصادر
+                صناعية، ثم تُفرز وتُغسل وتُعالج بعناية للوصول إلى مستويات عالية
+                من النقاء. تستخدم هذه الرقائق المستدامة في الأفلام الغذائية
+                والصواني والألياف النسيجية والتغليف والعديد من التطبيقات
+                الصناعية الأخرى.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="product-2.jpg" alt="مطحون قوالب PET شفاف">
+
+          <div class="product-content">
+            <div class="product-icon">♻</div>
+
+            <div>
+              <h3>مطحون قوالب PET شفاف</h3>
+
+              <p>
+                يوفر مطحون قوالب PET الشفاف حلاً موثوقاً ومتعدد الاستخدامات
+                لمجموعة واسعة من تطبيقات التصنيع. يُنتج من قوالب PET معاد
+                تدويرها، ويوفر شفافية ممتازة وجودة ثابتة وأداءً موثوقاً في
+                التغليف والمنتجات المصبوبة بالحقن والاستخدامات الصناعية الأخرى.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="PRE.jpg" alt="مطحون قوالب PET أزرق فاتح">
+
+          <div class="product-content">
+            <div class="product-icon">♻</div>
+
+            <div>
+              <h3>مطحون قوالب PET أزرق فاتح</h3>
+
+              <p>
+                يُنتج مطحون قوالب PET الأزرق الفاتح من Freedom Recycling من
+                قوالب PET معاد تدويرها عالية الجودة. هذه المادة مناسبة
+                للتطبيقات التي تتطلب لوناً مميزاً مع الاستفادة من المزايا
+                البيئية لإعادة التدوير، كما توفر جودة ثابتة وأداء موثوقاً في
+                العديد من عمليات التصنيع الصناعي.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="product-3.jpg" alt="رقائق PET ملونة">
+
+          <div class="product-content">
+            <div class="product-icon">♻</div>
+
+            <div>
+              <h3>رقائق PET ملونة</h3>
+
+              <p>
+                يتم فرز ومعالجة رقائق PET الملونة بعناية لتقديم مادة معاد
+                تدويرها موثوقة للاستخدام الصناعي. وهي مناسبة لمجموعة من
+                التطبيقات التي تتطلب ثبات اللون واستخدام محتوى معاد تدويره.
+              </p>
+            </div>
+          </div>
+        </article>
+
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section dark">
-  <div class="container">
-
-    <div class="process-wrap">
+  <!-- Quality Section -->
+  <section class="quality-banner">
+    <div class="container quality-banner-grid">
 
       <div>
         <div class="section-label">الجودة</div>
         <h2>مواد معاد تدويرها معتمدة</h2>
-        <p class="lead">
-          تتوافق منتجاتنا مع المعايير الصناعية الخاصة بالمحتوى المعاد تدويره والأداء.
-        </p>
-        <p style="color:#d6e2dd;margin-top:16px;">
-          نقدم شهادات ووثائق لكل شحنة لدعم تقارير الاستدامة الخاصة بكم.
-        </p>
       </div>
 
-      <div class="tech-card">
-        <h3>هل تحتاج مادة خاصة؟</h3>
-        <p>شاركنا احتياجاتك وسنقترح عليك الحل المناسب</p>
-        <a href="contact.html" class="btn btn-primary" style="margin-top:16px;">
-          طلب عرض سعر
+      <p>
+        تتوافق منتجاتنا مع معايير القطاع المتعلقة بالمحتوى المعاد تدويره
+        والجودة والأداء. نوفر الشهادات والوثائق اللازمة مع جميع الشحنات لدعم
+        تقارير وأهداف الاستدامة الخاصة بكم.
+      </p>
+
+      <a href="contact-ar.html" class="btn btn-primary">
+        اطلب عرض سعر ←
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <img src="logo1.png" alt="Freedom Recycling" class="footer-logo">
+
+        <p>
+          نبني مستقبلاً دائرياً من خلال إعادة تدوير البلاستيك بطريقة مسؤولة
+          وإنتاج مواد معاد تدويرها عالية الجودة.
+        </p>
+
+        <div class="social-links">
+          <a
+            href="https://www.facebook.com/yourpage"
+            target="_blank"
+            rel="noopener"
+            aria-label="Facebook"
+          >
+            <img src="fcb.png" alt="Facebook">
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/freedom-recycling-87064b3a9"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+          >
+            <img src="lin.png" alt="LinkedIn">
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h3>روابط سريعة</h3>
+        <a href="index-ar.html">الرئيسية</a>
+        <a href="about-ar.html">من نحن</a>
+        <a href="process-ar.html">مراحل التدوير</a>
+        <a href="products-ar.html">المنتجات</a>
+        <a href="contact-ar.html">اتصل بنا</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>منتجاتنا</h3>
+        <a href="products-ar.html">رقائق PET</a>
+        <a href="products-ar.html">مطحون قوالب PET</a>
+        <a href="products-ar.html">حبيبات معاد تدويرها</a>
+        <a href="certifications-ar.html">الشهادات</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>اتصل بنا</h3>
+        <p>المنطقة الصناعية، البرواقية</p>
+        <p>المدية، الجزائر</p>
+
+        <a href="mailto:contact@freedomrecycling.com">
+          contact@freedomrecycling.com
         </a>
       </div>
 
     </div>
 
-  </div>
-</section>
+    <div class="footer-bottom">
+      <div class="container">
+        © 2026 Freedom Recycling. جميع الحقوق محفوظة.
+      </div>
+    </div>
+  </footer>
 
-<footer class="footer">
-  <div>© 2026 Freedom Recycling</div>
+  <!-- WhatsApp -->
+  <a
+    href="https://wa.me/213555123456?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D9%81%D8%B1%D9%8A%D8%AF%D9%88%D9%85%20%D8%B1%D9%8A%D8%B3%D8%A7%D9%8A%D9%83%D9%84%D9%8A%D9%86%D8%BA%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B7%D9%84%D8%A8%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1%20%D9%84%D9%85%D9%88%D8%A7%D8%AF%D9%83%D9%85%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%AF%20%D8%AA%D8%AF%D9%88%D9%8A%D8%B1%D9%87%D8%A7."
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener"
+    aria-label="التواصل مع Freedom Recycling عبر واتساب"
+  >
+    <img src="whatsapp.png" alt="واتساب">
+    <span class="whatsapp-text">واتساب</span>
+  </a>
 
-  <div class="social-links">
-    <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener">
-      <img src="fcb.png" alt="Facebook">فيسبوك
-    </a>
-
-    <a href="https://www.linkedin.com/company/yourcompany" target="_blank" rel="noopener">
-      <img src="lin.png" alt="LinkedIn">لينكدإن
-    </a>
-  </div>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
