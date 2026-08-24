@@ -3,161 +3,346 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Freedom Recycling | اتصل بنا</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="style.css?v=25">
 </head>
+
 <body>
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-content">
+      <img src="logo.png" alt="Freedom Recycling" class="loader-logo">
+      <div class="recycle-loader">♻</div>
+      <p>إعادة التدوير من أجل غدٍ أفضل</p>
+    </div>
+  </div>
 
-<div class="loader" id="loader"><div class="recycle-icon"></div></div>
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-wrap">
 
-<header class="header">
-  <div class="container nav-wrap">
+      <a class="logo" href="index-ar.html">
+        <img src="logo.png" alt="Freedom Recycling">
+      </a>
 
-    <a class="logo" href="index.html">
-      <img src="logo.png" alt="Freedom Recycling">
-    </a>
+      <nav class="nav" id="mainNav">
+        <a href="index-ar.html">الرئيسية</a>
+        <a href="about-ar.html">من نحن</a>
+        <a href="process-ar.html">مراحل التدوير</a>
+        <a href="products-ar.html">المنتجات</a>
+        <a href="sustainability-ar.html">الاستدامة</a>
+        <a href="certifications-ar.html">الشهادات</a>
+        <a href="contact-ar.html" class="active">اتصل بنا</a>
+      </nav>
 
-    <div class="header-right">
-      <div class="lang-dropdown">
-        <button class="lang-btn" onclick="toggleLangMenu()">AR ▾</button>
-        <div class="lang-menu" id="langMenu">
-          <a href="contact-en.html">English</a>
-          <a href="contact-fr.html">Français</a>
-          <a href="contact-ar.html">العربية</a>
+      <div class="header-right">
+        <div class="lang-dropdown">
+          <button
+            class="lang-btn"
+            type="button"
+            onclick="toggleLangMenu()"
+            aria-label="اختيار اللغة"
+          >
+            AR ▾
+          </button>
+
+          <div class="lang-menu" id="langMenu">
+            <a href="contact.html">English</a>
+            <a href="contact-fr.html">Français</a>
+            <a href="contact-ar.html">العربية</a>
+          </div>
         </div>
+
+        <a href="contact-ar.html" class="btn btn-primary quote-btn">
+          اطلب عرض سعر
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          onclick="toggleMenu()"
+          aria-label="فتح القائمة"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
 
-      <button class="menu-toggle" onclick="toggleMenu()" aria-label="فتح القائمة">
-        <span></span><span></span><span></span>
-      </button>
     </div>
+  </header>
 
-     <nav class="nav" id="mainNav">
-      <a href="index-ar.html">الرئيسية</a>
-      <a href="about-ar.html">من نحن</a>
-      <a href="process-ar.html">العملية الإنتاجية</a>
-      <a href="products-ar.html">المنتجات</a>
-      <a href="sustainability-ar.html">الاستدامة</a>
-      <a href="certifications-ar.html" class="active">الشهادات</a>
-      <a href="contact-ar.html">اتصل بنا</a>
-    </nav>
+  <!-- Hero -->
+  <section class="page-hero">
+    <div class="container page-hero-content">
+      <div class="section-label">اتصل بنا</div>
 
+      <h1>
+        لنبنِ معاً مستقبلاً
+        <span>دائرياً أكثر استدامة.</span>
+      </h1>
 
-  </div>
-</header>
-
-<section class="section dark" style="padding-top:130px;">
-  <div class="container">
-    <div class="section-label">اتصل بنا</div>
-    <h2>دعنا نتحدث عن مشروعك</h2>
-    <p class="lead">
-      أرسل لنا طلبك وسنقوم بالرد عليك في أقرب وقت ممكن.
-    </p>
-  </div>
-</section>
-
-<section class="section light">
-  <div class="container contact-grid">
-
-    <div>
-
-      <div class="section-label">معلوماتنا</div>
-      <h2>Freedom Recycling SARL</h2>
-      <p class="lead" style="color:var(--muted)">
-        المنطقة الصناعية، البرواقية، ولاية المدية، الجزائر
+      <p>
+        أرسل طلبك إلى Freedom Recycling وسيتواصل معك فريقنا في أقرب وقت ممكن.
       </p>
+    </div>
+  </section>
 
-      <div class="impact-grid" style="margin-top:26px;">
+  <!-- Contact Content -->
+  <section class="section contact-section">
+    <div class="container contact-layout">
 
-        <div class="step contact-card">
-          <h3>الهاتف</h3>
-          <p><a href="tel:+21300000000">+213 00 00 00 00</a></p>
+      <!-- Company Information -->
+      <div class="contact-details">
+
+        <div class="section-label">معلومات الاتصال</div>
+
+        <h2>Freedom Recycling SARL</h2>
+
+        <p class="contact-intro">
+          نحن جاهزون لمناقشة توريد المواد المعاد تدويرها، وخدمات الجمع،
+          والشراكات، ومشاريع إعادة التدوير الصناعية.
+        </p>
+
+        <div class="contact-info-grid">
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon">☎</div>
+
+            <div>
+              <h3>الهاتف</h3>
+              <a href="tel:+21300000000">+213 00 00 00 00</a>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon">✉</div>
+
+            <div>
+              <h3>البريد الإلكتروني</h3>
+              <a href="mailto:contact@freedomrecycling.com">
+                contact@freedomrecycling.com
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon">⌖</div>
+
+            <div>
+              <h3>الموقع</h3>
+              <p>البرواقية، المدية، الجزائر</p>
+            </div>
+          </div>
+
         </div>
 
-        <div class="step contact-card">
-          <h3>البريد الإلكتروني</h3>
-          <p><a href="mailto:contact@freedomrecycling.com">contact@freedomrecycling.com</a></p>
+        <div class="address-card">
+          <div class="address-icon">⌖</div>
+
+          <div>
+            <h3>عنواننا</h3>
+
+            <address>
+              Freedom Recycling SARL<br>
+              المنطقة الصناعية، البرواقية<br>
+              ولاية المدية، الجزائر
+            </address>
+          </div>
         </div>
 
-        <div class="step contact-card">
-          <h3>الموقع</h3>
-          <p>المنطقة الصناعية، البرواقية، المدية</p>
+        <div class="contact-social">
+          <h3>تابعونا</h3>
+
+          <div class="social-links contact-social-links">
+            <a
+              href="https://www.facebook.com/yourpage"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="fcb.png" alt="Facebook">
+              <span>Facebook</span>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/freedom-recycling-87064b3a9"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="lin.png" alt="LinkedIn">
+              <span>LinkedIn</span>
+            </a>
+          </div>
         </div>
 
       </div>
 
-      <div class="step contact-card" style="margin-top:22px;">
-        <h3>العنوان</h3>
-        <address>
-          Freedom Recycling SARL<br>
-          المنطقة الصناعية، البرواقية<br>
-          ولاية المدية، الجزائر
-        </address>
+      <!-- Form and Map -->
+      <div class="contact-right">
+
+        <div class="contact-form-card">
+          <div class="section-label">أرسل رسالة</div>
+          <h2>كيف يمكننا مساعدتك؟</h2>
+
+          <form class="form">
+            <div class="form-row">
+              <input
+                class="input"
+                type="text"
+                name="name"
+                placeholder="الاسم الكامل"
+                required
+              >
+
+              <input
+                class="input"
+                type="email"
+                name="email"
+                placeholder="البريد الإلكتروني"
+                required
+              >
+            </div>
+
+            <input
+              class="input"
+              type="text"
+              name="subject"
+              placeholder="الموضوع"
+            >
+
+            <textarea
+              class="textarea"
+              name="message"
+              placeholder="أخبرنا عن مشروعك أو طلبك"
+              required
+            ></textarea>
+
+            <button class="btn btn-primary form-submit" type="submit">
+              إرسال الرسالة ←
+            </button>
+          </form>
+        </div>
+
+        <div class="map-card">
+          <div class="map-card-header">
+            <div>
+              <div class="section-label">زورونا</div>
+              <h3>موقعنا</h3>
+            </div>
+
+            <div class="map-icon">⌖</div>
+          </div>
+
+          <div class="map-box">
+            <iframe
+              src="https://www.google.com/maps?q=Berrouaghia,+Medea,+Algeria&output=embed"
+              width="100%"
+              height="330"
+              style="border:0;display:block;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="خريطة موقع Freedom Recycling"
+            ></iframe>
+          </div>
+        </div>
+
       </div>
 
-      <div class="step contact-card" style="margin-top:22px;">
-        <h3>التواصل الاجتماعي</h3>
-        <div class="social-links" style="justify-content:flex-start;margin-top:12px;">
-          <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener">
-            <img src="fcb.png" alt="Facebook">فيسبوك
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <img src="logo1.png" alt="Freedom Recycling" class="footer-logo">
+
+        <p>
+          نبني مستقبلاً دائرياً من خلال إعادة تدوير البلاستيك بطريقة مسؤولة
+          وإنتاج مواد معاد تدويرها عالية الجودة.
+        </p>
+
+        <div class="social-links">
+          <a
+            href="https://www.facebook.com/yourpage"
+            target="_blank"
+            rel="noopener"
+            aria-label="Facebook"
+          >
+            <img src="fcb.png" alt="Facebook">
           </a>
 
-          <a href="https://www.linkedin.com/company/yourcompany" target="_blank" rel="noopener">
-            <img src="lin.png" alt="LinkedIn">لينكدإن
+          <a
+            href="https://www.linkedin.com/in/freedom-recycling-87064b3a9"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+          >
+            <img src="lin.png" alt="LinkedIn">
           </a>
         </div>
+      </div>
+
+      <div class="footer-column">
+        <h3>روابط سريعة</h3>
+        <a href="index-ar.html">الرئيسية</a>
+        <a href="about-ar.html">من نحن</a>
+        <a href="process-ar.html">مراحل التدوير</a>
+        <a href="products-ar.html">المنتجات</a>
+        <a href="contact-ar.html">اتصل بنا</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>منتجاتنا</h3>
+        <a href="products-ar.html">رقائق PET</a>
+        <a href="products-ar.html">حبيبات معاد تدويرها</a>
+        <a href="products-ar.html">بالات بلاستيكية</a>
+        <a href="certifications-ar.html">الشهادات</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>اتصل بنا</h3>
+        <p>المنطقة الصناعية، البرواقية</p>
+        <p>المدية، الجزائر</p>
+
+        <a href="mailto:contact@freedomrecycling.com">
+          contact@freedomrecycling.com
+        </a>
       </div>
 
     </div>
 
-    <div>
-
-      <div class="step contact-card">
-        <h3>الخريطة</h3>
-        <div class="map-box" style="margin-top:16px;">
-          <iframe
-            src="https://www.google.com/maps?q=Berrouaghia,+Medea,+Algeria&output=embed"
-            width="100%"
-            height="340"
-            style="border:0;display:block;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+    <div class="footer-bottom">
+      <div class="container">
+        © 2026 Freedom Recycling. جميع الحقوق محفوظة.
       </div>
-
-      <div class="step contact-card" style="margin-top:22px;">
-        <h3>نموذج الاتصال</h3>
-
-        <form class="form" style="margin-top:14px;">
-          <input class="input" type="text" placeholder="الاسم الكامل" required>
-          <input class="input" type="email" placeholder="البريد الإلكتروني" required>
-          <input class="input" type="text" placeholder="الموضوع">
-          <textarea class="textarea" placeholder="رسالتك" required></textarea>
-          <button class="btn btn-primary" type="submit">إرسال</button>
-        </form>
-
-      </div>
-
     </div>
+  </footer>
 
-  </div>
-</section>
+  <!-- WhatsApp -->
+  <a
+    href="https://wa.me/213555123456?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D9%81%D8%B1%D9%8A%D8%AF%D9%88%D9%85%20%D8%B1%D9%8A%D8%B3%D8%A7%D9%8A%D9%83%D9%84%D9%8A%D9%86%D8%BA%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%20%D9%81%D8%B1%D9%8A%D9%82%D9%83%D9%85."
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener"
+    aria-label="التواصل مع Freedom Recycling عبر واتساب"
+  >
+    <img src="whatsapp.png" alt="واتساب">
+    <span class="whatsapp-text">واتساب</span>
+  </a>
 
-<footer class="footer">
-  <div>© 2026 Freedom Recycling</div>
-
-  <div class="social-links">
-    <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener">
-      <img src="fcb.png" alt="Facebook">فيسبوك
-    </a>
-
-    <a href="https://www.linkedin.com/company/yourcompany" target="_blank" rel="noopener">
-      <img src="lin.png" alt="LinkedIn">لينكدإن
-    </a>
-  </div>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
