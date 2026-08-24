@@ -1382,3 +1382,52 @@ html[dir="rtl"] .whatsapp-float {
     transition: none;
   }
 }
+/* =========================================
+   Remove Black Border Around Hero Video
+========================================= */
+
+.hero {
+  background: #e7f5eb !important;
+}
+
+.hero-video {
+  background: #e7f5eb !important;
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 610px;
+    overflow: hidden;
+    background: #e7f5eb !important;
+  }
+
+  .hero-video {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+
+    width: 100vw !important;
+    height: 100% !important;
+    min-width: 100% !important;
+    min-height: 100% !important;
+
+    transform: translate(-50%, -50%) scale(1.08);
+    transform-origin: center;
+
+    object-fit: cover !important;
+    object-position: 72% center !important;
+
+    border: 0 !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+    background: transparent !important;
+  }
+
+  .hero-overlay {
+    border: 0 !important;
+    outline: 0 !important;
+  }
+}
