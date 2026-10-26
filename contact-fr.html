@@ -8,7 +8,6 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet"
@@ -18,13 +17,8 @@
 </head>
 
 <body>
-  <!-- Loader -->
   <div class="loader" id="loader">
-    <div class="loader-content">
-      <img src="logo.png" alt="Freedom Recycling" class="loader-logo">
-      <div class="recycle-loader">♻</div>
-      <p>Recycler pour un avenir meilleur</p>
-    </div>
+    <div class="recycle-icon"></div>
   </div>
 
   <!-- Header -->
@@ -38,7 +32,7 @@
       <nav class="nav" id="mainNav">
         <a href="index-fr.html">ACCUEIL</a>
         <a href="about-fr.html">À PROPOS</a>
-        <a href="process-fr.html">PROCESSUS</a>
+        <a href="process-fr.html">NOTRE PROCESSUS</a>
         <a href="products-fr.html">PRODUITS</a>
         <a href="sustainability-fr.html">DURABILITÉ</a>
         <a href="certifications-fr.html">CERTIFICATIONS</a>
@@ -82,10 +76,10 @@
     </div>
   </header>
 
-  <!-- Hero -->
+  <!-- Page Hero -->
   <section class="page-hero">
     <div class="container page-hero-content">
-      <div class="section-label">CONTACTEZ-NOUS</div>
+      <div class="section-label">NOUS CONTACTER</div>
 
       <h1>
         Construisons ensemble un avenir
@@ -111,28 +105,25 @@
         <h2>Freedom Recycling SARL</h2>
 
         <p class="contact-intro">
-          Nous sommes à votre disposition pour discuter de la fourniture de
-          matières recyclées, de la collecte, des partenariats et des projets
-          industriels de recyclage.
+          Nous sommes prêts à discuter de la fourniture de matières recyclées,
+          de la collecte, des partenariats et des projets de recyclage industriel.
         </p>
 
         <div class="contact-info-grid">
 
           <div class="contact-info-card">
             <div class="contact-info-icon">☎</div>
-
             <div>
               <h3>Téléphone</h3>
               <a href="tel:+213770262345">+213 770 26 23 45</a>
-              <a href="tel:+337 68648439">+33 768 64 84 39</a>
+              <a href="tel:+33768648439">+33 768 64 84 39</a>
             </div>
           </div>
 
           <div class="contact-info-card">
             <div class="contact-info-icon">✉</div>
-
             <div>
-              <h3>E-mail</h3>
+              <h3>Email</h3>
               <a href="mailto:contact@freedomrecyclingdz.com">
                 contact@freedomrecyclingdz.com
               </a>
@@ -141,7 +132,6 @@
 
           <div class="contact-info-card">
             <div class="contact-info-icon">⌖</div>
-
             <div>
               <h3>Localisation</h3>
               <p>Berrouaghia, Médéa, Algérie</p>
@@ -168,20 +158,12 @@
           <h3>SUIVEZ-NOUS</h3>
 
           <div class="social-links contact-social-links">
-            <a
-              href="https://www.facebook.com/yourpage"
-              target="_blank"
-              rel="noopener"
-            >
+            <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener">
               <img src="fcb.png" alt="Facebook">
               <span>Facebook</span>
             </a>
 
-            <a
-              href="https://www.linkedin.com/in/freedom-recycling-87064b3a9"
-              target="_blank"
-              rel="noopener"
-            >
+            <a href="https://www.linkedin.com/company/yourcompany" target="_blank" rel="noopener">
               <img src="lin.png" alt="LinkedIn">
               <span>LinkedIn</span>
             </a>
@@ -197,7 +179,30 @@
           <div class="section-label">ENVOYER UN MESSAGE</div>
           <h2>Comment pouvons-nous vous aider ?</h2>
 
-          <form class="form">
+          <form
+            class="form"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+          >
+
+            <input
+              type="hidden"
+              name="access_key"
+              value="ea79f288-4890-4965-8c23-058498e26de3"
+            >
+
+            <input
+              type="hidden"
+              name="subject"
+              value="Nouveau message depuis le site Freedom Recycling"
+            >
+
+            <input
+              type="hidden"
+              name="from_name"
+              value="Site Web Freedom Recycling"
+            >
+
             <div class="form-row">
               <input
                 class="input"
@@ -211,7 +216,7 @@
                 class="input"
                 type="email"
                 name="email"
-                placeholder="Votre e-mail"
+                placeholder="Votre email"
                 required
               >
             </div>
@@ -219,7 +224,7 @@
             <input
               class="input"
               type="text"
-              name="subject"
+              name="user_subject"
               placeholder="Objet"
             >
 
@@ -233,6 +238,7 @@
             <button class="btn btn-primary form-submit" type="submit">
               ENVOYER LE MESSAGE →
             </button>
+
           </form>
         </div>
 
@@ -255,7 +261,7 @@
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-              title="Carte de localisation Freedom Recycling"
+              title="Localisation de Freedom Recycling"
             ></iframe>
           </div>
         </div>
@@ -273,26 +279,16 @@
         <img src="logo1.png" alt="Freedom Recycling" class="footer-logo">
 
         <p>
-          Construire un avenir circulaire grâce au recyclage responsable du
-          plastique et à des matières recyclées de haute qualité.
+          Construire un avenir circulaire grâce au recyclage responsable du plastique
+          et à des matières recyclées de haute qualité.
         </p>
 
         <div class="social-links">
-          <a
-            href="https://www.facebook.com/yourpage"
-            target="_blank"
-            rel="noopener"
-            aria-label="Facebook"
-          >
+          <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener">
             <img src="fcb.png" alt="Facebook">
           </a>
 
-          <a
-            href="https://www.linkedin.com/in/freedom-recycling-87064b3a9"
-            target="_blank"
-            rel="noopener"
-            aria-label="LinkedIn"
-          >
+          <a href="https://www.linkedin.com/in/freedom-recycling-87064b3a9" target="_blank" rel="noopener">
             <img src="lin.png" alt="LinkedIn">
           </a>
         </div>
@@ -302,25 +298,24 @@
         <h3>LIENS RAPIDES</h3>
         <a href="index-fr.html">Accueil</a>
         <a href="about-fr.html">À propos</a>
-        <a href="process-fr.html">Processus</a>
+        <a href="process-fr.html">Notre processus</a>
         <a href="products-fr.html">Produits</a>
         <a href="contact-fr.html">Contact</a>
       </div>
 
       <div class="footer-column">
         <h3>NOS PRODUITS</h3>
-        <a href="products-fr.html">Paillettes PET</a>
+        <a href="products-fr.html">Flocons PET</a>
         <a href="products-fr.html">Granulés recyclés</a>
-        <a href="products-fr.html">Balles plastiques</a>
+        <a href="products-fr.html">Balles de plastique</a>
         <a href="certifications-fr.html">Certifications</a>
       </div>
 
       <div class="footer-column">
-        <h3>CONTACTEZ-NOUS</h3>
+        <h3>NOUS CONTACTER</h3>
         <p>Zone Industrielle, Berrouaghia</p>
         <p>Médéa, Algérie</p>
-
-        <a href="mailto:contact@freedomrecycling.com">
+        <a href="mailto:contact@freedomrecyclingdz.com">
           contact@freedomrecyclingdz.com
         </a>
       </div>
@@ -334,9 +329,8 @@
     </div>
   </footer>
 
-  <!-- WhatsApp -->
   <a
-    href="https://wa.me/213770262345?text=Bonjour%20Freedom%20Recycling%2C%20je%20souhaite%20parler%20avec%20votre%20%C3%A9quipe."
+    href="https://wa.me/213770262345?text=Bonjour%20Freedom%20Recycling%2C%20je%20souhaite%20obtenir%20des%20informations%20sur%20vos%20certifications."
     class="whatsapp-float"
     target="_blank"
     rel="noopener"
