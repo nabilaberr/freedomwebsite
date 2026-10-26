@@ -8,9 +8,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link
-    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet"
   >
 
@@ -18,13 +17,8 @@
 </head>
 
 <body>
-  <!-- Loader -->
   <div class="loader" id="loader">
-    <div class="loader-content">
-      <img src="logo.png" alt="Freedom Recycling" class="loader-logo">
-      <div class="recycle-loader">♻</div>
-      <p>إعادة التدوير من أجل غدٍ أفضل</p>
-    </div>
+    <div class="recycle-icon"></div>
   </div>
 
   <!-- Header -->
@@ -38,7 +32,7 @@
       <nav class="nav" id="mainNav">
         <a href="index-ar.html">الرئيسية</a>
         <a href="about-ar.html">من نحن</a>
-        <a href="process-ar.html">مراحل التدوير</a>
+        <a href="process-ar.html">عمليتنا</a>
         <a href="products-ar.html">المنتجات</a>
         <a href="sustainability-ar.html">الاستدامة</a>
         <a href="certifications-ar.html">الشهادات</a>
@@ -51,9 +45,9 @@
             class="lang-btn"
             type="button"
             onclick="toggleLangMenu()"
-            aria-label="اختيار اللغة"
+            aria-label="اختر اللغة"
           >
-            AR ▾
+            العربية ▾
           </button>
 
           <div class="lang-menu" id="langMenu">
@@ -82,14 +76,14 @@
     </div>
   </header>
 
-  <!-- Hero -->
+  <!-- Page Hero -->
   <section class="page-hero">
     <div class="container page-hero-content">
       <div class="section-label">اتصل بنا</div>
 
       <h1>
-        لنبنِ معاً مستقبلاً
-        <span>دائرياً أكثر استدامة.</span>
+        لنبني معًا مستقبلًا
+        <span>أكثر استدامة وتدويرًا.</span>
       </h1>
 
       <p>
@@ -105,44 +99,41 @@
       <!-- Company Information -->
       <div class="contact-details">
 
-        <div class="section-label">معلومات الاتصال</div>
+        <div class="section-label">معلومات التواصل</div>
 
-        <h2>Freedom Recycling SARL</h2>
+        <h2>شركة Freedom Recycling</h2>
 
         <p class="contact-intro">
-          نحن جاهزون لمناقشة توريد المواد المعاد تدويرها، وخدمات الجمع،
-          والشراكات، ومشاريع إعادة التدوير الصناعية.
+          نحن جاهزون لمناقشة توفير المواد المعاد تدويرها، والجمع، والشراكات،
+          ومشاريع إعادة التدوير الصناعية.
         </p>
 
         <div class="contact-info-grid">
 
           <div class="contact-info-card">
             <div class="contact-info-icon">☎</div>
-
             <div>
               <h3>الهاتف</h3>
               <a href="tel:+213770262345">+213 770 26 23 45</a>
-              <a href="tel:+337 68648439">+33 768 64 84 39</a>
+              <a href="tel:+33768648439">+33 768 64 84 39</a>
             </div>
           </div>
 
           <div class="contact-info-card">
             <div class="contact-info-icon">✉</div>
-
             <div>
               <h3>البريد الإلكتروني</h3>
-              <a href="mailto:contact@freedomrecycling.com">
-                contact@freedomrecycling.com
+              <a href="mailto:contact@freedomrecyclingdz.com">
+                contact@freedomrecyclingdz.com
               </a>
             </div>
           </div>
 
           <div class="contact-info-card">
             <div class="contact-info-icon">⌖</div>
-
             <div>
               <h3>الموقع</h3>
-              <p>البرواقية، المدية، الجزائر</p>
+              <p>برواقية، المدية، الجزائر</p>
             </div>
           </div>
 
@@ -155,8 +146,8 @@
             <h3>عنواننا</h3>
 
             <address>
-              Freedom Recycling SARL<br>
-              المنطقة الصناعية، البرواقية<br>
+              شركة Freedom Recycling<br>
+              المنطقة الصناعية، برواقية<br>
               ولاية المدية، الجزائر
             </address>
           </div>
@@ -166,22 +157,14 @@
           <h3>تابعونا</h3>
 
           <div class="social-links contact-social-links">
-            <a
-              href="https://www.facebook.com/yourpage"
-              target="_blank"
-              rel="noopener"
-            >
-              <img src="fcb.png" alt="Facebook">
-              <span>Facebook</span>
+            <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener">
+              <img src="fcb.png" alt="فيسبوك">
+              <span>فيسبوك</span>
             </a>
 
-            <a
-              href="https://www.linkedin.com/in/freedom-recycling-87064b3a9"
-              target="_blank"
-              rel="noopener"
-            >
-              <img src="lin.png" alt="LinkedIn">
-              <span>LinkedIn</span>
+            <a href="https://www.linkedin.com/company/yourcompany" target="_blank" rel="noopener">
+              <img src="lin.png" alt="لينكدإن">
+              <span>لينكدإن</span>
             </a>
           </div>
         </div>
@@ -195,7 +178,30 @@
           <div class="section-label">أرسل رسالة</div>
           <h2>كيف يمكننا مساعدتك؟</h2>
 
-          <form class="form">
+          <form
+            class="form"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+          >
+
+            <input
+              type="hidden"
+              name="access_key"
+              value="ea79f288-4890-4965-8c23-058498e26de3"
+            >
+
+            <input
+              type="hidden"
+              name="subject"
+              value="رسالة جديدة من موقع Freedom Recycling"
+            >
+
+            <input
+              type="hidden"
+              name="from_name"
+              value="موقع Freedom Recycling"
+            >
+
             <div class="form-row">
               <input
                 class="input"
@@ -217,7 +223,7 @@
             <input
               class="input"
               type="text"
-              name="subject"
+              name="user_subject"
               placeholder="الموضوع"
             >
 
@@ -229,8 +235,9 @@
             ></textarea>
 
             <button class="btn btn-primary form-submit" type="submit">
-              إرسال الرسالة ←
+              إرسال الرسالة →
             </button>
+
           </form>
         </div>
 
@@ -253,7 +260,7 @@
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-              title="خريطة موقع Freedom Recycling"
+              title="موقع Freedom Recycling"
             ></iframe>
           </div>
         </div>
@@ -271,27 +278,17 @@
         <img src="logo1.png" alt="Freedom Recycling" class="footer-logo">
 
         <p>
-          نبني مستقبلاً دائرياً من خلال إعادة تدوير البلاستيك بطريقة مسؤولة
-          وإنتاج مواد معاد تدويرها عالية الجودة.
+          نبني مستقبلًا دائريًا من خلال إعادة التدوير المسؤول للبلاستيك
+          وتوفير مواد معاد تدويرها عالية الجودة.
         </p>
 
         <div class="social-links">
-          <a
-            href="https://www.facebook.com/yourpage"
-            target="_blank"
-            rel="noopener"
-            aria-label="Facebook"
-          >
-            <img src="fcb.png" alt="Facebook">
+          <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener">
+            <img src="fcb.png" alt="فيسبوك">
           </a>
 
-          <a
-            href="https://www.linkedin.com/in/freedom-recycling-87064b3a9"
-            target="_blank"
-            rel="noopener"
-            aria-label="LinkedIn"
-          >
-            <img src="lin.png" alt="LinkedIn">
+          <a href="https://www.linkedin.com/in/freedom-recycling-87064b3a9" target="_blank" rel="noopener">
+            <img src="lin.png" alt="لينكدإن">
           </a>
         </div>
       </div>
@@ -300,7 +297,7 @@
         <h3>روابط سريعة</h3>
         <a href="index-ar.html">الرئيسية</a>
         <a href="about-ar.html">من نحن</a>
-        <a href="process-ar.html">مراحل التدوير</a>
+        <a href="process-ar.html">عمليتنا</a>
         <a href="products-ar.html">المنتجات</a>
         <a href="contact-ar.html">اتصل بنا</a>
       </div>
@@ -309,17 +306,16 @@
         <h3>منتجاتنا</h3>
         <a href="products-ar.html">رقائق PET</a>
         <a href="products-ar.html">حبيبات معاد تدويرها</a>
-        <a href="products-ar.html">بالات بلاستيكية</a>
+        <a href="products-ar.html">باليتات البلاستيك</a>
         <a href="certifications-ar.html">الشهادات</a>
       </div>
 
       <div class="footer-column">
         <h3>اتصل بنا</h3>
-        <p>المنطقة الصناعية، البرواقية</p>
+        <p>المنطقة الصناعية، برواقية</p>
         <p>المدية، الجزائر</p>
-
-        <a href="mailto:contact@freedomrecycling.com">
-         contact@freedomrecyclingdz.com
+        <a href="mailto:contact@freedomrecyclingdz.com">
+          contact@freedomrecyclingdz.com
         </a>
       </div>
 
@@ -332,9 +328,8 @@
     </div>
   </footer>
 
-  <!-- WhatsApp -->
   <a
-    href="https://wa.me/213770262345?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D9%81%D8%B1%D9%8A%D8%AF%D9%88%D9%85%20%D8%B1%D9%8A%D8%B3%D8%A7%D9%8A%D9%83%D9%84%D9%8A%D9%86%D8%BA%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%20%D9%81%D8%B1%D9%8A%D9%82%D9%83%D9%85."
+    href="https://wa.me/213770262345?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20Freedom%20Recycling%2C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA%20%D8%B9%D9%86%20%D8%A7%D9%84%D8%B4%D9%87%D8%A7%D8%AF%D8%A7%D8%AA."
     class="whatsapp-float"
     target="_blank"
     rel="noopener"
