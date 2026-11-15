@@ -4,146 +4,224 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Freedom Recycling | À propos</title>
-   <link rel="stylesheet" href="style.css?v=25">
+  <link rel="stylesheet" href="style.css?v=25">
 </head>
 <body>
-<div class="loader" id="loader"><div class="recycle-icon"></div></div>
+  <div class="loader" id="loader">
+    <div class="recycle-icon"></div>
+  </div>
 
-<header class="header">
-  <div class="container nav-wrap">
-    <a class="logo" href="index-fr.html"><img src="logo.png" alt="Freedom Recycling"></a>
-    <div class="header-right">
-      <div class="lang-dropdown">
-        <button class="lang-btn" onclick="toggleLangMenu()">FR ▾</button>
-        <div class="lang-menu" id="langMenu">
-          <a href="about.html">English</a>
-          <a href="about-fr.html">Français</a>
-          <a href="about-ar.html">العربية</a>
-        </div>
+  <header class="header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html">
+        <img src="logo.png" alt="Freedom Recycling">
+      </a>
+
+      <div class="header-right">
+        <button class="menu-toggle" onclick="toggleMenu()" aria-label="Ouvrir le menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
-      <a href="contact.html" class="btn btn-outline quote-btn">DEMANDER UN DEVIS</a>
-      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open menu"><span></span><span></span><span></span></button>
-    </div>
-    <nav class="nav" id="mainNav">
-      <a href="index-fr.html">ACCUEIL</a>
-      <a href="about-fr.html" class="active">À PROPOS</a>
-      <a href="process-fr.html">PROCESSUS</a>
-      <a href="products-fr.html">PRODUITS</a>
-      <a href="sustainability-fr.html">DURABILITÉ</a>
-      <a href="certifications-fr.html">CERTIFICATIONS</a>
-      <a href="contact-fr.html">CONTACT</a>
-    </nav>
-  </div>
-</header>
 
-<section class="hero about-hero">
-  <video class="hero-video" autoplay muted loop playsinline poster="assets/about-poster.jpg">
-    <source src="about-vide.mp4" type="video/mp4">
-  </video>
-  <div class="hero-overlay"></div>
-  <div class="container hero-content">
-    <div class="hero-copy">
-      <div class="kicker">À PROPOS DE FREEDOM RECYCLING</div>
-      <h1>Transformer les déchets plastiques en paillettes PET recyclées de qualité premium</h1>
-      <p>Fondée en 2020 à Berrouaghia, en Algérie, Freedom Recycling se spécialise dans le recyclage des bouteilles PET post-consommation et post-industrielles en matières premières de haute qualité destinées à l’industrie.</p>
-      <a href="contact.html" class="btn btn-primary">NOUS CONTACTER</a>
+      <nav class="nav" id="mainNav">
+        <a href="index.html">ACCUEIL</a>
+        <a href="about-fr.html" class="active">À PROPOS</a>
+        <a href="process-fr.html">PROCESSUS</a>
+        <a href="products-fr.html">PRODUITS</a>
+        <a href="sustainability-fr.html">DURABILITÉ</a>
+        <a href="certifications-fr.html">CERTIFICATIONS</a>
+        <a href="contact-fr.html">CONTACT</a>
+      </nav>
     </div>
-  </div>
-</section>
+  </header>
 
-<section class="section light">
-  <div class="container about-grid">
-    <div class="step">
-      <h3>Qui nous sommes</h3>
-      <p>Freedom Recycling s’engage à transformer les déchets plastiques en ressources utiles pour un environnement plus propre et un avenir plus durable.</p>
-    </div>
-    <div class="step">
-      <h3>Ce que nous produisons</h3>
-      <p>Nous produisons des paillettes PET recyclées de qualité premium répondant à des normes industrielles élevées de constance et de pureté.</p>
-    </div>
-    <div class="step">
-      <h3>Où elles sont utilisées</h3>
-      <p>Nos paillettes sont utilisées dans les textiles, les emballages alimentaires et les emballages de boissons.</p>
-    </div>
-  </div>
-</section>
+  <section class="hero about-hero">
+    <video class="hero-video" autoplay muted loop playsinline poster="assets/about-poster.jpg">
+      <source src="about-vide.mp4" type="video/mp4">
+    </video>
 
-<section class="section dark">
-  <div class="container process-wrap">
-    <div>
-      <div class="section-label">TECHNOLOGIE</div>
-      <h2>Tri optique avancé pour la pureté et la qualité</h2>
-      <p class="lead">Nous utilisons la technologie de tri optique Bühler, avec deux unités SORTEX A et une unité SORTEX N, afin d’obtenir une séparation précise des couleurs et une élimination efficace des contaminants.</p>
-    </div>
-    <div class="step contact-card">
-      <h3>Économie circulaire</h3>
-      <p>Chaque bouteille que nous recyclons contribue à réduire la pollution plastique, à préserver les ressources naturelles et à donner une seconde vie au plastique.</p>
-    </div>
-  </div>
-</section>
+    <div class="hero-overlay"></div>
 
-<section class="section light">
-  <div class="container">
-    <div class="section-label">PARTENARIAT</div>
-    <h2>Prêts à soutenir des solutions durables</h2>
-    <p class="lead" style="color:var(--muted)">Si vous recherchez un partenaire de recyclage fiable pour des paillettes PET et des solutions circulaires, nous sommes prêts à collaborer avec vous.</p>
-  </div>
-</section>
+    <div class="container hero-content">
+      <div class="hero-copy">
+        <div class="kicker">À PROPOS DE FREEDOM RECYCLING</div>
 
- <footer class="footer">
+        <h1>Transformer les déchets plastiques en flocons de PET recyclé de haute qualité</h1>
+
+        <p>
+          Fondée en 2020 à Berrouaghia, en Algérie, Freedom Recycling est
+          spécialisée dans le recyclage des bouteilles PET post-consommation
+          et post-industrielles afin de produire des matières de haute
+          qualité destinées aux applications techniques et industrielles.
+        </p>
+
+        <a href="contact-fr.html" class="btn btn-primary">NOUS CONTACTER</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section light">
+    <div class="container about-grid">
+      <div class="step">
+        <h3>Qui sommes-nous</h3>
+        <p>
+          Freedom Recycling s’engage à transformer les déchets plastiques en
+          ressources valorisables pour un environnement plus propre et un
+          avenir plus durable.
+        </p>
+      </div>
+
+      <div class="step">
+        <h3>Ce que nous produisons</h3>
+        <p>
+          Nous produisons des flocons de PET recyclé de haute qualité,
+          conformes aux exigences élevées du secteur en matière de qualité
+          et de pureté.
+        </p>
+      </div>
+
+      <div class="step">
+        <h3>Secteurs d’utilisation</h3>
+        <p>
+          Nos flocons de PET recyclé sont destinés à des applications
+          techniques et industrielles, notamment les fibres textiles, les
+          emballages non alimentaires, les sangles, le moulage par injection
+          et d’autres procédés de fabrication.
+        </p>
+        <p>
+          <strong>Remarque :</strong> Nos flocons de PET ne sont pas de
+          qualité alimentaire et ne sont pas destinés au contact direct avec
+          les aliments.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark">
+    <div class="container process-wrap">
+      <div>
+        <div class="section-label">TECHNOLOGIE</div>
+
+        <h2>Trie optique avancée pour la pureté et la qualité</h2>
+
+        <p class="lead">
+          Nous utilisons la technologie de tri optique Bühler, comprenant
+          deux unités SORTEX A et une unité SORTEX N, afin d’assurer une
+          séparation précise des couleurs et une élimination efficace des
+          contaminants.
+        </p>
+      </div>
+
+      <div class="step contact-card">
+        <h3>Économie circulaire</h3>
+        <p>
+          Chaque bouteille recyclée contribue à réduire la pollution
+          plastique, à préserver les ressources naturelles et à donner une
+          seconde vie au plastique.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section light">
+    <div class="container">
+      <div class="section-label">COLLABORER AVEC NOUS</div>
+
+      <h2>Prêts à soutenir des solutions durables</h2>
+
+      <p class="lead" style="color:var(--muted)">
+        Si vous recherchez un partenaire de recyclage fiable pour des flocons
+        de PET à usage technique et des solutions de matériaux circulaires,
+        nous sommes prêts à travailler avec vous.
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer">
     <div class="container footer-grid">
 
       <div class="footer-brand">
         <img src="logo1.png" alt="Freedom Recycling" class="footer-logo">
 
         <p>
-          Building a circular future through responsible plastic recycling
-          and high-quality recycled materials.
+          Construire un avenir circulaire grâce au recyclage responsable du
+          plastique et à des matières recyclées de haute qualité destinées à
+          un usage technique et industriel.
         </p>
 
         <div class="social-links">
-          <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener">
+          <a
+            href="https://www.facebook.com/yourpage"
+            target="_blank"
+            rel="noopener"
+            aria-label="Facebook"
+          >
             <img src="fcb.png" alt="Facebook">
           </a>
 
-          <a href="https://www.linkedin.com/in/freedom-recycling-87064b3a9" target="_blank" rel="noopener">
+          <a
+            href="https://www.linkedin.com/in/freedom-recycling-87064b3a9"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+          >
             <img src="lin.png" alt="LinkedIn">
           </a>
         </div>
       </div>
 
       <div class="footer-column">
-        <h3>QUICK LINKS</h3>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="process.html">Our Process</a>
-        <a href="products.html">Products</a>
-        <a href="sustainability.html">Sustainability</a>
+        <h3>LIENS RAPIDES</h3>
+        <a href="index.html">Accueil</a>
+        <a href="about-fr.html">À propos</a>
+        <a href="process-fr.html">Notre processus</a>
+        <a href="products-fr.html">Produits</a>
+        <a href="sustainability-fr.html">Durabilité</a>
       </div>
 
       <div class="footer-column">
-        <h3>OUR PRODUCTS</h3>
-        <a href="products.html">PET Flakes</a>
-        <a href="products.html">Recycled Granules</a>
-        <a href="products.html">Plastic Bales</a>
-        <a href="certifications.html">Certifications</a>
+        <h3>NOS PRODUITS</h3>
+        <a href="products-fr.html">Flocons de PET</a>
+        <a href="products-fr.html">Granulés recyclés</a>
+        <a href="products-fr.html">Balles de plastique</a>
+        <a href="certifications-fr.html">Certifications</a>
       </div>
 
       <div class="footer-column">
-        <h3>CONTACT US</h3>
-        <p>Algeria</p>
+        <h3>NOUS CONTACTER</h3>
+        <p>Algérie</p>
+
         <a href="mailto:contact@freedomrecyclingdz.com">
           contact@freedomrecyclingdz.com
         </a>
+
         <a href="https://freedomrecyclingdz.com">
           freedomrecyclingdz.com
         </a>
       </div>
 
     </div>
-    <footer class="footer">
-       <a
-    href="https://wa.me/213770262345?text=Bonjour%20Freedom%20Recycling%2C%20je%20souhaite%20obtenir%20des%20informations%20sur%20vos%20certifications."
+
+    <div class="container technical-use-notice">
+      <p>
+        Ce site est destiné à un usage technique et professionnel uniquement.
+        Les matières PET recyclées ne sont pas de qualité alimentaire, sauf
+        indication contraire et certification spécifique pour le contact
+        alimentaire.
+      </p>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        © 2026 Freedom Recycling. Tous droits réservés.
+      </div>
+    </div>
+  </footer>
+
+  <a
+    href="https://wa.me/213770262345?text=Bonjour%20Freedom%20Recycling%2C%20je%20souhaite%20obtenir%20des%20informations%20sur%20vos%20mati%C3%A8res%20PET%20recycl%C3%A9es."
     class="whatsapp-float"
     target="_blank"
     rel="noopener"
@@ -152,6 +230,7 @@
     <img src="whatsapp.png" alt="WhatsApp">
     <span class="whatsapp-text">WhatsApp</span>
   </a>
-<script src="script.js"></script>
+
+  <script src="script.js"></script>
 </body>
 </html>
